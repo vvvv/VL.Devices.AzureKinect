@@ -1,0 +1,14 @@
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\depthengine_2_0.dll
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\k4a.dll
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\k4arecord.dll
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\k4a.pdb
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\k4arecord.pdb
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\Xenko.Core.ssdeps
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\VL.Devices.AzureKinect.deps.json
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\VL.Devices.AzureKinect.dll
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\bin\x64\Debug\VL.Devices.AzureKinect.pdb
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\obj\x64\Debug\VL.Devices.AzureKinect.csproj.CoreCompileInputs.cache
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\obj\x64\Debug\VL.Devices.AzureKinect.AssemblyInfoInputs.cache
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\obj\x64\Debug\VL.Devices.AzureKinect.AssemblyInfo.cs
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\obj\x64\Debug\VL.Devices.AzureKinect.dll
+C:\Users\conature\VL.Devices.AzureKinect\src\VL.Devices.AzureKinect\obj\x64\Debug\VL.Devices.AzureKinect.pdb

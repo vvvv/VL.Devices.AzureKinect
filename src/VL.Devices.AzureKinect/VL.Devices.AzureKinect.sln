@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Devices.AzureKinect", "VL.Devices.AzureKinect.csproj", "{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Debug|x64.ActiveCfg = Debug|x64
+		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Debug|x64.Build.0 = Debug|x64
+		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Release|x64.ActiveCfg = Release|x64
+		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA972968-EF16-491A-AFEF-9FD89E2C6ADB}
+	EndGlobalSection
+EndGlobal
