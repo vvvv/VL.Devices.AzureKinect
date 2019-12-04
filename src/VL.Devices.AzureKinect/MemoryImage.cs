@@ -4,13 +4,14 @@ using VL.Lib.Basics.Imaging;
 
 namespace VL.Devices.AzureKinect
 {
-    class MemoryImage : IImage
+    class MemoryImage<T> : IImage
+        where T : unmanaged
     {
         unsafe class Data : IImageData
         {
-            readonly Memory<byte> memory;
+            readonly Memory<T> memory;
             readonly MemoryHandle handle;
-            public Data(Memory<byte> memory, int scanSize)
+            public Data(Memory<T> memory, int scanSize)
             {
                 this.memory = memory;
                 this.handle = memory.Pin();
@@ -19,7 +20,7 @@ namespace VL.Devices.AzureKinect
 
             public IntPtr Pointer => new IntPtr(handle.Pointer);
 
-            public int Size => memory.Length;
+            public int Size => memory.Length * sizeof(T);
 
             public int ScanSize { get; }
 
@@ -30,14 +31,14 @@ namespace VL.Devices.AzureKinect
         }
 
 
-        public MemoryImage(Memory<byte> memory, ImageInfo info, int stride)
+        public MemoryImage(Memory<T> memory, ImageInfo info, int stride)
         {
             Memory = memory;
             Info = info;
             Stride = stride;
         }
 
-        public Memory<byte> Memory { get; }
+        public Memory<T> Memory { get; }
 
         public ImageInfo Info { get; }
 
