@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="MAxdYPtimWBMv4UKoYwp5f" LanguageVersion="2019.2.0-0200-84195a16db" Version="0.128">
+  <NugetDependency Id="GowQjEC3BnmLtfx2YShcc5" Location="VL.CoreLib" Version="2019.2.0-0195-gb5eb64bfc4" />
+  <Patch Id="EZ4HuupTYTZLQJDZAnUbZU">
+    <Canvas Id="Nj2gjmQfLhbNm404eipiCK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="AxfuF0MxMI0MFxuzDsPCSR">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="R5uxCrytiOJPQf4cthqaWN">
+        <Canvas Id="Ogtn9ksNkhbPGyjcpbZgl3" CanvasType="Group">
+          <Node Bounds="492,270,101,19" Id="L42ZVI1iJZUQIL5OcuoP9C">
+            <p:NodeReference LastCategoryFullName="KinectAzure" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AzureKinectDevice" />
+            </p:NodeReference>
+            <Pin Id="RrDKIBizr2mPgFwyH4JVgp" Name="Update" Kind="ApplyPin" />
+            <Pin Id="UihVaHDRSduMDsBZ6qp5G5" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="491,325" Id="Hi8XTxoayoGMlfWgxoETBl">
+            <p:NodeReference LastCategoryFullName="KinectAzure" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BodyTracker" />
+            </p:NodeReference>
+            <Pin Id="NIPUkLlnmk7Mq2TW2vQ5RG" Name="Sensor" Kind="InputPin" />
+            <Pin Id="JudXXZtgdkvLwzLIxZJBIt" Name="Frames" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="494,384" Id="BvKDXlmO4LuL2ehqTwwPBq">
+            <p:NodeReference LastCategoryFullName="KinectAzure" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Skeleton" />
+            </p:NodeReference>
+            <Pin Id="A42rq9ydb63PDjvBar22JH" Name="Frames" Kind="InputPin" />
+            <Pin Id="VOIZH7iXefNMirgOhPGJhn" Name="Joint Positions" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EY6CxgHxboHLQOKjZN7FGf" Comment="Joint Positions" Bounds="494,441,271,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="497,353,145,19" Id="KY3DujvmkiWOnMgjj1dlNt">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Debug" />
+            </p:NodeReference>
+            <Pin Id="V2q8hpMKFXSOQeXr9RfXYe" Name="Input" Kind="InputPin" />
+            <Pin Id="BehsgKwc8jCOPgzNaEglqH" Name="Reset" Kind="InputPin" />
+            <Pin Id="AeImZnjPRk3LbJyolqqHPC" Name="Result" Kind="OutputPin" />
+            <Pin Id="J0bWD8VgAwYNto6dKskx45" Name="Input Changed Count" Kind="OutputPin" />
+            <Pin Id="HcXR8AJduvIOlLJXEUxPyX" Name="Subscribe Calls" Kind="OutputPin" />
+            <Pin Id="G44DdJOmpeQNVURIhVnSUs" Name="On Next Calls" Kind="OutputPin" />
+            <Pin Id="Lj1n19Xp1E7M60y00FtNAd" Name="On Error Calls" Kind="OutputPin" />
+            <Pin Id="C1JJRt8gB7aQWNt3IOyciR" Name="On Completed Calls" Kind="OutputPin" />
+            <Pin Id="B9aUCmtIiJ8NZ9vETfb3TB" Name="Unsubscribe Calls" Kind="OutputPin" />
+            <Pin Id="F4j0PueTQXyM5XNJyulcFv" Name="Latest Thread Id" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="RlZV5tJEXJtQZNM6K8cp0q" Name="Create" />
+        <Patch Id="I8uQePu79PPO2Vfad4m1Q4" Name="Update" />
+        <ProcessDefinition Id="Hn25erGy9s3ObmFej0X6x1">
+          <Fragment Id="KroFIlkd3JLL8JGPBZ4zw2" Patch="RlZV5tJEXJtQZNM6K8cp0q" Enabled="true" />
+          <Fragment Id="UFR2S6Vc2gGQIXrrQ3N110" Patch="I8uQePu79PPO2Vfad4m1Q4" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="RdSNDfZuRWtNXiFeBMFDZd" Ids="UihVaHDRSduMDsBZ6qp5G5,NIPUkLlnmk7Mq2TW2vQ5RG" />
+        <Link Id="KBkMP3i6XXwPj57vZeo3PH" Ids="JudXXZtgdkvLwzLIxZJBIt,V2q8hpMKFXSOQeXr9RfXYe" />
+        <Link Id="J0rA978pV4JQJfizCQ7Ia6" Ids="VOIZH7iXefNMirgOhPGJhn,EY6CxgHxboHLQOKjZN7FGf" />
+        <Link Id="Tq0NOH4FMGlQXSThIChC4w" Ids="AeImZnjPRk3LbJyolqqHPC,A42rq9ydb63PDjvBar22JH" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="BRJnnZdh5eyMS3vQIp8RQ2" Location="VL.Skia" Version="2019.2.0-0195-gb5eb64bfc4" />
+  <DocumentDependency Id="PzJJJkwMI67QEbWxZxdhPj" Location="../../VL.Devices.AzureKinect.vl" />
+</Document>
