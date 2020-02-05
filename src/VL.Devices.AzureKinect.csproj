@@ -11,8 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.Kinect.Sensor" Version="1.3.0" />
     <PackageReference Include="VL.Core" Version="2019.2.0-0197-ga168e3b40d" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Azure.Kinect.Sensor">
+      <HintPath>..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

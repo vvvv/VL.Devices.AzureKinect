@@ -13,10 +13,6 @@
 # Mono auto generated files
 mono_crash.*
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
 x64/
 x86/
 [Aa][Rr][Mm]/
@@ -280,3 +276,4 @@ healthchecksdb
 MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+*.vl.dll
