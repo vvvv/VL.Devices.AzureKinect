@@ -1,6 +1,7 @@
 ﻿using Microsoft.Azure.Kinect.Sensor;
 using System;
 using System.Collections.Generic;
+using System.Reactive.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using VL.Lib.Basics.Imaging;
@@ -16,6 +17,64 @@ namespace VL.Devices.AzureKinect
             public short x;
             public short y;
             public short z;
+        }
+
+        /// <summary>
+        /// Tries to decompress the image. Will return true if the image needed to be decompressed and therefor should get disposed of by the caller.
+        /// </summary>
+        /// <param name="image">The image which might be in a compressed form.</param>
+        /// <param name="decompressedImage">The decompressed image if decrompression was necessary or the original image.</param>
+        /// <returns>True if decompression was neccessary.</returns>
+        public static bool TryToDecompress(this Image image, out Image decompressedImage)
+        {
+            switch (image.Format)
+            {
+                case ImageFormat.ColorMJPG:
+                    decompressedImage = image.Decompress();
+                    return true;
+                default:
+                    decompressedImage = image;
+                    return false;
+            }
+        }
+
+        /// <summary>
+        /// Selects the color images out of the captures. Will also decompress them if needed.
+        /// </summary>
+        /// <param name="captures">The captures to select the color images from.</param>
+        /// <returns>The color images of the captures.</returns>
+        public static IObservable<IImage> SelectColorImages(this IObservable<Capture> captures)
+        {
+            return captures.SelectMany(c =>
+            {
+                var image = c.Color;
+                if (image != null)
+                {
+                    if (image.TryToDecompress(out var decompressedImage))
+                        return Observable.Using(() => decompressedImage, i => Observable.Return(i.AsVLImage()));
+                    else
+                        return Observable.Return(image.AsVLImage());
+                }
+                return Observable.Empty<IImage>();
+            });
+        }
+
+        /// <summary>
+        /// Selects the depth images out of the captures.
+        /// </summary>
+        /// <param name="captures">The captures to select the depth images from.</param>
+        /// <returns>The depth images of the captures.</returns>
+        public static IObservable<IImage> SelectDepthImages(this IObservable<Capture> captures)
+        {
+            return captures.SelectMany(c =>
+            {
+                var image = c.Depth;
+                if (image != null)
+                {
+                    return Observable.Return(image.AsVLImage());
+                }
+                return Observable.Empty<IImage>();
+            });
         }
 
         public static IImage AsVLImage(this Image image)
