@@ -77,6 +77,63 @@ namespace VL.Devices.AzureKinect
             });
         }
 
+        /// <summary>
+        /// Since a capture can miss either the color or depth image this operator will take care of always producing
+        /// a capture where the latest received color and depth images are set.
+        /// </summary>
+        public static IObservable<Capture> CombineLatestImages(this IObservable<Capture> captures)
+        {
+            var latestColor = default(Image);
+            var latestDepth = default(Image);
+            return captures.SelectMany(c =>
+            {
+                if (c.Color != null)
+                {
+                    latestColor?.Dispose();
+                    latestColor = c.Color.Reference();
+                }
+                if (c.Depth != null)
+                {
+                    latestDepth?.Dispose();
+                    latestDepth = c.Depth.Reference();
+                }
+                if (latestColor != null && latestDepth != null)
+                {
+                    return Observable.Using(
+                        () => CreateCapture(latestColor.Reference(), latestDepth.Reference(), c.IR?.Reference(), c.Temperature),
+                        x => Observable.Return(x));
+                }
+                return Observable.Empty<Capture>();
+            });
+        }
+
+        public static IObservable<Capture> DecompressColorImages(this IObservable<Capture> captures)
+        {
+            return captures.SelectMany(c =>
+            {
+                var colorImage = c.Color;
+                if (colorImage != null && colorImage.TryToDecompress(out var decompressedImage))
+                    return Observable.Using(
+                        () => CreateCapture(decompressedImage, c.Depth?.Reference(), c.IR?.Reference(), c.Temperature), 
+                        x => Observable.Return(x));
+                else
+                    return Observable.Return(c);
+            });
+        }
+
+        private static Capture CreateCapture(Image color, Image depth, Image ir, float temperature)
+        {
+            var capture = new Capture() { Temperature = temperature };
+            // The setters crash when assigning null
+            if (color != null)
+                capture.Color = color;
+            if (depth != null)
+                capture.Depth = depth;
+            if (ir != null)
+                capture.IR = ir;
+            return capture;
+        }
+
         public static IImage AsVLImage(this Image image)
         {
             var info = new ImageInfo(image.WidthPixels, image.HeightPixels, image.Format.ToPixelFormat(), image.Format.ToString());
