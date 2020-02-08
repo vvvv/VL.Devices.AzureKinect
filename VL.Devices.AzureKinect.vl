@@ -148,8 +148,23 @@
                 <ControlPoint Id="Gdb6v70vp7uOj84quyAPrR" Bounds="730,559" />
                 <Pin Id="STN3mdecTnlMwur3I7wyNF" Name="Output" Kind="OutputPin" Bounds="1102,695" />
                 <Link Id="CbyhxyQm6EXMjqCdHIskvg" Ids="Gdb6v70vp7uOj84quyAPrR,STN3mdecTnlMwur3I7wyNF" IsHidden="true" />
-                <Link Id="DzEjVV3nQbjNAoRtAkRPxt" Ids="PgTif4TnsQANQ2EzRe0Fu4,A752xqiyYusOa4bexzBMgJ" />
+                <Link Id="DzEjVV3nQbjNAoRtAkRPxt" Ids="PgTif4TnsQANQ2EzRe0Fu4,DbG4i3gV93JPCyaLGaFbkL" />
                 <Link Id="UlPRKD9krFXPm19ifwXUKT" Ids="IocK5UpAoePOWa3hyxW834,Gdb6v70vp7uOj84quyAPrR" />
+                <Node Bounds="821,446" Id="UswrEN0rbY9NT6sDXJhoLp">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" />
+                    <Choice Kind="OperationCallFlag" Name="SetCameraFPS" />
+                  </p:NodeReference>
+                  <Pin Id="DbG4i3gV93JPCyaLGaFbkL" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DQd3YTWJuNuNe2ydUDssjG" Name="Value" Kind="InputPin" />
+                  <Pin Id="GryVS4mAOTOQWaix3pF5BA" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="Kwxuo8uNuGnNE3y3cIo2Nc" Ids="GryVS4mAOTOQWaix3pF5BA,A752xqiyYusOa4bexzBMgJ" />
+                <ControlPoint Id="Ohdv21JGOuwLg196wwzmIF" Bounds="989,368" />
+                <Link Id="OxX8I562xfyM0LdmwG1k63" Ids="Ohdv21JGOuwLg196wwzmIF,DQd3YTWJuNuNe2ydUDssjG" />
+                <Pin Id="VvPKye4xiIeNZiGP2TAi1N" Name="FPS" Kind="InputPin" Bounds="989,368" />
+                <Link Id="FYXoSBTx1BzOeuc05ML7tU" Ids="VvPKye4xiIeNZiGP2TAi1N,Ohdv21JGOuwLg196wwzmIF" IsHidden="true" />
               </Patch>
             </Node>
             <ControlPoint Id="J53nzkxqmE9OYX31WVHKBa" Bounds="277,183" />
@@ -263,19 +278,22 @@
                     <Pin Id="IasgzEJvq22MQwgUUI52sV" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="Rq4W9LUNXVaMlZQYcOoLRS" Bounds="198,348" />
                     <Node Bounds="196,306,70,19" Id="PlOJrdi7oPZLFAgyvgl96c">
-                      <p:NodeReference LastCategoryFullName="Devices.AzureKinect.AzureKinectDevice" LastSymbolSource="VL.Devices.AzureKinect.vl">
+                      <p:NodeReference LastCategoryFullName="Devices.AzureKinect.SensorDevice" LastSymbolSource="VL.Devices.AzureKinect.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="OpenDevice" />
                       </p:NodeReference>
                       <Pin Id="Gztd0BFebhkOuhgxOr3CFk" Name="Index" Kind="InputPin" />
                       <Pin Id="GeKTUXIrdU2LjUalQZggaf" Name="Depth Mode" Kind="InputPin" />
                       <Pin Id="LemfyCNCDC9QQFP9QL8MAJ" Name="Color Resolution" Kind="InputPin" />
+                      <Pin Id="Urofi1pRwhoOhNjfjC7BN8" Name="FPS" Kind="InputPin" />
                       <Pin Id="SUt5ghDViDdP3BaO8lDTRX" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
                 </Node>
               </Patch>
+              <ControlPoint Id="UYZ56g8VGQ4NCsZkkt4F7w" Bounds="454,258" Alignment="Top" />
             </Node>
+            <ControlPoint Id="HlL0jrFimQ3OcU87dRKqSM" Bounds="506,182" />
           </Canvas>
           <Patch Id="TB8WkLMS34EMsZ3wFgmFlr" Name="Create" />
           <Patch Id="QHc7KLcDuFRP1txEzv4pfP" Name="Update">
@@ -288,6 +306,11 @@
             <Pin Id="Pv1pB4IgbO6NqGmuPJx6qp" Name="Color Resolution" Kind="InputPin" DefaultValue="R720p">
               <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
                 <Choice Kind="TypeFlag" Name="ColorResolution" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PyuOCkA0kFjLqmFLu5Cltg" Name="FPS" Kind="InputPin" Bounds="506,182" DefaultValue="FPS30">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                <Choice Kind="TypeFlag" Name="FPS" />
               </p:TypeAnnotation>
             </Pin>
           </Patch>
@@ -350,6 +373,9 @@
           <Link Id="LkrLaIeVGczQWO1CIGM2m3" Ids="N3Teo14OB9MPdQBTQUjkIi,Qv9DHOB7wofLJKNoxJhZ01" />
           <Link Id="IaZ9fxzPN6zPIDsW3Masik" Ids="N3Teo14OB9MPdQBTQUjkIi,ELZoeD0IQL8QPrndRV70Hk" />
           <Link Id="BSnbIhWZ8JtNwO2yo9KlEi" Ids="N3Teo14OB9MPdQBTQUjkIi,Ich12yfen1dM6EvxRMyLi1" />
+          <Link Id="F4YYACDPDX3MSpXXpz6rMS" Ids="UYZ56g8VGQ4NCsZkkt4F7w,Urofi1pRwhoOhNjfjC7BN8" />
+          <Link Id="NetL8oxD81IMvpJSnDWnzn" Ids="HlL0jrFimQ3OcU87dRKqSM,UYZ56g8VGQ4NCsZkkt4F7w" />
+          <Link Id="TX94HjXsBYGQAri2rKbozI" Ids="PyuOCkA0kFjLqmFLu5Cltg,HlL0jrFimQ3OcU87dRKqSM" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -4286,11 +4312,6 @@
               <ControlPoint Id="ODNBZvxQuIzQBxkYRFyFNc" Bounds="616,246" />
             </Canvas>
             <Patch Id="JEjmIX5dRVfOuPZiHZJq8S" Name="Create" />
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="OwiOgJB1Uj4QIylpQSUvuC" IsHidden="true">
               <Fragment Id="O4aFFnqvo8dLcAcfU0Yy7z" Patch="JEjmIX5dRVfOuPZiHZJq8S" Enabled="true" />
               <Fragment Id="DJgZwH0TUj9LR8pPYkiubG" Patch="HMrN0msjnd9L3QTdaTDlEV" />
