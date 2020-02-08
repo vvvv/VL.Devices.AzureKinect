@@ -20,6 +20,9 @@
     <Reference Include="Microsoft.Azure.Kinect.Sensor">
       <HintPath>..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Azure.Kinect.Sensor.Record">
+      <HintPath>..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.Record.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
