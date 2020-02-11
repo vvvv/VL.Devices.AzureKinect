@@ -30,5 +30,22 @@ namespace VL.Devices.AzureKinect
             //}
             //return 0;
         }
+
+        public static TimeSpan GetStartTimestampOffset(this Playback playback)
+        {
+            var config = playback.RecordConfiguration;
+            return config.StartTimestampOffset;
+        }
+
+        public static TimeSpan GetTimestamp(this Capture capture)
+        {
+            if (capture.IR != null)
+                return capture.IR.DeviceTimestamp;
+            if (capture.Depth != null)
+                return capture.Depth.DeviceTimestamp;
+            if (capture.Color != null)
+                return capture.Color.DeviceTimestamp;
+            return default;
+        }
     }
 }

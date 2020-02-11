@@ -52,7 +52,7 @@ namespace VL.Devices.AzureKinect
             }).Publish().RefCount();
         }
 
-        public static IObservable<TData> PollData<TDevice, TData, TClock>(this IResourceProvider<TDevice> device, Func<TDevice, TData> producer, IObservable<TClock> clock)
+        public static IObservable<TData> PollData<TDevice, TData, TClock>(this IResourceProvider<TDevice> device, Func<TDevice, TClock, TData> producer, IObservable<TClock> clock)
             where TDevice : class, IDisposable
         {
             if (device == null)
@@ -68,9 +68,9 @@ namespace VL.Devices.AzureKinect
                 {
                     using (var handle = device.GetHandle())
                     {
-                        clock.Subscribe(_ =>
+                        clock.Subscribe(c =>
                         {
-                            var item = producer(handle.Resource);
+                            var item = producer(handle.Resource, c);
                             observer.OnNext(item);
                         }, token);
                         await token.WhenCanceled();
@@ -109,7 +109,43 @@ namespace VL.Devices.AzureKinect
             }).Publish().RefCount();
         }
 
-        public static IObservable<TResource> PollResource<TDevice, TResource, TClock>(this IResourceProvider<TDevice> device, Func<TDevice, TResource> producer, IObservable<TClock> clock)
+        public static IObservable<TResource> PollResourceAndYield<TDevice, TResource, TState>(this IResourceProvider<TDevice> device, Func<TState> create, Func<TState, TDevice, Tuple<TState, TResource>> update)
+            where TDevice : class, IDisposable
+            where TResource : IDisposable
+        {
+            if (device == null)
+                throw new ArgumentNullException(nameof(device));
+            if (update == null)
+                throw new ArgumentNullException(nameof(update));
+
+            return Observable.Create<TResource>(async (observer, token) =>
+            {
+                await Task.Run(async () =>
+                {
+                    using (var handle = device.GetHandle())
+                    {
+                        var state = create();
+                        while (!token.IsCancellationRequested)
+                        {
+                            var (s, resource) = update(state, handle.Resource);
+                            state = s;
+                            using (resource)
+                            {
+                                if (resource != null)
+                                    observer.OnNext(resource);
+                                else
+                                    await Task.Delay(1).ConfigureAwait(false);
+                            }
+                        }
+
+                        if (state is IDisposable disposable)
+                            disposable.Dispose();
+                    }
+                });
+            }).Publish().RefCount();
+        }
+
+        public static IObservable<TResource> PollResource<TDevice, TResource, TClock>(this IResourceProvider<TDevice> device, Func<TDevice, TClock, TResource> producer, IObservable<TClock> clock)
             where TDevice : class, IDisposable
             where TResource : IDisposable
         {
@@ -127,9 +163,9 @@ namespace VL.Devices.AzureKinect
                     using (var handle = device.GetHandle())
                     {
                         var cts = CancellationTokenSource.CreateLinkedTokenSource(token);
-                        clock.Subscribe(_ =>
+                        clock.Subscribe(c =>
                         {
-                            using (var resource = producer(handle.Resource))
+                            using (var resource = producer(handle.Resource, c))
                             {
                                 if (resource != null)
                                     observer.OnNext(resource);
