@@ -2120,7 +2120,7 @@
                       <Pin Id="E2bseEAdLdDQdLkEk4RnZS" Name="Input" Kind="StateInputPin" />
                       <Pin Id="SILp8t1wbE3MA0fO8Nc3qf" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="869,561,153,136" Id="F05KRachTA9N2MDqNgB9Ef">
+                    <Node Bounds="869,561,221,158" Id="F05KRachTA9N2MDqNgB9Ef">
                       <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
@@ -2156,6 +2156,16 @@
                           <Pin Id="B54JjG7XS8CLQ9KIrOSIqC" Name="Input" Kind="StateInputPin" />
                           <Pin Id="H0LPwEHVc6GPJMrkU3QZXT" Name="Output" Kind="StateOutputPin" />
                           <Pin Id="FespQzD5RB6OlcqR2uVwMr" Name="Position" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="1011,640,67,26" Id="D0t3FWGUBjFOvhM8qSIxwL">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.BodyTracking.Joint" LastSymbolSource="Microsoft.Azure.Kinect.BodyTracking.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <CategoryReference Kind="AssemblyCategory" Name="Joint" />
+                            <Choice Kind="OperationCallFlag" Name="Quaternion" />
+                          </p:NodeReference>
+                          <Pin Id="H6rmsM3uey1MRXi1vpSGc5" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="EFTk2SQlpKnMKztxLCHzK7" Name="Output" Kind="StateOutputPin" />
+                          <Pin Id="Qy4CPNW3P6zMKeDPrnvHmY" Name="Quaternion" Kind="OutputPin" />
                         </Node>
                       </Patch>
                       <ControlPoint Id="VpnxLuNydppPcnMdVPHO2R" Bounds="908,692" Alignment="Bottom" />
@@ -2232,6 +2242,7 @@
           <Link Id="Mf36RjbsChQPNFD0n3YCRi" Ids="MjvguPkjwPfOA1rcWDrcV2,CnJeUws2wzlLrhgQDu4Z7h" IsHidden="true" />
           <Link Id="AcAMOs0Z69mOGv1u0H8lqN" Ids="SxvVwSB5NGdMPSipLEsErv,KOsuqNxFCvONCI19Im7UKR" />
           <Link Id="FO4I7kbxZnIOpODpcXVcu3" Ids="BgpqjEuru88M39fzWY261t,CxF2qdqu8FWPeBOihJCmUp" />
+          <Link Id="H2jB3txommOP1YzUQEdlrL" Ids="HJBNfhVnqFrOO22MItPYdH,H6rmsM3uey1MRXi1vpSGc5" />
         </Patch>
       </Node>
       <!--
@@ -5441,11 +5452,6 @@
                   <Pad Id="BCf6WrFhNsFNOVomqm9bEi" SlotId="EgNmQS4E9l2NctvZIj71k6" Bounds="574,919" />
                 </Canvas>
                 <Patch Id="Dv5RZSSYmcONFTCyRpZkVm" Name="Create" />
-                <!--
-
-    ************************  ************************
-
--->
                 <ProcessDefinition Id="LrMeT8b7EVNLIDid4AvWeO">
                   <Fragment Id="ANYZ7AbDxwEMHyChzHFsw5" Patch="Dv5RZSSYmcONFTCyRpZkVm" Enabled="true" />
                   <Fragment Id="SrHCe7hciOHPqBbJFzIQzU" Patch="NeIimR9LDWRLWxyyK2Fy0V" Enabled="true" />
