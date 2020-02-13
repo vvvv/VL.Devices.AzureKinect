@@ -4,13 +4,90 @@ using System.Text;
 using Microsoft.Azure.Kinect.Sensor;
 using VL.Lib.Collections;
 using System.Numerics;
+using System.Linq;
 
 namespace VL.Devices.AzureKinect
 {
     public static class PointCloudUtils
     {
+        class ExtrinsicsComparer : IEqualityComparer<Extrinsics>
+        {
+            public static readonly ExtrinsicsComparer Default = new ExtrinsicsComparer();
+
+            public bool Equals(Extrinsics x, Extrinsics y)
+            {
+                return x.Rotation.SequenceEqual(y.Rotation) &&
+                       x.Translation.SequenceEqual(y.Translation);
+            }
+
+            public int GetHashCode(Extrinsics obj)
+            {
+                return 0;
+            }
+        }
+
+        class IntrinsicsComparer : IEqualityComparer<Intrinsics>
+        {
+            public static readonly IntrinsicsComparer Default = new IntrinsicsComparer();
+
+            public bool Equals(Intrinsics x, Intrinsics y)
+            {
+                return x.Type == y.Type &&
+                       x.ParameterCount == y.ParameterCount &&
+                       // The last 4 values are very very small so let's ignore them as it would cause equality check to fail
+                       x.Parameters.Take(12).SequenceEqual(y.Parameters.Take(12));
+            }
+
+            public int GetHashCode(Intrinsics obj)
+            {
+                return 0;
+            }
+        }
+
+        class CameraCalibrationComparer : IEqualityComparer<CameraCalibration>
+        {
+            public static readonly CameraCalibrationComparer Default = new CameraCalibrationComparer();
+
+            public bool Equals(CameraCalibration x, CameraCalibration y)
+            {
+                return x.ResolutionWidth == y.ResolutionWidth &&
+                       x.ResolutionHeight == y.ResolutionHeight &&
+                       x.MetricRadius == y.MetricRadius &&
+                       ExtrinsicsComparer.Default.Equals(x.Extrinsics, y.Extrinsics) &&
+                       IntrinsicsComparer.Default.Equals(x.Intrinsics, y.Intrinsics);
+
+            }
+
+            public int GetHashCode(CameraCalibration obj)
+            {
+                return 0;
+            }
+        }
+        class CalibrationComparer : IEqualityComparer<Calibration>
+        {
+            public static readonly CalibrationComparer Default = new CalibrationComparer();
+
+            public bool Equals(Calibration x, Calibration y)
+            {
+                return x.ColorResolution == y.ColorResolution &&
+                       x.DepthMode == y.DepthMode &&
+                       CameraCalibrationComparer.Default.Equals(x.ColorCameraCalibration, y.ColorCameraCalibration) &&
+                       CameraCalibrationComparer.Default.Equals(x.DepthCameraCalibration, y.DepthCameraCalibration) &&
+                       x.DeviceExtrinsics.SequenceEqual(y.DeviceExtrinsics, ExtrinsicsComparer.Default);
+            }
+
+            public int GetHashCode(Calibration obj)
+            {
+                return obj.ColorResolution.GetHashCode();
+            }
+        }
+
+        static Dictionary<Calibration, Spread<Xenko.Core.Mathematics.Vector2>> rayTableCache = 
+            new Dictionary<Calibration, Spread<Xenko.Core.Mathematics.Vector2>>(CalibrationComparer.Default);
         public static Spread<Xenko.Core.Mathematics.Vector2> BuildRayTable(Calibration calibration)
         {
+            if (rayTableCache.TryGetValue(calibration, out var rayTable))
+                return rayTable;
 
             int width = calibration.DepthCameraCalibration.ResolutionWidth;
             int height = calibration.DepthCameraCalibration.ResolutionHeight;
@@ -39,7 +116,9 @@ namespace VL.Devices.AzureKinect
                 }
             }
 
-            return table_data.ToSpread();
+            rayTable = table_data.ToSpread();
+            rayTableCache[calibration] = rayTable;
+            return rayTable;
         }
     }
 }
