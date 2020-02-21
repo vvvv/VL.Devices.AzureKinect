@@ -159,15 +159,5 @@ namespace VL.Devices.AzureKinect
             colorRayTableCache[calibration] = rayTable;
             return rayTable;
         }
-
-        static Dictionary<Calibration, Transformation> transformationCache =
-            new Dictionary<Calibration, Transformation>(CalibrationComparer.Default);
-
-        public static Transformation GetCachedTransformation(Calibration calibration)
-        {
-            if (!transformationCache.TryGetValue(calibration, out var transformation))
-                transformationCache[calibration] = transformation = new Transformation(calibration);
-            return transformation;
-        }
     }
 }
