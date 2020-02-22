@@ -4693,7 +4693,7 @@
             <ControlPoint Id="IYNZEIzlx5qOpU0flZTFHk" Bounds="100,908" />
             <ControlPoint Id="Iv0idG5nUZRP1JEyzRIvqj" Bounds="114,84" />
             <ControlPoint Id="ThdsJP1L8IMMtfO2nE8kDZ" Bounds="395,728" />
-            <Node Bounds="55,124,480,569" Id="TE284DqR0kANbrgcDAyZAa">
+            <Node Bounds="55,124,480,570" Id="TE284DqR0kANbrgcDAyZAa">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -4808,7 +4808,7 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="239,557,117,95" Id="TPGkQD6m4qrMhdxpfBXgoI">
+                <Node Bounds="233,484,117,95" Id="TPGkQD6m4qrMhdxpfBXgoI">
                   <p:NodeReference LastCategoryFullName="System.Resources" LastSymbolSource="CoreLibBasics.vl">
                     <CategoryReference Kind="Category" Name="Resources" />
                     <Choice Kind="OperationCallFlag" Name="Using (Select)" />
@@ -4819,9 +4819,9 @@
                   <Patch Id="KreR7DZ8KrtQLDRl7bXWBy" Name="Extractor" ManuallySortedPins="true">
                     <Pin Id="LxdzFKJSMjZQTwkzkNTBwK" Name="Input" Kind="InputPin" />
                     <Pin Id="HmFcDnIg0AUMmR14HxOJMq" Name="Result" Kind="OutputPin" />
-                    <ControlPoint Id="IzBhanU8ih6PPJPfpDZBP2" Bounds="250,565" />
-                    <ControlPoint Id="EmMkoN9k0BlLdOCmvs019p" Bounds="250,645" />
-                    <Node Bounds="251,588,93,26" Id="GlAV9EeA462N5WlkYeflHg">
+                    <ControlPoint Id="IzBhanU8ih6PPJPfpDZBP2" Bounds="244,492" />
+                    <ControlPoint Id="EmMkoN9k0BlLdOCmvs019p" Bounds="244,572" />
+                    <Node Bounds="245,515,93,26" Id="GlAV9EeA462N5WlkYeflHg">
                       <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Record.Playback" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.Record.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Playback" />
@@ -6210,16 +6210,6 @@
             <ControlPoint Id="DHEIqj2LveZNlb3W6gWZuc" Bounds="969,164" />
             <ControlPoint Id="Bs6Qbhoa6UyMVBI07zZ4ta" Bounds="1012,188" />
             <ControlPoint Id="Lw97WIjuE3kNcCDer9zR1r" Bounds="1052,218" />
-            <Node Bounds="781,353,51,26" Id="KYoXOAgJPN1MSmAc7uUTji">
-              <p:NodeReference LastCategoryFullName="Primitive.Reference" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Reference" />
-                <Choice Kind="OperationCallFlag" Name="SetData" />
-              </p:NodeReference>
-              <Pin Id="B9D8KwUanLRNIrt1BPlY37" Name="Input" Kind="StateInputPin" />
-              <Pin Id="TrjjrNEYhjlLha615HVcp4" Name="Data" Kind="InputPin" />
-              <Pin Id="IyCH4OUxxMiP0LKXmgP94D" Name="Output" Kind="StateOutputPin" />
-            </Node>
           </Canvas>
           <Patch Id="AFUPgbXVu4VLAHOSSsDJWq" Name="Create" />
           <ProcessDefinition Id="KoY2AfJncmmOnbwul6HJcc" HasStateOut="true">
