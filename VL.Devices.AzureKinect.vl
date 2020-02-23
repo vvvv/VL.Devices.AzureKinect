@@ -5915,7 +5915,7 @@
                 <Canvas Id="VYai32ulpQNOAbcniqRbar" CanvasType="Group">
                   <ControlPoint Id="OPHUq43TuqHLvnIfwI4k85" Bounds="791,69" />
                   <ControlPoint Id="OuSXvdaMa52M5VzKqCaKZB" Bounds="374,69" />
-                  <ControlPoint Id="CTrpC6XMn9ZLk54S3iNaG1" Bounds="570,103" />
+                  <ControlPoint Id="CTrpC6XMn9ZLk54S3iNaG1" Bounds="570,53" />
                   <ControlPoint Id="BI5INrGe1ZYNjhKo7h7CbK" Bounds="93,24" />
                   <ControlPoint Id="FN4WdSt2DEgOmUz5Ap1x27" Bounds="210,24" />
                   <ControlPoint Id="CB4dVKb28L0P3sNAOTSGPO" Bounds="887,69" />
@@ -6020,6 +6020,15 @@
                     <Pin Id="Q7zWmjNdHAiMk0p82FvTkd" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="UoUvzodiq8QM1j81WbT0MY" Name="Apply" Kind="InputPin" />
                   </Node>
+                  <Node Bounds="706,148,30,19" Id="MOb7uzUJcZ1LqkW2dmwiJy">
+                    <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="OR" />
+                    </p:NodeReference>
+                    <Pin Id="N8k90AhOePRNL08hWM78q0" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="FNJUAMuj4IyPuoOTuKuM5V" Name="Input 2" Kind="InputPin" />
+                    <Pin Id="VDvxY3U777RMTCviKLQ1S8" Name="Output" Kind="StateOutputPin" />
+                  </Node>
                 </Canvas>
                 <Patch Id="NZxjvA6HllbLroYlf4QULG" Name="Create" />
                 <ProcessDefinition Id="JnOFo0OFN3DLGtF2B1nfpP" HasStateOut="true">
@@ -6100,7 +6109,7 @@
                 <Link Id="S0PZyXwZUruQYdAubl9HiK" Ids="SDbtdzYIGKpPD2hjT8tmEa,K9MnTPhchJGQKeTCl9Hctp" IsHidden="true" />
                 <Link Id="Vs0EFT7LcTMNfrlS7XOZTW" Ids="S87q9oyOQZRN9EMhqzXv0k,UtyJGzxGOSzLcHyFnCPAAP" IsHidden="true" />
                 <Slot Id="PIKuQPhF2FwMIWnTy2MXZE" Name="Play" />
-                <Link Id="ElUEVUAiD32PFh4rcmuGNX" Ids="GpHMuoqKWAkLSbBRfOwAuZ,HBFM14hXRvNOER4v9BleIf" />
+                <Link Id="ElUEVUAiD32PFh4rcmuGNX" Ids="GpHMuoqKWAkLSbBRfOwAuZ,N8k90AhOePRNL08hWM78q0" />
                 <Slot Id="HMPMswAKXVeMWGFLmHP55m" Name="Speed" />
                 <Link Id="Pr05zWA4s9UNFgU1soroEz" Ids="CB4dVKb28L0P3sNAOTSGPO,OHtJkrk1KeeNeGfZkiKY4p" />
                 <Slot Id="ARnyfC39n0IPWwuSzJrdk2" Name="Time Range" />
@@ -6170,6 +6179,8 @@
                   <Pin Id="S51bzH7iobcOEdiQ8X34nv" Name="Do Seek" Kind="InputPin" />
                 </Patch>
                 <Link Id="KBFDeEnt4xCP0pKL4haf2h" Ids="S51bzH7iobcOEdiQ8X34nv,RzYTeq4rQAhNI1WwmDIA4u" IsHidden="true" />
+                <Link Id="PIP13vk9KaXNZlEWjIOLMu" Ids="VDvxY3U777RMTCviKLQ1S8,HBFM14hXRvNOER4v9BleIf" />
+                <Link Id="JJI7HQ60a4WQSR0J9JxbjH" Ids="CTrpC6XMn9ZLk54S3iNaG1,FNJUAMuj4IyPuoOTuKuM5V" />
               </Patch>
             </Node>
             <Node Bounds="678,255,377,19" Id="N3x3M1YE3l6OLGztNouyRH">
@@ -6663,7 +6674,7 @@
   <NugetDependency Id="MsqCX6Ttc4CLXiQVDI6QhQ" Location="VL.Skia" Version="2019.2.0-0236-g52759e123e" />
   <PlatformDependency Id="QalzFnteTJVNz20QEqW7Qf" Location="./lib/netstandard2.0/Microsoft.Azure.Kinect.Sensor.dll" />
   <PlatformDependency Id="JvKnBkMg9y5QJxBrHlbiSn" Location="./src/VL.Devices.AzureKinect/bin/x64/Debug/VL.Devices.AzureKinect.dll" />
-  <NugetDependency Id="EjNyLskXnHuLPC8kaHO75Q" Location="VL.Xenko" Version="0.6.166-g03c36eec0d" />
+  <NugetDependency Id="EjNyLskXnHuLPC8kaHO75Q" Location="VL.Xenko" Version="0.6.167-g6140441320" />
   <PlatformDependency Id="R9TYCaZCMN1PuUQWc2MU7C" Location="../VL.Xenko/packages/VL.Xenko/src/bin/Debug/netstandard2.0/VL.Xenko.dll" />
   <NugetDependency Id="MxeGkGe0nqBPTcNeQVuY9C" Location="Microsoft.Azure.Kinect.BodyTracking" Version="1.0.0" />
   <PlatformDependency Id="SKiONx2GsucN6x31rJS4d6" Location="./lib/netstandard2.0/Microsoft.Azure.Kinect.Sensor.Record.dll" />
