@@ -1621,7 +1621,7 @@
               <Pin Id="GJpQFohchFWMkA8Cq1K1bB" Name="Value" Kind="InputPin" />
               <Pin Id="Qqhp3SJdwswQaUtnuPahHz" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="588,570,65,19" Id="IwRmKHL9oJYPRfIp2EEtJi">
+            <Node Bounds="583,548,65,19" Id="IwRmKHL9oJYPRfIp2EEtJi">
               <p:NodeReference LastCategoryFullName="Xenko.Models" LastSymbolSource="VL.Xenko.Rendering.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="QuadMesh" />
@@ -1711,7 +1711,7 @@
               <Pin Id="RAPdsxuqTEWQTinvqwKrH0" Name="Value" Kind="InputPin" />
               <Pin Id="LBv2qne0QArPQSOqg8c2KD" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="442,546,73,19" Id="LeaGDZlnCjKPeRrHAu0oC3">
+            <Node Bounds="594,372,73,19" Id="LeaGDZlnCjKPeRrHAu0oC3">
               <p:NodeReference LastCategoryFullName="Xenko.ShaderFX.Texture" LastSymbolSource="VL.Xenko.Rendering.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="LoadTexture" />
@@ -1720,7 +1720,7 @@
               <Pin Id="AnJTRjkCsQjMHdD7ibVSRO" Name="Tex Coord" Kind="InputPin" />
               <Pin Id="L4OTem4Rf4HObhIslWGqNW" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="510,505,83,19" Id="VOlSZTyG78AObCARxZxjA7">
+            <Node Bounds="662,331,83,19" Id="VOlSZTyG78AObCARxZxjA7">
               <p:NodeReference LastCategoryFullName="Xenko.ShaderFX.Variables" LastSymbolSource="VL.Xenko.Rendering.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessNode" Name="GetExistingVar" />
@@ -1761,7 +1761,7 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="394,523,40,19" Id="VNs972R7gtrPew1MxpkLcI">
+            <Node Bounds="546,349,40,19" Id="VNs972R7gtrPew1MxpkLcI">
               <p:NodeReference LastCategoryFullName="Xenko.ShaderFX" LastSymbolSource="VL.Xenko.Rendering.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Input" />
@@ -1770,12 +1770,12 @@
               <Pin Id="JPNBiVl7oLqPHPS06i2rBJ" Name="Value" Kind="InputPin" />
               <Pin Id="CcBHFEE2M68LIG024qlh6l" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="SpLtMT8MiRmOIzn9xpdPAX" Comment="" Bounds="487,406,35,57" ShowValueBox="true" isIOBox="true" Value="1, 1, 1, 1">
+            <Pad Id="SpLtMT8MiRmOIzn9xpdPAX" Comment="" Bounds="639,232,35,57" ShowValueBox="true" isIOBox="true" Value="1, 1, 1, 1">
               <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Vector4" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="396,575,45,19" Id="DPDPMdlHfDUNzr4xSYpNTm">
+            <Node Bounds="548,407,45,19" Id="DPDPMdlHfDUNzr4xSYpNTm">
               <p:NodeReference LastCategoryFullName="Xenko.ShaderFX" LastSymbolSource="VL.Xenko.Rendering.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Switch" />
@@ -1786,7 +1786,7 @@
               <Pin Id="FrTJO2eWOnyLUtTcK4t282" Name="True" Kind="InputPin" />
               <Pin Id="GF282RWXFNAMbMc1mMLO0i" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="572,451,40,19" Id="KiPWTHfcPQ3QMGXVvV5X6x">
+            <Node Bounds="465,369,40,19" Id="KiPWTHfcPQ3QMGXVvV5X6x">
               <p:NodeReference LastCategoryFullName="Xenko.ShaderFX" LastSymbolSource="VL.Xenko.Rendering.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Input" />
@@ -1795,7 +1795,7 @@
               <Pin Id="HSa4KfM1ZqBLyVqXHRo54f" Name="Value" Kind="InputPin" />
               <Pin Id="CUd7IuFriQrLLLUzdOM18e" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="V704H3nFKxdNdVpIh24sN3" Bounds="573,420" />
+            <ControlPoint Id="V704H3nFKxdNdVpIh24sN3" Bounds="466,338" />
             <Node Bounds="772,534,45,19" Id="Ij8ZUyuuJzfPQV8P5XYTRM">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1895,6 +1895,41 @@
               <Pin Id="UzVxd77QemGNQGg6UDmTRV" Name="Key" Kind="InputPin" />
               <Pin Id="FAMaDellmWtQYGXl3H5SZO" Name="Output" Kind="OutputPin" />
             </Node>
+            <Node Bounds="849,248,59,19" Id="QFiDnfGilELN6HZBR1BH5K">
+              <p:NodeReference LastCategoryFullName="Xenko.ShaderFX.Variables" LastSymbolSource="VL.Xenko.Rendering.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="ShaderFX" />
+                <CategoryReference Kind="Category" Name="Variables" />
+                <Choice Kind="ProcessAppFlag" Name="POSITION" />
+              </p:NodeReference>
+              <Pin Id="TgUJkbJsNb4Osq8nRXwmwJ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="863,298,55,19" Id="N2QqeQP86gTPhCrr9MPhCf">
+              <p:NodeReference LastCategoryFullName="Xenko.ShaderFX.Operations" LastSymbolSource="VL.Xenko.Rendering.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Distance" />
+                <FullNameCategoryReference ID="Xenko.ShaderFX.Operations" />
+              </p:NodeReference>
+              <Pin Id="TbWQj8CcSnSPAVrqPKZRdH" Name="Input" Kind="InputPin" />
+              <Pin Id="CE1heAejqs0OLTYvF10Fgl" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Erc155OM0u6QQwB3BxVbRs" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="966,218,32,19" Id="UpgLCexkF99LPiThmof1xQ">
+              <p:NodeReference LastCategoryFullName="Xenko.Rendering.Shaders.TransformationKeys" LastSymbolSource="VL.Xenko.Rendering.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Eye" />
+              </p:NodeReference>
+              <Pin Id="CJOLmAyYIb6ORtFU6Imdj2" Name="Eye" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="966,253,33,19" Id="MgpWq0PkrkYO0H28siyiBt">
+              <p:NodeReference LastCategoryFullName="Xenko.ShaderFX" LastSymbolSource="VL.Xenko.Rendering.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Key" />
+                <CategoryReference Kind="Category" Name="ShaderFX" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="NXCQtEHnZYiLvrnFTvbpy2" Name="Key" Kind="InputPin" />
+              <Pin Id="RLNE5fvTArePQRxOlCMoON" Name="Output" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="AsJRlOtNmNiK9WujJGEHjf" Name="Create" />
           <Patch Id="Ek78GeAVc4oLyr7x1PGtYF" Name="Update" ManuallySortedPins="true">
@@ -1962,6 +1997,9 @@
           <Link Id="GXE5kLq6TMhMiRxiRQeCO0" Ids="S3oypJo6z4XLZjU2l4S7si,VjhNmqVxu56Luzkb6lE62c" />
           <Link Id="DjTVyKksmpgQAbCmNB8Joc" Ids="OOkZ60VQIYDOuRmJSl70oW,UzVxd77QemGNQGg6UDmTRV" />
           <Link Id="O7JaAm6o5PlLeOeZYDN0O7" Ids="FAMaDellmWtQYGXl3H5SZO,OaFRO1n5pXHOhHpv9jT00e" />
+          <Link Id="KN8iwyJrxCPND0i1G8AqUU" Ids="TgUJkbJsNb4Osq8nRXwmwJ,TbWQj8CcSnSPAVrqPKZRdH" />
+          <Link Id="OIdjOhmI0i3LiA9y954AbA" Ids="CJOLmAyYIb6ORtFU6Imdj2,NXCQtEHnZYiLvrnFTvbpy2" />
+          <Link Id="Q2UR22jN2J7QCVNLfhpmIP" Ids="RLNE5fvTArePQRxOlCMoON,CE1heAejqs0OLTYvF10Fgl" />
         </Patch>
       </Node>
       <!--
@@ -6674,7 +6712,7 @@
   <NugetDependency Id="MsqCX6Ttc4CLXiQVDI6QhQ" Location="VL.Skia" Version="2019.2.0-0236-g52759e123e" />
   <PlatformDependency Id="QalzFnteTJVNz20QEqW7Qf" Location="./lib/netstandard2.0/Microsoft.Azure.Kinect.Sensor.dll" />
   <PlatformDependency Id="JvKnBkMg9y5QJxBrHlbiSn" Location="./src/VL.Devices.AzureKinect/bin/x64/Debug/VL.Devices.AzureKinect.dll" />
-  <NugetDependency Id="EjNyLskXnHuLPC8kaHO75Q" Location="VL.Xenko" Version="0.6.167-g6140441320" />
+  <NugetDependency Id="EjNyLskXnHuLPC8kaHO75Q" Location="VL.Xenko" Version="0.6.176-g1a567cbe2d" />
   <PlatformDependency Id="R9TYCaZCMN1PuUQWc2MU7C" Location="../VL.Xenko/packages/VL.Xenko/src/bin/Debug/netstandard2.0/VL.Xenko.dll" />
   <NugetDependency Id="MxeGkGe0nqBPTcNeQVuY9C" Location="Microsoft.Azure.Kinect.BodyTracking" Version="1.0.0" />
   <PlatformDependency Id="SKiONx2GsucN6x31rJS4d6" Location="./lib/netstandard2.0/Microsoft.Azure.Kinect.Sensor.Record.dll" />
