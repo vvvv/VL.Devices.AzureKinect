@@ -136,8 +136,8 @@ namespace VL.Devices.AzureKinect
 
         public static IImage AsVLImage(this Image image)
         {
-            var info = new ImageInfo(image.WidthPixels, image.HeightPixels, image.Format.ToPixelFormat(), image.Format.ToString());
-            return new MemoryImage<byte>(image.Memory, info, image.StrideBytes);
+            ReadOnlyMemory<byte> memory = image.Memory;
+            return memory.ToImage(image.WidthPixels, image.HeightPixels, image.Format.ToPixelFormat(), image.Format.ToString(), isVolatile: true);
         }
 
         public static Spread<Vector3> GetPointCloudData(this Image image, float scaling = 1f)
@@ -166,7 +166,7 @@ namespace VL.Devices.AzureKinect
             {
                 pixels[i++] = new ColorBGRA(pixel.x * scaling, pixel.y * scaling, pixel.z * scaling, 1);
             }
-            return new MemoryImage<ColorBGRA>(pixels.AsMemory(), new ImageInfo(image.WidthPixels, image.HeightPixels, PixelFormat.B8G8R8A8), image.WidthPixels * 4);
+            return pixels.ToImage(image.WidthPixels, image.HeightPixels, PixelFormat.B8G8R8A8);
         }
 
         public static PixelFormat ToPixelFormat(this ImageFormat format)
