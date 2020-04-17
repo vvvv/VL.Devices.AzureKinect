@@ -12,17 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Kinect.BodyTracking" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Azure.Kinect.Sensor" Version="1.4.0" />
     <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0007" />
     <PackageReference Include="VL.Core" Version="2020.1.0-0044-g720b6d4fe8" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Microsoft.Azure.Kinect.Sensor">
-      <HintPath>..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Azure.Kinect.Sensor.Record">
-      <HintPath>..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.Record.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

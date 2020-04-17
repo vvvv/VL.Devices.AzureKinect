@@ -78,6 +78,24 @@ namespace VL.Devices.AzureKinect
         }
 
         /// <summary>
+        /// Selects the infrared images out of the captures.
+        /// </summary>
+        /// <param name="captures">The captures to select the infrared images from.</param>
+        /// <returns>The infrared images of the captures.</returns>
+        public static IObservable<IImage> SelectInfraredImages(this IObservable<Capture> captures)
+        {
+            return captures.SelectMany(c =>
+            {
+                var image = c.IR;
+                if (image != null)
+                {
+                    return Observable.Return(image.AsVLImage());
+                }
+                return Observable.Empty<IImage>();
+            });
+        }
+
+        /// <summary>
         /// Since a capture can miss either the color or depth image this operator will take care of always producing
         /// a capture where the latest received color and depth images are set.
         /// </summary>
@@ -85,6 +103,7 @@ namespace VL.Devices.AzureKinect
         {
             var latestColor = default(Image);
             var latestDepth = default(Image);
+            var latestIR = default(Image);
             return captures.SelectMany(c =>
             {
                 if (c.Color != null)
@@ -97,10 +116,15 @@ namespace VL.Devices.AzureKinect
                     latestDepth?.Dispose();
                     latestDepth = c.Depth.Reference();
                 }
-                if (latestColor != null && latestDepth != null)
+                if (c.IR != null)
+                {
+                    latestIR?.Dispose();
+                    latestIR = c.IR.Reference();
+                }
+                if (latestColor != null && latestDepth != null && latestIR != null)
                 {
                     return Observable.Using(
-                        () => CreateCapture(latestColor.Reference(), latestDepth.Reference(), c.IR?.Reference(), c.Temperature),
+                        () => CreateCapture(latestColor.Reference(), latestDepth.Reference(), latestIR.Reference(), c.Temperature),
                         x => Observable.Return(x));
                 }
                 return Observable.Empty<Capture>();
@@ -177,6 +201,12 @@ namespace VL.Devices.AzureKinect
                     return PixelFormat.B8G8R8A8;
                 case ImageFormat.Depth16:
                     return PixelFormat.R16;
+                case ImageFormat.IR16:
+                    return PixelFormat.R16;
+                case ImageFormat.Custom16:
+                    return PixelFormat.R16;
+                case ImageFormat.Custom8:
+                    return PixelFormat.R8;
                 default:
                     throw new UnsupportedImageFormatException(format);
             }
