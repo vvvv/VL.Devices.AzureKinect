@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="R5uxCrytiOJPQf4cthqaWN">
         <Canvas Id="Ogtn9ksNkhbPGyjcpbZgl3" CanvasType="Group">
-          <Node Bounds="487,315,77,19" Id="JAGcPhwsLYQN1rj4qXhq9O">
+          <Node Bounds="336,255,77,19" Id="JAGcPhwsLYQN1rj4qXhq9O">
             <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AzureKinect" />
@@ -26,7 +26,7 @@
             <Pin Id="IYZSaCJOOn8ONb6Oym9IEe" Name="FPS" Kind="InputPin" />
             <Pin Id="BcNkTNAZPsSOD7zheTR6C3" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="487,364,60,19" Id="KGTjTUAb0CQMCFQXlLVxPT">
+          <Node Bounds="336,304,60,19" Id="KGTjTUAb0CQMCFQXlLVxPT">
             <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Skeletons" />
@@ -34,7 +34,7 @@
             <Pin Id="NMv8rMmlAspPeXhW2bIiXr" Name="Device" Kind="InputPin" />
             <Pin Id="SNtBqedAiC1PCk0Zr2TzmE" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="477,422,209,85" Id="OHBYYe3MHLtOBGFocSM4cm">
+          <Node Bounds="326,362,209,86" Id="OHBYYe3MHLtOBGFocSM4cm">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -45,7 +45,7 @@
               <Patch Id="CMRgbFhCgsHNpYwzrrTL3R" Name="Create" ManuallySortedPins="true" />
               <Patch Id="J0QfqDOO0iwLC8imycnkhl" Name="Update" ManuallySortedPins="true" />
               <Patch Id="Kcx7sRqwCDBLoeYumxWpXH" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="498,465" Id="AFey1j43PJ2Mi9p7HoKNyp">
+              <Node Bounds="347,405,65,19" Id="AFey1j43PJ2Mi9p7HoKNyp">
                 <p:NodeReference LastCategoryFullName="Devices.AzureKinect.Skeleton" LastSymbolSource="VL.Devices.AzureKinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="Skeleton" />
@@ -57,7 +57,7 @@
                 <Pin Id="OUZoSGwQ5lzPS0IOID9aaE" Name="Quaternions" Kind="OutputPin" />
                 <Pin Id="G6CdgGfEDTQLveTr4n1GTa" Name="Joint Types" Kind="OutputPin" />
               </Node>
-              <Node Bounds="609,446,65,19" Id="F0xqk5ED2vNQMxbFTEg9Ii">
+              <Node Bounds="458,386,65,19" Id="F0xqk5ED2vNQMxbFTEg9Ii">
                 <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Stickman (3D)" />
@@ -69,18 +69,18 @@
                 <Pin Id="SteiouDl6poNJd0GILBIuw" Name="Output" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="KFIS6zUBNDHPtbciYnfk7f" Bounds="491,428" Alignment="Top" />
-            <ControlPoint Id="Vj8QYq3UVzELSL7MEwxiZs" Bounds="503,501" Alignment="Bottom" />
-            <ControlPoint Id="Hq9EAimvbyQOuhD9tDRQ0k" Bounds="527,501" Alignment="Bottom" />
-            <ControlPoint Id="ECgWY4gfGhpOX1QVEPouie" Bounds="566,501" Alignment="Bottom" />
-            <ControlPoint Id="UEuj574EsP2L24hFtopFo9" Bounds="608,501" Alignment="Bottom" />
+            <ControlPoint Id="KFIS6zUBNDHPtbciYnfk7f" Bounds="340,368" Alignment="Top" />
+            <ControlPoint Id="Vj8QYq3UVzELSL7MEwxiZs" Bounds="352,442" Alignment="Bottom" />
+            <ControlPoint Id="Hq9EAimvbyQOuhD9tDRQ0k" Bounds="376,442" Alignment="Bottom" />
+            <ControlPoint Id="ECgWY4gfGhpOX1QVEPouie" Bounds="415,442" Alignment="Bottom" />
+            <ControlPoint Id="UEuj574EsP2L24hFtopFo9" Bounds="457,442" Alignment="Bottom" />
           </Node>
-          <Node Bounds="483,766,145,19" Id="R7ervbQyfezOcsRsMDrTGS">
+          <Node Bounds="332,706,145,19" Id="R7ervbQyfezOcsRsMDrTGS">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="JXnCpM35MTaMTEkOgHU6ak" Name="Bounds" Kind="InputPin" DefaultValue="1049, 58, 864, 795">
+            <Pin Id="JXnCpM35MTaMTEkOgHU6ak" Name="Bounds" Kind="InputPin" DefaultValue="1146, 58, 767, 653">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -96,7 +96,7 @@
             <Pin Id="IMe6hVGrplEPGDO8vjMsE9" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="UJKdtIccmpoL8AByEqc9DO" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Node Bounds="384,608,145,19" Id="UEvCDNp4hHhOYLdE0UKhBQ">
+          <Node Bounds="233,548,145,19" Id="UEvCDNp4hHhOYLdE0UKhBQ">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Layers" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AxisAndGrid" />
@@ -111,14 +111,14 @@
             <Pin Id="S0hidxqfr5DLFuZvWa4Jlt" Name="Grid Stroke Width" Kind="InputPin" />
             <Pin Id="EbLp2Z437oBMuW0lbo1sTk" Name="Axis Size" Kind="InputPin" />
             <Pin Id="ExHVHtYQwccQPDOjyyDT4c" Name="Axis Stroke Width" Kind="InputPin" />
-            <Pin Id="E3nB8Z21CEsOnaUj9mvIgT" Name="Enabled" Kind="InputPin" DefaultValue="False">
+            <Pin Id="E3nB8Z21CEsOnaUj9mvIgT" Name="Enabled" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Vwtv9DkOOUBMrDyl6LnyTd" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="496,653,45,19" Id="CwPpKiyTSHNOqbkLRQ8Bod">
+          <Node Bounds="345,593,45,19" Id="CwPpKiyTSHNOqbkLRQ8Bod">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group" />
@@ -129,7 +129,7 @@
             <Pin Id="A8OwoZjk4vONyWuI50DTKn" Name="Enabled" Kind="InputPin" />
             <Pin Id="FPWukj4EMpkMrPgAdj1NGw" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="500,714,105,19" Id="JM8m1I50AtsP5p29L5qdH2">
+          <Node Bounds="349,654,105,19" Id="JM8m1I50AtsP5p29L5qdH2">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Transform" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Camera (Orbit)" />
@@ -143,7 +143,7 @@
             <Pin Id="KMiDiaNDmuWNnC6UqXjq8x" Name="Output" Kind="OutputPin" />
             <Pin Id="OnME84bqruWOxqBId9i13H" Name="Idle" Kind="OutputPin" />
           </Node>
-          <Node Bounds="607,599,44,19" Id="LlfY92eMxCFLkud1Z4JqDc">
+          <Node Bounds="456,539,44,19" Id="LlfY92eMxCFLkud1Z4JqDc">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />

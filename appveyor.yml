@@ -39,7 +39,7 @@ install:
 #---------------------------------#
 
 # build platform, i.e. x86, x64, Any CPU. This setting is optional.
-platform: Any CPU
+platform: x64
 
 # build Configuration, i.e. Debug, Release, etc.
 configuration: Release
