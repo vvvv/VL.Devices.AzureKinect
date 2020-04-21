@@ -14,7 +14,7 @@
     <tags>VL, camera, video, depth, tracking, body, skeleton</tags>
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
-		<dependency id="Microsoft.Azure.Kinect.BodyTracking" />
+		<dependency id="Microsoft.Azure.Kinect.BodyTracking" version="[1.0.1]" />
 		<dependency id="VL.Skia3d" version="[0.1.4-alpha]" />
     </dependencies>
   </metadata>
