@@ -11,6 +11,10 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutputPath>..\lib\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Kinect.BodyTracking" Version="1.0.1" />
     <PackageReference Include="Microsoft.Azure.Kinect.Sensor" Version="1.4.0" />
