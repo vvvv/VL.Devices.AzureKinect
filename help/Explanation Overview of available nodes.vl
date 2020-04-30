@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
+  <Patch Id="APFBYc3ryadNMXCUycaQDK">
+    <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="PNbg63iTMIGMWpKhKkhEUl">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PFfDaLRccY9PbWwk3Oc9Yz">
+        <Canvas Id="NrbeJxw6AQVLIXfi6tseMO" CanvasType="Group">
+          <Node Bounds="57,366,85,19" Id="SUCg21NZ9mzM9jjNovNYDe">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AzureKinect" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="GCyzyN97A9vMFHNmBXqpSH" Name="Device Index" Kind="InputPin" />
+            <Pin Id="RytbJs9kE67LbNIDMQjRRh" Name="Color Resolution" Kind="InputPin" />
+            <Pin Id="J3ifE8QJpk1PbJj9nBxIA2" Name="Depth Mode" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                <Choice Kind="TypeFlag" Name="DepthMode" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UtLnAUSTDsMOwOhBPqhH5s" Name="FPS" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                <Choice Kind="TypeFlag" Name="FPS" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="JSjl99ULWguQVlUiCYX9kL" Name="Wired Sync Mode" Kind="InputPin" />
+            <Pin Id="K1Grrr2CgCdOjKwDlkBW7x" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="176,447,69,19" Id="BXZj28suNmNNzNSQj1yoZw">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="PYgw79V4QSCMbhjKWDwGsW" Name="Device" Kind="InputPin" />
+            <Pin Id="Grydrv0UWUcLjj5yHyfjQy" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="251,447,71,19" Id="HN51jgRV1wyOe5jVU1tPIr">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DepthImage" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="UyI3iqyZyF5QDEcUOO8WdF" Name="Device" Kind="InputPin" />
+            <Pin Id="ETUvRYMKDZAPJde9zt798P" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VGBupwmyQQaOFSCVniCvON" Bounds="425,456,230,172" ShowValueBox="true" isIOBox="true" Value="&lt; These return images&#xD;&#xA;&#xD;&#xA;They are also available as &quot;Reactive&quot; versions in the nodebrowser if you enable &quot;Advanced&quot; nodes. &#xD;&#xA;&#xD;&#xA;The reactive versions allow you to apply computations to the images in a background thread.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="121,542,85,19" Id="ES7HeHJfLilMeFxNb0igh7">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PointCloud" />
+            </p:NodeReference>
+            <Pin Id="Jm9aVOIBv8EMBnBQWUu5Yu" Name="Device" Kind="InputPin" />
+            <Pin Id="Dj1kfSglhBnMTrrA2OUNDa" Name="Minimum Z" Kind="InputPin" />
+            <Pin Id="T5Vlgn93BfINiIoXoUEbyq" Name="Maximum Z" Kind="InputPin" />
+            <Pin Id="Ra5y9xrjgMtNTtiZpavMXK" Name="Decimation" Kind="InputPin" />
+            <Pin Id="HqwtDcueippP8pC1U9b5gz" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CyoGW6MV4hTOtqJZ2R3LoE" Bounds="217,547,173,99" ShowValueBox="true" isIOBox="true" Value="&lt; Returns a spread of 3d points in world position. This is a rather slow node, meant mostly for quick debugging. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="R1LCRrRiMVjNAeLX8NTzoZ" Bounds="761,436,150,65" ShowValueBox="true" isIOBox="true" Value="&lt; Provides field of view for both color and depth sensors">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RCpbRxBe10VPbGDgCAWMbV" Bounds="182,124,301,45" ShowValueBox="true" isIOBox="true" Value="&lt; If you have multiple Kinects attached, use the device index to differentiate between them">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AqomDnjCbHvLKzuhHijxDt" Comment="Device Index" Bounds="59,126,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TxOTcRY93zZOjTupQO2WKz" Bounds="449,769,336,21" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/de-de/azure/Kinect-dk/">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PR7byrrR40GM2prjNMV8FO" Bounds="449,821,275,19" ShowValueBox="true" isIOBox="true" Value="https://feedback.azure.com/forums/920053-azure-kinect-dk">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FJifvd17qrlN2v7mwqo3T1" Bounds="449,743,474,19" ShowValueBox="true" isIOBox="true" Value="https://support.microsoft.com/en-us/hub/4489611/azure-kinect-dk-help">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="L0zcgyXk7umPi3Wl7S3imT" Bounds="449,800,108,19" ShowValueBox="true" isIOBox="true" Value="Feedback Forum">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G5rcFWbXcihQblNH9Xpq55" Bounds="449,723,85,19" ShowValueBox="true" isIOBox="true" Value="Finding Help">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="57,692,85,19" Id="GGe5tPXgbfPL0cuNoDAeYS">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="IMUData" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="JaqQZtfRZUCPMmP3lFyWgK" Name="Device" Kind="InputPin" />
+            <Pin Id="DLCoOiIp0tZNzghtoGWmgw" Name="Accelerometer Sample" Kind="OutputPin" />
+            <Pin Id="BT34SHr5EfoOtrx3OGHq5x" Name="Accelerometer Timestamp" Kind="OutputPin" />
+            <Pin Id="EjKLXPL6hjMPyHfYMSlSKD" Name="Gyro Sample" Kind="OutputPin" />
+            <Pin Id="J4V73Mta8jgLZRoFaDUPds" Name="Gyro Timestamp" Kind="OutputPin" />
+            <Pin Id="BduoOtnxsPqPSR3EQXNPqA" Name="Temperature" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="328,447,80,19" Id="ISl7mmwl0ihOyph7qXaAvK">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Devices" />
+              <CategoryReference Kind="Category" Name="AzureKinect" />
+              <Choice Kind="ProcessAppFlag" Name="InfraredImage" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="VBy2zl75tjYPlPMVOMjtkE" Name="Device" Kind="InputPin" />
+            <Pin Id="TCmNu6cyhsmOS4h4n2MCGT" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="686,428,66,19" Id="IQQPdAjNEPTNNl0vGQLDBc">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FOV" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="OwNF8OQf6bPQHZDzQgQ5zy" Name="Device" Kind="InputPin" />
+            <Pin Id="QC8nL6ZtWPgL0AI4TZPGHT" Name="Color FOV" Kind="OutputPin" />
+            <Pin Id="MU4dHpwsHvKLww1Z32q72L" Name="Color Resolution" Kind="OutputPin" />
+            <Pin Id="QUciEAk5oyRP7LvCZ7024w" Name="Depth FOV" Kind="OutputPin" />
+            <Pin Id="OrFcPz769QyPQ26uQ5pWuj" Name="Depth Mode" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BMCk3bWcf5XP13jbZV1kfj" Bounds="157,700,213,67" ShowValueBox="true" isIOBox="true" Value="&lt; Returns Inertial Motion Units data: Accelerometer, Gyroscope and Temperature">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EdYJVBclizwN9ye2Tz2pij" Comment="Depth FOV" Bounds="729,534,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CryY7qEpJsILSbyH7SPLgL" Bounds="288,244,172,19" ShowValueBox="true" isIOBox="true" Value="Depth modes explained:">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="F7LIP9UhoeNPX2DRNi4GBl" Bounds="288,262,230,19" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#depth-camera-supported-operating-modes">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="B8OXDDQpWRzLrWv7F1PUA3" Bounds="219,316,250,19" ShowValueBox="true" isIOBox="true" Value="&lt; WFOV_Unbinned only supports 15fps!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D2fqlNhGfR0Mqiw9oa3kW3" Comment="Color Resolution" Bounds="79,184,64,15" ShowValueBox="true" isIOBox="true" Value="R720p">
+            <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+              <Choice Kind="TypeFlag" Name="ColorResolution" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="RBegF7rxmO9LPQEMdh0UVj" Comment="Depth Mode" Bounds="99,247,108,15" ShowValueBox="true" isIOBox="true" Value="NFOV_Unbinned">
+            <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+              <Choice Kind="TypeFlag" Name="DepthMode" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="AfyvV5iGNe4QIi2R5WU3o4" Bounds="288,181,180,19" ShowValueBox="true" isIOBox="true" Value="Color Resolutions explained:">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MBmr2AUtVhXOPXNsgfkHLI" Bounds="288,200,227,19" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#color-camera-supported-operating-modes">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MVcazppNLePLMUgalYFgfb" Comment="FPS" Bounds="119,317,55,15" ShowValueBox="true" isIOBox="true" Value="FPS30">
+            <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+              <Choice Kind="TypeFlag" Name="FPS" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EDknUJpmD7zQYp4SKVdyMG" Bounds="708,147,99,19" ShowValueBox="true" isIOBox="true" Value="LED Indicators:">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ipe79sECmygQYrIkx46OLz" Bounds="708,168,234,19" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#indicators">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LnUhvtBsI9WMFPZvCtQBQ7" Bounds="710,195,231,10" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#what-does-the-light-mean">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BUZ5ofCBPifMEBaI4aeiRU" Bounds="155,766,195,19" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#motion-sensor-imu">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="F1WQEcF3yWPNH3dcRgSAS7" Bounds="764,499,219,14" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#camera-field-of-view">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="PVbVbOGAsC1OMyqjNp9dbd" Name="Create" />
+        <Patch Id="H2XlLgF6scLOXsDx75hd3r" Name="Update" />
+        <ProcessDefinition Id="Q75xfigtNzgOvh7zlq5gns">
+          <Fragment Id="GbhzaHLL7cgP9Aqb7MKI3C" Patch="PVbVbOGAsC1OMyqjNp9dbd" Enabled="true" />
+          <Fragment Id="R56Abdr1Rw3OEfJsdkIY8m" Patch="H2XlLgF6scLOXsDx75hd3r" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="EYP6JjskoE3N8esifs1ZCa" Ids="K1Grrr2CgCdOjKwDlkBW7x,PYgw79V4QSCMbhjKWDwGsW" />
+        <Link Id="Mnj1suZLyOgO1gQztC6Bhy" Ids="K1Grrr2CgCdOjKwDlkBW7x,UyI3iqyZyF5QDEcUOO8WdF" />
+        <Link Id="KctHe2mV33pO5NhSA6Xvp7" Ids="K1Grrr2CgCdOjKwDlkBW7x,VBy2zl75tjYPlPMVOMjtkE" />
+        <Link Id="EkzHTaKfgtyQFcfUCkYOQ7" Ids="AqomDnjCbHvLKzuhHijxDt,GCyzyN97A9vMFHNmBXqpSH" />
+        <Link Id="TKx0PrjhUzROMXdjgG7jiv" Ids="QUciEAk5oyRP7LvCZ7024w,EdYJVBclizwN9ye2Tz2pij" />
+        <Link Id="MyOIMuLoLOGQKAdxDa4bQt" Ids="D2fqlNhGfR0Mqiw9oa3kW3,RytbJs9kE67LbNIDMQjRRh" />
+        <Link Id="QEF7JamQ3QqM6cnF4WKp0e" Ids="RBegF7rxmO9LPQEMdh0UVj,J3ifE8QJpk1PbJj9nBxIA2" />
+        <Link Id="QQVFpF64EqQMkiWcuJFacj" Ids="MVcazppNLePLMUgalYFgfb,UtLnAUSTDsMOwOhBPqhH5s" />
+        <Link Id="Pq6iEQRNtYjOQOS6TwFf5C" Ids="K1Grrr2CgCdOjKwDlkBW7x,Jm9aVOIBv8EMBnBQWUu5Yu" />
+        <Link Id="JNGkMwDDaPiOokI1lzLl4t" Ids="K1Grrr2CgCdOjKwDlkBW7x,OwNF8OQf6bPQHZDzQgQ5zy" />
+        <Link Id="Bo64SxD1nb0NJHuLzQ2AcE" Ids="K1Grrr2CgCdOjKwDlkBW7x,JaqQZtfRZUCPMmP3lFyWgK" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="RZzgwQ5hDLQQVOrRCGYkHo" Location="VL.Devices.AzureKinect" Version="0.0.0.0" />
+</Document>
