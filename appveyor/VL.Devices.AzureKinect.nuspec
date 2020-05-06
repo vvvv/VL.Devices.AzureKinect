@@ -15,7 +15,7 @@
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
 		<dependency id="Microsoft.Azure.Kinect.Sensor" version="[1.4.0]" />
-		<dependency id="VL.Skia3d" version="[0.1.5-alpha]" />
+		<dependency id="VL.Skia3d" version="[0.1.6-alpha]" />
     </dependencies>
   </metadata>
   <files>
