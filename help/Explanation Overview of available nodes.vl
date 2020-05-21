@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="MbjWXhjC9jcMf2qlPAmD7M" LanguageVersion="2020.1.2.125" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.2-0122-ga74ffb9640" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -83,7 +83,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="R1LCRrRiMVjNAeLX8NTzoZ" Bounds="761,436,150,65" ShowValueBox="true" isIOBox="true" Value="&lt; Provides field of view for both color and depth sensors">
+          <Pad Id="R1LCRrRiMVjNAeLX8NTzoZ" Bounds="768,436,150,65" ShowValueBox="true" isIOBox="true" Value="&lt; Provides field of view for both color and depth sensors">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -182,6 +182,7 @@
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="OwNF8OQf6bPQHZDzQgQ5zy" Name="Device" Kind="InputPin" />
+            <Pin Id="SqJv0cC2d3UMcusC4Ymi2z" Name="Color View Transform" Kind="OutputPin" />
             <Pin Id="QC8nL6ZtWPgL0AI4TZPGHT" Name="Color FOV" Kind="OutputPin" />
             <Pin Id="MU4dHpwsHvKLww1Z32q72L" Name="Color Resolution" Kind="OutputPin" />
             <Pin Id="QUciEAk5oyRP7LvCZ7024w" Name="Depth FOV" Kind="OutputPin" />
@@ -196,7 +197,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EdYJVBclizwN9ye2Tz2pij" Comment="Depth FOV" Bounds="729,534,35,28" ShowValueBox="true" isIOBox="true" />
           <Pad Id="CryY7qEpJsILSbyH7SPLgL" Bounds="288,244,172,19" ShowValueBox="true" isIOBox="true" Value="Depth modes explained:">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -293,7 +293,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="F1WQEcF3yWPNH3dcRgSAS7" Bounds="764,499,219,14" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#camera-field-of-view">
+          <Pad Id="F1WQEcF3yWPNH3dcRgSAS7" Bounds="771,499,219,19" ShowValueBox="true" isIOBox="true" Value="https://docs.microsoft.com/en-us/azure/Kinect-dk/hardware-specification#camera-field-of-view">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -313,7 +313,6 @@
         <Link Id="Mnj1suZLyOgO1gQztC6Bhy" Ids="K1Grrr2CgCdOjKwDlkBW7x,UyI3iqyZyF5QDEcUOO8WdF" />
         <Link Id="KctHe2mV33pO5NhSA6Xvp7" Ids="K1Grrr2CgCdOjKwDlkBW7x,VBy2zl75tjYPlPMVOMjtkE" />
         <Link Id="EkzHTaKfgtyQFcfUCkYOQ7" Ids="AqomDnjCbHvLKzuhHijxDt,GCyzyN97A9vMFHNmBXqpSH" />
-        <Link Id="TKx0PrjhUzROMXdjgG7jiv" Ids="QUciEAk5oyRP7LvCZ7024w,EdYJVBclizwN9ye2Tz2pij" />
         <Link Id="MyOIMuLoLOGQKAdxDa4bQt" Ids="D2fqlNhGfR0Mqiw9oa3kW3,RytbJs9kE67LbNIDMQjRRh" />
         <Link Id="QEF7JamQ3QqM6cnF4WKp0e" Ids="RBegF7rxmO9LPQEMdh0UVj,J3ifE8QJpk1PbJj9nBxIA2" />
         <Link Id="QQVFpF64EqQMkiWcuJFacj" Ids="MVcazppNLePLMUgalYFgfb,UtLnAUSTDsMOwOhBPqhH5s" />
@@ -323,6 +322,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.2-0122-ga74ffb9640" />
   <NugetDependency Id="RZzgwQ5hDLQQVOrRCGYkHo" Location="VL.Devices.AzureKinect" Version="0.0.0.0" />
 </Document>

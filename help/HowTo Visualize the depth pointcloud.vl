@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2020.1.0.53" Version="0.128">
+<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2020.1.2.125" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -156,7 +156,7 @@
       </p:NodeReference>
       <Patch Id="AakuIj5uHvGOzeYYASa5w1">
         <Canvas Id="OmMTMn4stX9OcpjNA5bkqW" CanvasType="Group">
-          <Pad Id="UBW8b29shqoM7mIApeAsS5" Comment="Value" Bounds="438,419,137,15" ShowValueBox="true" isIOBox="true" Value="0, 1, 0.7599995, 0.3100007">
+          <Pad Id="UBW8b29shqoM7mIApeAsS5" Comment="Value" Bounds="438,419,137,15" ShowValueBox="true" isIOBox="true" Value="0, 1, 0.7599995, 1">
             <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
@@ -214,7 +214,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="JTXrhzm5Ug8MISAau5o3d2" Name="Bounds" Kind="InputPin" DefaultValue="1147, 40, 747, 613">
+            <Pin Id="JTXrhzm5Ug8MISAau5o3d2" Name="Bounds" Kind="InputPin" DefaultValue="1135, 224, 747, 613">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -330,8 +330,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.0" />
-  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.0" />
+  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.2-0122-ga74ffb9640" />
+  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.2-0122-ga74ffb9640" />
   <NugetDependency Id="U98q7v2PBvcP5vzK579zef" Location="VL.Skia3d" Version="0.0.0.0" />
   <NugetDependency Id="OMmobhEk38dOri5oZHfSjN" Location="VL.Devices.AzureKinect" Version="0.0.0.0" />
 </Document>
