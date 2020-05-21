@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Pack>
 	<VLDocument link="Explanation Overview of available nodes.vl" />
-	<VLDocument link="HowTo HowTo Visualize the depth pointcloud.vl" />
+	<VLDocument link="HowTo Visualize the depth pointcloud.vl" />
 </Pack>
