@@ -2,15 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect</id>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <title>VL.Devices.AzureKinect</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Set of nodes to use Azure Kinect devices in VL</summary>
-    <description>Azure Kinect for VL</description>
-    <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
+    <summary>Azure Kinect for vvvv</summary>
+    <description>Azure Kinect for vvvv</description>
     <tags>VL, camera, video, depth</tags>
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
