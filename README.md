@@ -1,7 +1,7 @@
 # VL.Devices.AzureKinect
 Set of nodes to use Azure Kinect with VL
 
-Try it with vvvv, the visual live-programming environment for .NET
+Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
 
 ## Using the library
