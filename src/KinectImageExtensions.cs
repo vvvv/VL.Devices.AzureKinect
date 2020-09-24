@@ -1,12 +1,9 @@
 ﻿using Microsoft.Azure.Kinect.Sensor;
 using System;
-using System.Collections.Generic;
 using System.Reactive.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
 using VL.Lib.Basics.Imaging;
 using VL.Lib.Collections;
-using Xenko.Core.Mathematics;
+using Stride.Core.Mathematics;
 
 namespace VL.Devices.AzureKinect
 {

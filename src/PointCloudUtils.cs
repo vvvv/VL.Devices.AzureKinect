@@ -82,9 +82,9 @@ namespace VL.Devices.AzureKinect
             }
         }
 
-        static Dictionary<Calibration, Spread<Xenko.Core.Mathematics.Vector2>> depthRayTableCache = 
-            new Dictionary<Calibration, Spread<Xenko.Core.Mathematics.Vector2>>(CalibrationComparer.Default);
-        public static Spread<Xenko.Core.Mathematics.Vector2> BuildDepthRayTable(Calibration calibration)
+        static Dictionary<Calibration, Spread<Stride.Core.Mathematics.Vector2>> depthRayTableCache = 
+            new Dictionary<Calibration, Spread<Stride.Core.Mathematics.Vector2>>(CalibrationComparer.Default);
+        public static Spread<Stride.Core.Mathematics.Vector2> BuildDepthRayTable(Calibration calibration)
         {
             if (depthRayTableCache.TryGetValue(calibration, out var rayTable))
                 return rayTable;
@@ -92,7 +92,7 @@ namespace VL.Devices.AzureKinect
             int width = calibration.DepthCameraCalibration.ResolutionWidth;
             int height = calibration.DepthCameraCalibration.ResolutionHeight;
 
-            var table_data = new Xenko.Core.Mathematics.Vector2[width * height];// xy_table. (k4a_float2_t *)(void*)k4a_image_get_buffer(xy_table);
+            var table_data = new Stride.Core.Mathematics.Vector2[width * height];// xy_table. (k4a_float2_t *)(void*)k4a_image_get_buffer(xy_table);
 
             Vector2 p;
             for (int y = 0, idx = 0; y < height; y++)
@@ -121,9 +121,9 @@ namespace VL.Devices.AzureKinect
             return rayTable;
         }
 
-        static Dictionary<Calibration, Spread<Xenko.Core.Mathematics.Vector2>> colorRayTableCache =
-            new Dictionary<Calibration, Spread<Xenko.Core.Mathematics.Vector2>>(CalibrationComparer.Default);
-        public static Spread<Xenko.Core.Mathematics.Vector2> BuildColorRayTable(Calibration calibration)
+        static Dictionary<Calibration, Spread<Stride.Core.Mathematics.Vector2>> colorRayTableCache =
+            new Dictionary<Calibration, Spread<Stride.Core.Mathematics.Vector2>>(CalibrationComparer.Default);
+        public static Spread<Stride.Core.Mathematics.Vector2> BuildColorRayTable(Calibration calibration)
         {
             if (colorRayTableCache.TryGetValue(calibration, out var rayTable))
                 return rayTable;
@@ -131,7 +131,7 @@ namespace VL.Devices.AzureKinect
             int width = calibration.ColorCameraCalibration.ResolutionWidth;
             int height = calibration.ColorCameraCalibration.ResolutionHeight;
 
-            var table_data = new Xenko.Core.Mathematics.Vector2[width * height];// xy_table. (k4a_float2_t *)(void*)k4a_image_get_buffer(xy_table);
+            var table_data = new Stride.Core.Mathematics.Vector2[width * height];// xy_table. (k4a_float2_t *)(void*)k4a_image_get_buffer(xy_table);
 
             Vector2 p;
             for (int y = 0, idx = 0; y < height; y++)
