@@ -6085,7 +6085,7 @@
     </Node>
   </Patch>
   <NugetDependency Id="MsqCX6Ttc4CLXiQVDI6QhQ" Location="VL.Skia" Version="2021.3.3" />
-  <PlatformDependency Id="JvKnBkMg9y5QJxBrHlbiSn" Location="VL.Devices.AzureKinect.dll" />
+  <PlatformDependency Id="JvKnBkMg9y5QJxBrHlbiSn" Location="lib/netstandard2.0/VL.Devices.AzureKinect.dll" />
   <NugetDependency Id="KZAfO3faLstMCFyjB36g9Y" Location="System.Numerics.Vectors" Version="4.5.0" />
   <NugetDependency Id="NSs7oMJT8N3MUjPdxlXgSg" Location="Microsoft.Azure.Kinect.Sensor" Version="1.4.1" />
   <NugetDependency Id="BjHHosGh8QaNOegumIQQIC" Location="VL.Skia3d" Version="0.0.0.0" />

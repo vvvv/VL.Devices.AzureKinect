@@ -118,10 +118,10 @@ namespace VL.Devices.AzureKinect
                     latestIR?.Dispose();
                     latestIR = c.IR.Reference();
                 }
-                if (latestColor != null && latestDepth != null && latestIR != null)
+                if (latestColor != null || latestDepth != null || latestIR != null)
                 {
                     return Observable.Using(
-                        () => CreateCapture(latestColor.Reference(), latestDepth.Reference(), latestIR.Reference(), c.Temperature),
+                        () => CreateCapture(latestColor?.Reference(), latestDepth?.Reference(), latestIR?.Reference(), c.Temperature),
                         x => Observable.Return(x));
                 }
                 return Observable.Empty<Capture>();
