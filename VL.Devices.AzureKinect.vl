@@ -6259,10 +6259,10 @@
             </Node>
             <!--
 
-    ************************ Player ************************
+    ************************ Player (Internal) ************************
 
 -->
-            <Node Name="Player" Bounds="797,511" Id="Hk5spWN4aiMLjlLPu7E4La">
+            <Node Name="Player (Internal)" Bounds="797,511" Id="Hk5spWN4aiMLjlLPu7E4La">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="ClassDefinition" Name="Class" />
               </p:NodeReference>
@@ -7298,10 +7298,10 @@
             <ControlPoint Id="VSOBwsx0vU8L2uUb9J7qmS" Bounds="241,728" />
             <!--
 
-    ************************ PlayerControl ************************
+    ************************ PlayerControl (Internal) ************************
 
 -->
-            <Node Name="PlayerControl" Bounds="824,560" Id="TB0MzLJAgLwLrRc7PgR3zB">
+            <Node Name="PlayerControl (Internal)" Bounds="802,583" Id="TB0MzLJAgLwLrRc7PgR3zB">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="RecordDefinition" Name="Record" />
               </p:NodeReference>
