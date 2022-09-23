@@ -1,0 +1,4 @@
+[submodule "src/Azure-Kinect-Sensor-SDK"]
+	path = src/Azure-Kinect-Sensor-SDK
+	url = https://github.com/microsoft/Azure-Kinect-Sensor-SDK.git
+	branch = master

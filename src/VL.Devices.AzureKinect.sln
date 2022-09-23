@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29306.81
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Devices.AzureKinect", "VL.Devices.AzureKinect.csproj", "{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Devices.AzureKinect", "VL.Devices.AzureKinect\VL.Devices.AzureKinect.csproj", "{7A9F6D94-66F1-4380-B857-7C38F5AF3EB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Debug|x64.ActiveCfg = Debug|x64
-		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Debug|x64.Build.0 = Debug|x64
-		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Release|x64.ActiveCfg = Release|x64
-		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Release|x64.Build.0 = Release|x64
+		{7A9F6D94-66F1-4380-B857-7C38F5AF3EB8}.Debug|x64.ActiveCfg = Debug|x64
+		{7A9F6D94-66F1-4380-B857-7C38F5AF3EB8}.Debug|x64.Build.0 = Debug|x64
+		{7A9F6D94-66F1-4380-B857-7C38F5AF3EB8}.Release|x64.ActiveCfg = Release|x64
+		{7A9F6D94-66F1-4380-B857-7C38F5AF3EB8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
