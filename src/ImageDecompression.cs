@@ -29,8 +29,11 @@ namespace VL.Devices.AzureKinect
                     SystemTimestampNsec = image.SystemTimestampNsec,
                     WhiteBalance = image.WhiteBalance
                 };
-                var span = MemoryMarshal.AsBytes(decodedImage.GetPixelSpan());
-                span.CopyTo(kinectImage.Memory.Span);
+                if (decodedImage.TryGetSinglePixelSpan(out var bgraSpan))
+                {
+                    var span = MemoryMarshal.AsBytes(bgraSpan);
+                    span.CopyTo(kinectImage.Memory.Span);
+                }
                 return kinectImage;
             }
         }
