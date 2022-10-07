@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect</id>
-    <version>1.3.2-alpha</version>
+    <version>1.3.3-alpha</version>
     <title>VL.Devices.AzureKinect</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -24,7 +24,7 @@
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.Record.dll" target="lib\netstandard2.0\" exclude="" />
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
-    <file src="..\shaders\**" target="help\" exclude="" />
+    <file src="..\shaders\**" target="shaders\" exclude="" />
 	  <file src="nugeticon.png" target="icon\" />
   </files>
 </package>
