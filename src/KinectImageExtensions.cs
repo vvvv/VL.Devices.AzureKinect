@@ -44,7 +44,7 @@ namespace VL.Devices.AzureKinect
         {
             return captures.SelectMany(c =>
             {
-                var image = c.Color;
+                var image = c.Color; 
                 if (image != null)
                 {
                     if (image.TryToDecompress(out var decompressedImage))
@@ -89,6 +89,19 @@ namespace VL.Devices.AzureKinect
                     return Observable.Return(image.AsVLImage());
                 }
                 return Observable.Empty<IImage>();
+            });
+        }
+
+        /// <summary>
+        /// Selects the timestamps out of the captures.
+        /// </summary>
+        /// <param name="captures">The captures to select the timestamps from.</param>
+        /// <returns>The timestamps of the captures.</returns>
+        public static IObservable<TimeSpan> SelectTimestamp(this IObservable<Capture> captures)
+        {
+            return captures.SelectMany(c =>
+            {
+                return Observable.Return(c.GetTimestamp());
             });
         }
 
