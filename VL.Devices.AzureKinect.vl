@@ -34,7 +34,7 @@
               </p:NodeReference>
               <Patch Id="N4T2w37Qmq3PnZAUpXJr7H">
                 <Node Bounds="1149,268,89,26" Id="PSk9mL9pxWBNIUGOyIYwsw">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -42,48 +42,44 @@
                   <Pin Id="Lm1nGatsQogNeDbW7TUG3l" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1149,397,89,26" Id="S5y9hxIXXnQPjqv6QqHyuM">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" />
                     <Choice Kind="OperationCallFlag" Name="SetDepthMode" />
                   </p:NodeReference>
                   <Pin Id="CNDQp7196hdPfRz8TfaVYH" Name="Input" Kind="StateInputPin" />
                   <Pin Id="CG8kZMYZTa8NZVdNp1bryu" Name="Value" Kind="InputPin" DefaultValue="NFOV_Unbinned">
-                    <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="TypeFlag" Name="DepthMode" />
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="ROskcWT5EW2Pqv77XghBey" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1149,354,102,26" Id="PiqmJIGsSoRNIAnczMgBLU">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetColorResolution" />
                     <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="LZPDVH6IODTQAkhiVOW522" Name="Input" Kind="StateInputPin" />
                   <Pin Id="EEcoorXrJ3YM3vR3mwNQME" Name="Value" Kind="InputPin" DefaultValue="R1080p">
-                    <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="TypeFlag" Name="ColorResolution" />
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="ADX64KdL12uNQ37jOgnYai" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1149,311,89,26" Id="QGhhbyik0KJNwnxdoAZ0S0">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetColorFormat" />
                   </p:NodeReference>
                   <Pin Id="E6h4ef9KN9sMpcNZBy5o9x" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Dvf6djdFwUvPz6x2nkYX7h" Name="Value" Kind="InputPin" DefaultValue="ColorBGRA32">
-                    <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
-                      <Choice Kind="TypeFlag" Name="ImageFormat" />
-                    </p:TypeAnnotation>
-                  </Pin>
+                  <Pin Id="Dvf6djdFwUvPz6x2nkYX7h" Name="Value" Kind="InputPin" DefaultValue="ColorBGRA32" />
                   <Pin Id="R7O6NwcQ7T8PWXHHjG52Ev" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1149,483,144,26" Id="RzdlEyG934cPPRjHYrCuCV">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetSynchronizedImagesOnly" />
                   </p:NodeReference>
@@ -98,7 +94,7 @@
                 <Link Id="RsyQR4zJWPfLKBmPwyb2Zt" Ids="CmphAGpOHJkPewBbOvKEOP,EEcoorXrJ3YM3vR3mwNQME" />
                 <Link Id="LJ69dRdo9ZQNMNBTCw0Ass" Ids="Cg94EG0BSrcMrnlDAWmt8M,CmphAGpOHJkPewBbOvKEOP" IsHidden="true" />
                 <Node Bounds="1052,306,41,19" Id="QQuPkcMqCPpP4xhIoDHzNH">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Microsoft" />
                     <CategoryReference Kind="AssemblyCategory" Name="Azure" />
@@ -111,7 +107,7 @@
                   <Pin Id="QJx5g8WdwVANSA5EyKA7IQ" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1052,680,77,26" Id="LPktVzVStSVPgwQUj3zBFr">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Device" />
                     <Choice Kind="OperationCallFlag" Name="StartCameras" />
@@ -121,7 +117,7 @@
                   <Pin Id="E5fYKe8zlDQNEwSJ3ppyqx" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1052,722,55,26" Id="K6ER78sPIp2L6VSchsugmB">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="StartImu" />
                   </p:NodeReference>
@@ -137,7 +133,7 @@
                 <Link Id="CbyhxyQm6EXMjqCdHIskvg" Ids="Gdb6v70vp7uOj84quyAPrR,STN3mdecTnlMwur3I7wyNF" IsHidden="true" />
                 <Link Id="UlPRKD9krFXPm19ifwXUKT" Ids="IocK5UpAoePOWa3hyxW834,Gdb6v70vp7uOj84quyAPrR" />
                 <Node Bounds="1149,440,89,26" Id="UswrEN0rbY9NT6sDXJhoLp">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" />
                     <Choice Kind="OperationCallFlag" Name="SetCameraFPS" />
@@ -150,7 +146,7 @@
                 <Link Id="OxX8I562xfyM0LdmwG1k63" Ids="Ohdv21JGOuwLg196wwzmIF,DQd3YTWJuNuNe2ydUDssjG" />
                 <Link Id="FYXoSBTx1BzOeuc05ML7tU" Ids="VvPKye4xiIeNZiGP2TAi1N,Ohdv21JGOuwLg196wwzmIF" IsHidden="true" />
                 <Node Bounds="1149,589,101,26" Id="QJE5VHsxCl5QcPQd1r0zFB">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" />
                     <Choice Kind="OperationCallFlag" Name="SetWiredSyncMode" />
@@ -173,7 +169,7 @@
                 <ControlPoint Id="GVdTbaaqxmGLZh5Acn7ih6" Bounds="1516,415" />
                 <Link Id="AvkYfGtLUKRLm2E5GtU8a0" Ids="OKRzzXtYgBgN7lwCiHWYMS,GVdTbaaqxmGLZh5Acn7ih6" IsHidden="true" />
                 <Node Bounds="1149,528,121,26" Id="PgxcR3bhy7sNlK0yAXhuSH">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" />
                     <Choice Kind="OperationCallFlag" Name="SetDepthDelayOffColor" />
@@ -183,7 +179,7 @@
                   <Pin Id="Ptb5LjlAbjyQOKcXe94FEe" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1149,634,157,26" Id="HjfRFK7MJu2LF2j369YxSw">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.DeviceConfiguration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="DeviceConfiguration" />
                     <Choice Kind="OperationCallFlag" Name="SetSuboridinateDelayOffMaster" />
@@ -313,7 +309,7 @@
                     <ControlPoint Id="TX7eicuwoJTPwYHMRokghG" Bounds="602,440" />
                     <ControlPoint Id="Nvhoek1jJtLLUNW3OBFvPO" Bounds="602,520" />
                     <Node Bounds="599,465,68,26" Id="NiQ63OzmdLwPwa6N6zbuDM">
-                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="GetCapture" />
                         <PinReference Kind="InputPin" Name="this">
@@ -349,7 +345,7 @@
                     <ControlPoint Id="U30wuj3KLs2MirbCYOxtZV" Bounds="766,438" />
                     <ControlPoint Id="SqpGqvcmb8qOXynA6ySytv" Bounds="766,518" />
                     <Node Bounds="763,455,82,26" Id="EWfVZrOgQcHMlkHqhjGcN1">
-                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Device" />
                         <Choice Kind="OperationCallFlag" Name="GetImuSample" />
@@ -454,7 +450,7 @@
                     <ControlPoint Id="J3S4P2H9ytXOU2ZmB116Ac" Bounds="407,448" />
                     <ControlPoint Id="BItXtjHI31KM2Tdwp6Bq4v" Bounds="407,576" />
                     <Node Bounds="406,460,82,26" Id="IKsN9jIJTBgLqP4bZdNh1H">
-                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Device" />
                         <Choice Kind="OperationCallFlag" Name="GetCalibration" />
@@ -606,7 +602,7 @@
               </p:NodeReference>
               <Patch Id="JRXUHdAys1xOADzigXSC3Y">
                 <Node Bounds="1075,994,51,26" Id="QJZMiPkBvoCOVA2g5Gf8Ob">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Device" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Version" />
                   </p:NodeReference>
@@ -615,7 +611,7 @@
                   <Pin Id="NimkbY9z9mrNKwxSiUyVUB" Name="Version" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1121,1034,77,26" Id="VBSql9WfLEhQEdtPAFe61i">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="HardwareVersion" />
                     <Choice Kind="OperationCallFlag" Name="Depth" />
@@ -633,7 +629,7 @@
                   <Pin Id="JaRL90JFpQULfL70FsoL9c" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1121,1094,77,26" Id="CWfb6nj0WRfM2WxIEjIPVZ">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="HardwareVersion" />
                     <Choice Kind="OperationCallFlag" Name="RGB" />
@@ -651,7 +647,7 @@
                   <Pin Id="NpmXlbpwgWFQE9q23pnla8" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1114,1160,77,26" Id="Bu43hwjqFGiQPpWIOcNP3O">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DepthSensor" />
                   </p:NodeReference>
@@ -735,7 +731,7 @@
                 <Link Id="GRSudnbn4CMP96RGMhB1Q1" Ids="M0jc1XmTS9QOm9dMaYzi09,I1yO9vPM3GBPAtG9gAF6Ja" />
                 <Link Id="FTL0itXgaOxOWunKJFyP4k" Ids="Esk4mrOx0EKMfYYuBKrpYW,BhaKCAkbWdBQPvBrps78vJ" />
                 <Node Bounds="1115,1248,77,26" Id="RuNgUWyGzJYPmdvsM4t8ef">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.HardwareVersion" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Audio" />
                     <CategoryReference Kind="AssemblyCategory" Name="HardwareVersion" NeedsToBeDirectParent="true" />
@@ -864,17 +860,17 @@
           <Patch Id="QHc7KLcDuFRP1txEzv4pfP" Name="Update (Internal)">
             <Pin Id="FA66N3BQ5SaLBDLmDKrR1r" Name="Device Index" Kind="InputPin" />
             <Pin Id="Pv1pB4IgbO6NqGmuPJx6qp" Name="Color Resolution" Kind="InputPin" DefaultValue="R720p">
-              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                 <Choice Kind="TypeFlag" Name="ColorResolution" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="FZYLI5Rj0VNNbyB86z7Nku" Name="Depth Mode" Kind="InputPin" DefaultValue="NFOV_Unbinned">
-              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                 <Choice Kind="TypeFlag" Name="DepthMode" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="PyuOCkA0kFjLqmFLu5Cltg" Name="FPS" Kind="InputPin" Bounds="506,182" DefaultValue="FPS30">
-              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                 <Choice Kind="TypeFlag" Name="FPS" />
               </p:TypeAnnotation>
             </Pin>
@@ -1420,7 +1416,7 @@
                         <ControlPoint Id="H1nN2ggkSZOL9WAts8xuVq" Bounds="332,610" />
                         <ControlPoint Id="Gayz3LYZkNALtiJ3wRcwqk" Bounds="293,870" />
                         <Node Bounds="268,637,45,26" Id="QLppJLtc3x2LoZYjUPFTNg">
-                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="Capture" />
                             <Choice Kind="OperationCallFlag" Name="Depth" />
@@ -1430,7 +1426,7 @@
                           <Pin Id="DvfeXYzou1KO8sp5Ot2ZOz" Name="Depth" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="394,723,132,26" Id="MEv32uJL5gwNsfDrikaGcX">
-                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="Transformation" />
                             <Choice Kind="OperationCallFlag" Name="DepthImageToPointCloud" />
@@ -1469,7 +1465,7 @@
                           <Pin Id="EACprv1GqyLQbFbEaZXdxl" Name="Result" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="309,675,69,26" Id="RC4TGQZW6OVN16WeU3UubU">
-                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Image" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Image" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="Image" />
                             <Choice Kind="OperationCallFlag" Name="WidthPixels" />
@@ -1491,7 +1487,7 @@
                       <Pin Id="EQlsTwXK0GcOmFWmKEP97E" Name="Captures" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="428,546,71,26" Id="L7C8RHbMdEuNzt7nHqKCzd">
-                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                      <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Transformation" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1513,7 +1509,7 @@
                         <ControlPoint Id="RqrkD64ukhoN8dgwocxnjm" Bounds="258,440" />
                         <ControlPoint Id="TZtPtQrIFITOX3cjtlDD6P" Bounds="269,554" />
                         <Node Bounds="266,456,45,26" Id="NsbCoVVrXCSPcGF1JuMSux">
-                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="Capture" />
                             <Choice Kind="OperationCallFlag" Name="Depth" />
@@ -2481,7 +2477,7 @@
                 <p:HideCategory p:Type="Boolean">false</p:HideCategory>
                 <Patch Id="SuUsSQecATqMDdAVITbrxS">
                   <Node Bounds="322,384,114,26" AutoConnect="true" Id="C9PnxQ5sFV1NvMsW6cFXiV">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="OperationNode" Name="AccelerometerSample" />
                       <FullNameCategoryReference ID="Microsoft.Azure.Kinect.Sensor.ImuSample" />
                     </p:NodeReference>
@@ -2522,7 +2518,7 @@
                 <p:HideCategory p:Type="Boolean">false</p:HideCategory>
                 <Patch Id="Q7ng2mQSyeIMHZKhotSwZH">
                   <Node Bounds="629,393,128,26" AutoConnect="true" Id="R1g3ETiSpxTMlxdrhDDxWo">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="OperationNode" Name="SetAccelerometerSample" />
                       <FullNameCategoryReference ID="Microsoft.Azure.Kinect.Sensor.ImuSample" />
                     </p:NodeReference>
@@ -2560,7 +2556,7 @@
                 <p:HideCategory p:Type="Boolean">false</p:HideCategory>
                 <Patch Id="J2bQntGi06BL9PK6WoCEnl">
                   <Node Bounds="357,635,10,10" AutoConnect="true" Id="FiUA2iN8FlJP98Bn8Z0KzG">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="OperationNode" Name="GyroSample" />
                       <FullNameCategoryReference ID="Microsoft.Azure.Kinect.Sensor.ImuSample" />
                     </p:NodeReference>
@@ -2601,7 +2597,7 @@
                 <p:HideCategory p:Type="Boolean">false</p:HideCategory>
                 <Patch Id="O3uoMegO834NoVXlEFItJj">
                   <Node Bounds="623,701,84,26" AutoConnect="true" Id="OiN7YFGyQqyNVV9d1Mbq2U">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="OperationNode" Name="SetGyroSample" />
                       <FullNameCategoryReference ID="Microsoft.Azure.Kinect.Sensor.ImuSample" />
                     </p:NodeReference>
@@ -2983,7 +2979,7 @@
                     <Pin Id="N9e9hlX0j0zLkUkja7hHzo" Name="Value" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="583,520,69,26" Id="KPDW32zwAz5MSTa8Ki9RDu">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Calibration" />
                       <Choice Kind="OperationCallFlag" Name="DepthMode" />
@@ -2993,7 +2989,7 @@
                     <Pin Id="KLUpcp60fmyLLwSBGhq6rO" Name="Depth Mode" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="325,512,89,26" Id="RQHUn2J0373NG4J0HjkZXe">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Calibration" />
                       <Choice Kind="OperationCallFlag" Name="ColorResolution" />
@@ -3011,7 +3007,7 @@
                     <Pin Id="R6KLBxwQ4ukMnqpLz1kJIu" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="169,511,125,26" Id="OpS8m77MkBHQaYjfe3Basj">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ColorCameraCalibration" />
                     </p:NodeReference>
@@ -3028,7 +3024,7 @@
                     <Pin Id="EbRr8sE97hGPwofS33J8ZI" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="435,518,128,26" Id="BxeGNQjsW1LOHPTezajCjl">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="DepthCameraCalibration" />
                     </p:NodeReference>
@@ -3037,7 +3033,7 @@
                     <Pin Id="LBNc1lH3IDOQanwUhqKRWe" Name="Depth Camera Calibration" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="57,540,83,26" Id="RkkZtbpOq6WN1yapHCds4c">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="CameraCalibration" />
                       <Choice Kind="OperationCallFlag" Name="Extrinsics" />
@@ -3047,7 +3043,7 @@
                     <Pin Id="NW0HDbg93iwPspn14xmwAf" Name="Extrinsics" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="52,578,54,26" Id="EW8EojwLeraPYfd4mEJv7Z">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Extrinsics" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Extrinsics" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Extrinsics" />
                       <Choice Kind="OperationCallFlag" Name="Rotation" />
@@ -3057,7 +3053,7 @@
                     <Pin Id="K3ErpuGhlihQBFWQnZFUHl" Name="Rotation" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="146,576,67,26" Id="VqY8q8YzdgkLK2oNPDydwf">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Extrinsics" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Extrinsics" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Translation" />
                       <CategoryReference Kind="AssemblyCategory" Name="Extrinsics" NeedsToBeDirectParent="true" />
@@ -3547,7 +3543,7 @@
               </Node>
               <Pad Id="TVqgFzsGytuP3S9qFxSjId" Comment="Gyro" Bounds="1346,1284,35,43" ShowValueBox="true" isIOBox="true" />
               <Node Bounds="390,430,114,26" Id="MYKrn166tZbLWpQnfel8MV">
-                <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="ImuSample" />
                   <Choice Kind="OperationCallFlag" Name="AccelerometerSample" />
@@ -3558,7 +3554,7 @@
               </Node>
               <Pad Id="NyDiSKpdKRbOywJ8t1slmE" Comment="Accelerometer Sample" Bounds="385,476,149,15" ShowValueBox="true" isIOBox="true" />
               <Node Bounds="1108,427,114,26" Id="G8kibWlAP8zMe1L5IbIv7F">
-                <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="ImuSample" />
                   <Choice Kind="OperationCallFlag" Name="GyroSample" />
@@ -3568,7 +3564,7 @@
                 <Pin Id="BgQoUtlC8TXMvTfThm7o12" Name="Gyro Sample" Kind="OutputPin" />
               </Node>
               <Node Bounds="692,434,132,26" Id="E8jth2fGVZqLtraNAx8JUW">
-                <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.ImuSample" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="ImuSample" />
                   <Choice Kind="OperationCallFlag" Name="AccelerometerTimestamp" />
@@ -4392,7 +4388,7 @@
                   <ControlPoint Id="KJs2mh8gwWPOf7rznEZ1mu" Bounds="359,637" />
                   <ControlPoint Id="BALt7XBq6RoPKO6B4TuGmc" Bounds="365,849" />
                   <Node Bounds="368,660,45,26" Id="RTsogIbEJS1Orgo8fLFBRf">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Capture" />
                       <Choice Kind="OperationCallFlag" Name="Depth" />
@@ -4410,7 +4406,7 @@
                     <Pin Id="IBzQ0yq85chLQxUqZjMoM6" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="376,729,132,26" Id="K6H0RE3mMdLPhkKf3tr6Xn">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Transformation" />
                       <Choice Kind="OperationCallFlag" Name="DepthImageToPointCloud" />
@@ -4473,7 +4469,7 @@
                   <ControlPoint Id="GnAVFgxqBsdL5QvJuhjVVr" Bounds="365,502" />
                   <ControlPoint Id="MqDobajE7HZLt789Koyl3O" Bounds="361,591" />
                   <Node Bounds="365,514,45,26" Id="Jycb6vILUfuNyOrkpSeyVx">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Capture" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Capture" />
                       <Choice Kind="OperationCallFlag" Name="Depth" />
@@ -4580,7 +4576,7 @@
                     <Pin Id="EEfECVAiKuuMsJxP6qqwXv" Name="Has Changed" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="111,280,128,26" Id="LD9QbPIIN5hPAxOVBBWuoD">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Calibration" />
                       <Choice Kind="OperationCallFlag" Name="DepthCameraCalibration" />
@@ -4590,7 +4586,7 @@
                     <Pin Id="SulmnLGMbKIPUXIybhOOKK" Name="Depth Camera Calibration" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="66,326,90,26" Id="CgvUDfeduoIOAca0phLqmE">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ResolutionWidth" />
                     </p:NodeReference>
@@ -4599,7 +4595,7 @@
                     <Pin Id="PLNAbdWTrPLNd6wYcZIqIE" Name="Resolution Width" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="166,326,94,26" Id="HWSBAiggJL0P4OWO5DGE34">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ResolutionHeight" />
                     </p:NodeReference>
@@ -4706,7 +4702,7 @@
                     <Pin Id="MyBjZ7PDXXlMsIJAgecTmf" Name="Has Changed" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="362,583,128,26" Id="Edt2xspi3dhOi6gRTdX5iC">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Calibration" />
                       <Choice Kind="OperationCallFlag" Name="ColorCameraCalibration" />
@@ -4716,7 +4712,7 @@
                     <Pin Id="MNN3ZiLhcoEMcKFCd2PsDd" Name="Color Camera Calibration" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="317,629,90,26" Id="Ghbhvh72YLhLAam2ExH5qC">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ResolutionWidth" />
                     </p:NodeReference>
@@ -4725,7 +4721,7 @@
                     <Pin Id="IkietDdXyfKLwYoJw2pEet" Name="Resolution Width" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="417,629,94,26" Id="NJt8V5o4YdJLy0cbEe9QHK">
-                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.CameraCalibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ResolutionHeight" />
                     </p:NodeReference>
@@ -5330,7 +5326,7 @@
                       <ControlPoint Id="I85zV97ddtLO0Kwr1jn0y7" Bounds="206,431" />
                       <ControlPoint Id="CsdrvaVzkMYMPvxLBEShKY" Bounds="207,579" />
                       <Node Bounds="239,456,142,26" Id="BMHaO6cjiDXOngP74oyGOK">
-                        <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                        <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="Transformation" />
                           <Choice Kind="OperationCallFlag" Name="ColorImageToDepthCamera" />
@@ -5493,7 +5489,7 @@
                         <Pin Id="KJcqJNhs7pcMTceFwhHdFZ" Name="Output" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="425,562,142,26" Id="Vpeb1PtLcrTPlmEkmjm62c">
-                        <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                        <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="Transformation" />
                           <PinReference Kind="OutputPin" Name="return" ParameterModifier="return" />
@@ -5857,7 +5853,7 @@
                       <Patch Id="TDhtdMqdrTKPONquFY939x" Name="Update" ManuallySortedPins="true" />
                       <Patch Id="TSwrDVgnpJRNRIdhsuU0c3" Name="Dispose" ManuallySortedPins="true" />
                       <Node Bounds="467,559,88,26" Id="BP7lkKAmiXlLAkKn5M8QQN">
-                        <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                        <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Calibration" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="TransformTo2D" />
                           <PinReference Kind="InputPin" Name="Source Point 3D" />
@@ -5866,7 +5862,7 @@
                         <Pin Id="KCzscTjh2CsNB4hvCTAw75" Name="Source Point 3D" Kind="InputPin" />
                         <Pin Id="D1Hpa96DNdlMPFwE1PhlSD" Name="Source Camera" Kind="InputPin" />
                         <Pin Id="F4o8cTJ2OSzMJXzQkSk36O" Name="Target Camera" Kind="InputPin" DefaultValue="Color">
-                          <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                          <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.Sensor" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                             <Choice Kind="TypeFlag" Name="CalibrationDeviceType" />
                           </p:TypeAnnotation>
                         </Pin>
@@ -6063,7 +6059,7 @@
                 <Patch Id="MZbqlVgrl3XNFBVvzSz9F3" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="KHSMQP9RSz5OoOeKgA6wAT" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="418,448,71,26" Id="SRLuz9olzEEMbPHzGFWF2X">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.dll">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Transformation" LastSymbolSource="Microsoft.Azure.Kinect.Sensor-pr1711.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Transformation" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -6321,7 +6317,7 @@
                         <ControlPoint Id="VmoB3foAjoyNbPw0pSy8rj" Bounds="242,420" />
                         <ControlPoint Id="E5gZL1bKr4IQLzSQTDtXHp" Bounds="247,630" />
                         <Node Bounds="240,449,93,26" Id="ECL4az9HpksLpqtyLYcBpj">
-                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Record.Playback" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.Record.dll">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Record.Playback" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.Record-pr1711.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="Playback" />
                             <Choice Kind="OperationCallFlag" Name="RecordingLength" />
@@ -6353,13 +6349,15 @@
                         <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Using (Provider)" />
                       </p:NodeReference>
+                      <Pin Id="F3xd7fIyhSRM1L25DQ3qW6" Name="Provider" Kind="InputPin" />
+                      <Pin Id="V2GinOpuPgvPpOdbpdouGh" Name="Result" Kind="OutputPin" />
                       <Patch Id="PiME9fwQVZFMpk6fTnmkrV" Name="Observable Factory" ManuallySortedPins="true">
                         <Pin Id="ESHZ8vi3d9EQEEhT1vOFZF" Name="Input" Kind="InputPin" />
                         <Pin Id="OBDF506tC0vPBGDAoxku9W" Name="Result" Kind="OutputPin" />
                         <ControlPoint Id="Ei7V284kPdrMcLAu66vo7E" Bounds="113,492" />
                         <ControlPoint Id="EwA4KE5dSBgLFatv61t9YY" Bounds="114,601" />
                         <Node Bounds="111,508,66,26" Id="Vho6zIlNjZGPbfwefmyt7R">
-                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Record.Playback" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.Record.dll">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Record.Playback" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.Record-pr1711.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="Playback" />
                             <Choice Kind="OperationCallFlag" Name="Calibration" />
@@ -6378,8 +6376,6 @@
                           <Pin Id="TG2xWLiRN1MPHA5m8oQ4Ae" Name="Result" Kind="OutputPin" />
                         </Node>
                       </Patch>
-                      <Pin Id="F3xd7fIyhSRM1L25DQ3qW6" Name="Provider" Kind="InputPin" />
-                      <Pin Id="V2GinOpuPgvPpOdbpdouGh" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="100,148,79,97" Id="Bj0WfEUDBcRPekigt6jTL5">
                       <p:NodeReference LastCategoryFullName="System.Resources" LastSymbolSource="CoreLibBasics.vl">
@@ -6392,7 +6388,7 @@
                         <Pin Id="ExSWESk4knHO1EHGQOtlHK" Name="Result" Kind="OutputPin" />
                         <ControlPoint Id="TY4elYMEGFYPw5NvxcdpyN" Bounds="114,238" />
                         <Node Bounds="112,200,41,19" Id="U4hoCaO8BEQP017XPKhA69">
-                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Record.Playback" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.Record.dll">
+                          <p:NodeReference LastCategoryFullName="Microsoft.Azure.Kinect.Sensor.Record.Playback" LastSymbolSource="Microsoft.Azure.Kinect.Sensor.Record-pr1711.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="Playback" />
                             <Choice Kind="OperationCallFlag" Name="Open" />
@@ -9167,6 +9163,6 @@
   <NugetDependency Id="KZAfO3faLstMCFyjB36g9Y" Location="System.Numerics.Vectors" Version="4.5.0" />
   <NugetDependency Id="BjHHosGh8QaNOegumIQQIC" Location="VL.Skia3d" Version="1.1.2" />
   <NugetDependency Id="VJjJ4uUjfMCMWx9Df4PSWA" Location="VL.Stride.Runtime" Version="2021.4.10" />
-  <PlatformDependency Id="QFgM5jDAhfxPsQ0SrkSAPc" Location="./dependencies/Microsoft.Azure.Kinect.Sensor/Microsoft.Azure.Kinect.Sensor.dll" />
-  <PlatformDependency Id="GML7Urt30mJOajUQRUztY1" Location="./dependencies/Microsoft.Azure.Kinect.Sensor.Record/Microsoft.Azure.Kinect.Sensor.Record.dll" />
+  <PlatformDependency Id="QFgM5jDAhfxPsQ0SrkSAPc" Location="./dependencies/Microsoft.Azure.Kinect.Sensor/Microsoft.Azure.Kinect.Sensor-pr1711.dll" />
+  <PlatformDependency Id="GML7Urt30mJOajUQRUztY1" Location="./dependencies/Microsoft.Azure.Kinect.Sensor.Record/Microsoft.Azure.Kinect.Sensor.Record-pr1711.dll" />
 </Document>

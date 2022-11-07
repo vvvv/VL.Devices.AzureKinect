@@ -7,15 +7,15 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Microsoft.Azure.Kinect.Sensor.Record/1.0.0": {
+      "Microsoft.Azure.Kinect.Sensor.Record-pr1711/1.0.0": {
         "dependencies": {
-          "Microsoft.Azure.Kinect.Sensor": "1.0.0",
+          "Microsoft.Azure.Kinect.Sensor-pr1711": "1.0.0",
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.4",
           "NETStandard.Library": "2.0.3",
           "StyleCop.Analyzers": "1.1.118"
         },
         "runtime": {
-          "Microsoft.Azure.Kinect.Sensor.Record.dll": {}
+          "Microsoft.Azure.Kinect.Sensor.Record-pr1711.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.4": {
@@ -74,19 +74,19 @@
           }
         }
       },
-      "Microsoft.Azure.Kinect.Sensor/1.0.0": {
+      "Microsoft.Azure.Kinect.Sensor-pr1711/1.0.0": {
         "dependencies": {
           "System.Memory": "4.5.3",
           "System.Numerics.Vectors": "4.5.0"
         },
         "runtime": {
-          "Microsoft.Azure.Kinect.Sensor.dll": {}
+          "Microsoft.Azure.Kinect.Sensor-pr1711.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Microsoft.Azure.Kinect.Sensor.Record/1.0.0": {
+    "Microsoft.Azure.Kinect.Sensor.Record-pr1711/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -175,7 +175,7 @@
       "path": "system.runtime.compilerservices.unsafe/4.5.2",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
     },
-    "Microsoft.Azure.Kinect.Sensor/1.0.0": {
+    "Microsoft.Azure.Kinect.Sensor-pr1711/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
