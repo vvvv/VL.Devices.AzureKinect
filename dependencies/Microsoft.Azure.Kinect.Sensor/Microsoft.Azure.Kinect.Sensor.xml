@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Microsoft.Azure.Kinect.Sensor-pr1711</name>
+        <name>Microsoft.Azure.Kinect.Sensor</name>
     </assembly>
     <members>
         <member name="T:Microsoft.Azure.Kinect.Sensor.Allocator">

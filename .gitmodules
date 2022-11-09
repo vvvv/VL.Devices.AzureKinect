@@ -1,4 +1,0 @@
-[submodule "dependencies/Azure-Kinect-Sensor-SDK"]
-	path = dependencies/Azure-Kinect-Sensor-SDK
-	url = https://github.com/vvvv/Azure-Kinect-Sensor-SDK.git
-	branch = csharp-record

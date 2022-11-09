@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Microsoft.Azure.Kinect.Sensor-pr1711/1.0.0": {
+      "Microsoft.Azure.Kinect.Sensor/1.0.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.4",
           "NETStandard.Library": "2.0.3",
@@ -16,7 +16,7 @@
           "System.Numerics.Vectors": "4.5.0"
         },
         "runtime": {
-          "Microsoft.Azure.Kinect.Sensor-pr1711.dll": {}
+          "Microsoft.Azure.Kinect.Sensor.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.4": {
@@ -78,7 +78,7 @@
     }
   },
   "libraries": {
-    "Microsoft.Azure.Kinect.Sensor-pr1711/1.0.0": {
+    "Microsoft.Azure.Kinect.Sensor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
