@@ -12,3 +12,9 @@ In order to use this library with VL you have to install the nuget that is avail
 Once the VL.Devices.AzureKinect nuget is installed and referenced in your VL document you'll see the category "AzureKinect" under "Devices" in the nodebrowser. 
 
 Demos are available via the Help Browser!
+
+## Sponsoring
+Development of this library was partially sponsored by
+- [wirmachenbunt](https://wirmachenbunt.de)
+
+For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org).
