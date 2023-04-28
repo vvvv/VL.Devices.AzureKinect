@@ -3,22 +3,9 @@ shader UnpackR5G6B5A16_ComputeFX : ComputeShaderBase, Texturing
 {
 	RWTexture2D<float4> outputTextureRGB;
     RWTexture2D<float> outputTextureDepth;
-    RWBuffer<uint> outputBufferUint;
-    RWBuffer<float4> outputBufferFloat4;
 
     override void Compute()
     {
-        // float4 packedColor = Texture0.Load(int3(streams.DispatchThreadId.x,streams.DispatchThreadId.y,0));
-        
-        // // Extract the red, green, and blue color channels from the packed value
-        // uint r = (packedColor.r) * 255;
-        // uint g = (packedColor.g) * 255;
-        // uint b = (packedColor.b) * 255;
-        // uint a = (packedColor.a) * 255;
-
-        // //r = r << 8;
-        // float rf = r;
-
         // crooked solution using float4 instead of uint directly. did not figure out how to get right uint value from Texture
         float4 packedColor = Texture0.Load(int3(streams.DispatchThreadId.x,streams.DispatchThreadId.y,0));
         
@@ -27,9 +14,8 @@ shader UnpackR5G6B5A16_ComputeFX : ComputeShaderBase, Texturing
         uint b = (packedColor.b) * 255;
         uint a = (packedColor.a) * 255;
 
-        uint rgba = r + (g<<8) + (b<<16) + (a<<24);
+        uint rgba = r | (g<<8) | (b<<16) | (a<<24);
 
-        uint r5g6b5a16 = rgba;
         uint r5 = (uint)(rgba & 0x1F);
         uint g6 = (uint)(rgba >> 5) & 0x3F;
         uint b5 = (uint)(rgba >> 11) & 0x1F;
@@ -38,10 +24,8 @@ shader UnpackR5G6B5A16_ComputeFX : ComputeShaderBase, Texturing
 
         float dim = 1/Texture0TexelSize;
         uint idx = streams.DispatchThreadId.y * dim.x + streams.DispatchThreadId.x;
-        outputBufferUint[idx] = rgba;
-        outputBufferFloat4[idx] = float4(r5,g6,b5,a16);
         outputTextureRGB[streams.DispatchThreadId.xy] = float4(r5/31.0,g6/63.0,b5/31.0,1);
-        outputTextureDepth[streams.DispatchThreadId.xy] = uint(a16);
+        outputTextureDepth[streams.DispatchThreadId.xy] = a16/65635.0;
     }
 };
 
