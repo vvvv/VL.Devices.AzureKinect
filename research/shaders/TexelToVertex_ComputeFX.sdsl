@@ -1,0 +1,21 @@
+[Summary("")]
+shader TexelToVertex_ComputeFX : ComputeShaderBase, Texturing
+{
+	RWStructuredBuffer<float4> Values;
+
+    override void Compute()
+    {
+        float2 dim = 1/Texture0TexelSize;
+        float2 halfTexelSize = Texture0TexelSize*0.5;
+
+        float2 texCoord = float2(streams.DispatchThreadId.xy) / float2(dim.xy);
+        //float4 texel = Texture0.SampleLevel(Sampler0, texCoord + halfTexelSize,0);
+        float4 texel = Texture0.Load(int3(streams.DispatchThreadId.x, streams.DispatchThreadId.y,0));
+        texel.xy *= -1;
+
+        uint vertexIndex = streams.DispatchThreadId.y * dim.x + streams.DispatchThreadId.x;
+        Values[vertexIndex] = float4(texel.xyz, 1.0f);
+    }
+};
+
+
