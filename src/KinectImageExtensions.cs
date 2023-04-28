@@ -178,6 +178,53 @@ namespace VL.Devices.AzureKinect
             });
         }
 
+        struct BGRA
+        {
+            public byte b;
+            public byte g;
+            public byte r;
+            public byte a;
+        }
+
+        public static IObservable<IImage> ColorToDepthPackR5G6B5A16(this IObservable<Capture> captures, Transformation transformation)
+        {
+            return captures.SelectMany(c =>
+            {
+                var depth = c.Depth;
+                var color = c.Color;
+                if (depth == null || color == null || transformation == null)
+                    return Observable.Empty<IImage>();
+                else
+                {
+                    var image = transformation.ColorImageToDepthCamera(c);
+                    var rgb = image.GetPixels<BGRA>();
+                    var dImage = depth.GetPixels<ushort>();
+
+                    var pixels = new uint[rgb.Length]; 
+                    
+                    var i = 0;
+                    byte r;
+                    byte g;
+                    byte b;
+
+                    foreach (var pixel in rgb.Span)
+                    {
+                        r = (byte)(pixel.r >> 3);
+                        g = (byte)(pixel.g >> 2);
+                        b = (byte)(pixel.b >> 3);
+                        pixels[i++] = (uint)((b << 11) | (g << 5) | r);
+                    }
+                    i = 0;
+                    foreach (var dpixel in dImage.Span)
+                    {
+                        pixels[i] = (uint)(pixels[i] | (dpixel << 16));
+                        i++;
+                    }
+                    return Observable.Return(pixels.ToImage(image.WidthPixels, image.HeightPixels, PixelFormat.R8G8B8A8));
+                }
+            
+            });
+        }
 
         /// <summary>
         /// Selects the timestamps out of the captures.

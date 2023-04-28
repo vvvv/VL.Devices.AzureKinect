@@ -6063,6 +6063,86 @@
             <Link Id="JfKQAwg3eCMQBGrXPpPf9B" Ids="P6CzxIzFPytNcyX3lJyvQL,KvioOup9iqqNZkuYuXtiMV" />
           </Patch>
         </Node>
+        <!--
+
+    ************************ ColorToDepthImagePacked (Reactive) ************************
+
+-->
+        <Node Name="ColorToDepthImagePacked (Reactive)" Bounds="993,513" Id="TlPC8vdCy0LMACqMR5BJoW">
+          <p:NodeReference>
+            <Choice Kind="ContainerDefinition" Name="Process" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <Patch Id="Dj5XEb99l8cQQkhAjCQxJI">
+            <Canvas Id="NiGZ7P7tFbENMxbYUaCbMv" CanvasType="Group">
+              <ControlPoint Id="LZ8wDdw1q6ZP18uRmOAOM3" Bounds="210,172" />
+              <Node Bounds="123,217,85,26" Id="BrA9Sc2w1xvLkopYGje0ht">
+                <p:NodeReference LastCategoryFullName="Devices.AzureKinect.IDevice" LastDependency="VL.Devices.AzureKinect.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetCaptures" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="IDevice" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="BcI1DxjtP6aPEzLPzqckfj" Name="Input" Kind="StateInputPin" />
+                <Pin Id="U3Kgu0UTCjlNrmHK3ewOtJ" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="JbWuvOMQvy0PjVjS6xNm2Z" Name="Captures" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="Hfg2FfcwWFaQVpJiLhAE2n" Bounds="202,414" />
+              <Node Bounds="361,226,86,19" Id="GhPLE7jUTmUMJslSJ8DVzz">
+                <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Transformation" />
+                </p:NodeReference>
+                <Pin Id="E3usSk83vGLNajtiZFhjDc" Name="Device" Kind="InputPin" />
+                <Pin Id="RJFCh2NrurtLbWDwPun67u" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="188,279,185,93" Id="BSHPnN1jCvCLqgBMGIDVTN">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                </p:NodeReference>
+                <Pin Id="SuS69241tVlPHqrmQqBPqn" Name="Force" Kind="InputPin" />
+                <Pin Id="HdaxSDZQiEQPDDL8ZR9eNU" Name="Dispose Cached Outputs" Kind="InputPin" />
+                <Pin Id="UlG8yJrD9FtQSRLCIkTB6s" Name="Has Changed" Kind="OutputPin" />
+                <Patch Id="JACofJfIsBLLnildV9otYa" ManuallySortedPins="true">
+                  <Patch Id="G9tRGr54I4tOVAbVS2T9Bu" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="SBO5L7yw65OLcONa2BiGOi" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="200,326,154,26" Id="Pj1xJksrrUdOj4sajsa6he">
+                    <p:NodeReference LastCategoryFullName="VL.Devices.AzureKinect.KinectImageExtensions" LastDependency="VL.Devices.AzureKinect.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ColorToDepthPackR5G6B5A16" />
+                    </p:NodeReference>
+                    <Pin Id="MD5oVyhXBD1O0jeeO58GuA" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="GZG2XydG8JPLaQz0QulGa7" Name="Transformation" Kind="InputPin" />
+                    <Pin Id="K6lqzBJsy0SNzIdMaCaEMK" Name="Output" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="LGiG1vjjB9MMx4FPo5pXnI" Bounds="202,285" Alignment="Top" />
+                <ControlPoint Id="QTYYqNAVw7JMzoGGGBHK24" Bounds="202,366" Alignment="Bottom" />
+                <ControlPoint Id="G9tlEWdOzmoMwtz8GipR1T" Bounds="358,285" Alignment="Top" />
+              </Node>
+            </Canvas>
+            <Patch Id="Pt9dd7wPZUgPzAwSio4hy3" Name="Create" />
+            <Patch Id="V2Yjl6Cg8f3NtpRoIOPuOl" Name="Update">
+              <Pin Id="TsHy2I1qwUpMe9pL7LuupD" Name="Device" Kind="InputPin" Bounds="180,751" />
+              <Pin Id="EHHUqwbxc6jLwN3XasWKzC" Name="Output" Kind="OutputPin" Bounds="204,642" />
+            </Patch>
+            <ProcessDefinition Id="MdPg7ZPjJfqLf8RrvoFJ0F">
+              <Fragment Id="Ar1ESGjimLgN7Cliu5jyJ9" Patch="Pt9dd7wPZUgPzAwSio4hy3" Enabled="true" />
+              <Fragment Id="KaXuAzHy8xBQRhan5kEcZK" Patch="V2Yjl6Cg8f3NtpRoIOPuOl" Enabled="true" />
+            </ProcessDefinition>
+            <Link Id="SdjPqoAtV3ONry6VnAGYlZ" Ids="TsHy2I1qwUpMe9pL7LuupD,LZ8wDdw1q6ZP18uRmOAOM3" IsHidden="true" />
+            <Link Id="BUEheWELT1FNXxN1dTVIeR" Ids="LZ8wDdw1q6ZP18uRmOAOM3,E3usSk83vGLNajtiZFhjDc" />
+            <Link Id="HdyITEG16mzQIxjHVdVuYD" Ids="LZ8wDdw1q6ZP18uRmOAOM3,BcI1DxjtP6aPEzLPzqckfj" />
+            <Link Id="Jv8qVwzB85dQKuhV6xiO4m" Ids="Hfg2FfcwWFaQVpJiLhAE2n,EHHUqwbxc6jLwN3XasWKzC" IsHidden="true" />
+            <Link Id="RcpGhYj2O7DO6tQg1hx5XB" Ids="JbWuvOMQvy0PjVjS6xNm2Z,LGiG1vjjB9MMx4FPo5pXnI" />
+            <Link Id="I0B7fuBGHkUL4GBzxDUDg1" Ids="K6lqzBJsy0SNzIdMaCaEMK,QTYYqNAVw7JMzoGGGBHK24" />
+            <Link Id="UMIf4NCWca9OJWRR7UDpSk" Ids="QTYYqNAVw7JMzoGGGBHK24,Hfg2FfcwWFaQVpJiLhAE2n" />
+            <Link Id="OougFxJRiO3NhDNCE9bOA3" Ids="RJFCh2NrurtLbWDwPun67u,G9tlEWdOzmoMwtz8GipR1T" />
+            <Link Id="Kf1IkwhVlmQLvMmd6HG4XH" Ids="G9tlEWdOzmoMwtz8GipR1T,GZG2XydG8JPLaQz0QulGa7" />
+            <Link Id="ULApUdzfwBxNU6P4YlJ5Rh" Ids="LGiG1vjjB9MMx4FPo5pXnI,MD5oVyhXBD1O0jeeO58GuA" />
+          </Patch>
+        </Node>
       </Canvas>
       <Pad Id="Lk2ioW9RTBuP65dS4UVGch" Bounds="605,810,108,19" ShowValueBox="true" isIOBox="true" Value="Feedback Forum">
         <p:TypeAnnotation>
