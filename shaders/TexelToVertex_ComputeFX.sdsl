@@ -6,7 +6,7 @@ shader TexelToVertex_ComputeFX : ComputeShaderBase, Texturing
     override void Compute()
     {
         float2 dim = 1/Texture0TexelSize;
-        float2 halfTexelSize = Texture0TexelSize*0.5;
+        //float2 halfTexelSize = Texture0TexelSize*0.5;
 
         float2 texCoord = float2(streams.DispatchThreadId.xy) / float2(dim.xy);
         //float4 texel = Texture0.SampleLevel(Sampler0, texCoord + halfTexelSize,0);
