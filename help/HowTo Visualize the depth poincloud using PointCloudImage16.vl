@@ -43,12 +43,13 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloudImage16" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="RdbV23QIQt7NKu5Uc7NWq1" Name="Device" Kind="InputPin" />
             <Pin Id="DQfpSCjVaO7M6qh5YlpyNC" Name="Scaling" Kind="InputPin" DefaultValue="0.001" />
             <Pin Id="SFmBDJXqhjHMfa8M8yFgty" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="GgNbLMDzdvdNl7ksGUzUyq" Comment="" Bounds="382,243,190,132" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="516,1194,63,19" Id="BDB7okV6gqdOVw0cFqJOYV">
+          <Node Bounds="536,1149,63,19" Id="BDB7okV6gqdOVw0cFqJOYV">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RootScene" />
@@ -58,7 +59,7 @@
             <Pin Id="UFruXOs6wO3PhcxKDRuDh9" Name="Enabled" Kind="InputPin" />
             <Pin Id="FO735sITkGcQIV2Prw901y" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="496,1244,225,19" Id="Aqx1j4R3rlUMA2WTR1MImK">
+          <Node Bounds="516,1199,225,19" Id="Aqx1j4R3rlUMA2WTR1MImK">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
@@ -293,19 +294,6 @@
             <Pin Id="MlVoLDTBeNmPURFiD64KSL" Name="Enabled" Kind="InputPin" />
             <Pin Id="P6MBijzL9oxPCZAXfr1ouv" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Node Bounds="516,1141,85,19" Id="EPj80sdWB4ZNJY1vuODLjv">
-            <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Group" />
-              <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
-            </p:NodeReference>
-            <Pin Id="ENv0nkt6TwiL6xd4Bg7Pk1" Name="Transformation" Kind="InputPin" />
-            <Pin Id="IK928Eq1H4gNCcoP6J34UE" Name="Child" Kind="InputPin" />
-            <Pin Id="ENFnjOo1TnyOCsdTLCfUKq" Name="Child 2" Kind="InputPin" />
-            <Pin Id="A2GMXwJkcK9LlhVFCPAdkt" Name="Name" Kind="InputPin" />
-            <Pin Id="EUgeCD4KmJuLAesXDZRWtY" Name="Enabled" Kind="InputPin" />
-            <Pin Id="QRnIYhdIJwYP4HY8CsPc80" Name="Output" Kind="OutputPin" />
-          </Node>
           <Node Bounds="730,901,35,19" Id="H4RpxAIGo8WOSMxWq8LcjH">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -400,7 +388,6 @@
         <Link Id="L8tunWawurINMzPF7KYgn1" Ids="CNmYqyRtLqAMxZ0XdjXWGs,DxojWkbehzuMALKRr15yKQ" />
         <Link Id="I67aPJddHnyPZNxVzYB21k" Ids="GWaTY4SHAHyLIFu2PiNw96,PQUmR3nKbWNNzCDWweGfra" />
         <Link Id="RhpOW5KCynaNItHNFOPWgS" Ids="Qf9YRhXdLKIOdUXhkAGW25,EDLs1lUWTLaQQaYYuw9ukg" />
-        <Link Id="LZxW7u3apUrMfbo46ur9n0" Ids="P6MBijzL9oxPCZAXfr1ouv,IK928Eq1H4gNCcoP6J34UE" />
         <Link Id="SYHTLybTYPtQE7mZtRXahq" Ids="GAEvPOUoeytQb9v6zpuMKu,A5jH7Esf6kkOYowKIsx9Kb" />
         <Link Id="JpxyuBEnkqrORzgvV0zfAO" Ids="QH1AL5ctnLNLTIdHBkEH6t,AWbFsOcq42kOilh0w9Vjgj" />
         <Link Id="D7Zya5DDXesLqbiUZWQE8Z" Ids="Kff3It6nXjuLHfBQv7lY6x,AhgBMOOyVMCOZoSPqQpgoh" />
@@ -408,9 +395,9 @@
         <Link Id="UU8gtJE4ltpPpJXJbzYu5k" Ids="CNmYqyRtLqAMxZ0XdjXWGs,MlfGfHccd2COyuZEb99p3b" />
         <Link Id="FUlC3ceWuM6LjNnXBPL2Fa" Ids="VOEjHNn19L8PQaCiK0WXox,Ku3p6WY7UpdN3a7lQNJvR7" />
         <Link Id="VMgstfCPVktMUse8OtXwZN" Ids="NTovj6Jno28QB7GUlIMCMH,BLFeGOb04OtM4Epng5g6hW" />
-        <Link Id="BeglD5lDbGOLTMxtm2gUak" Ids="QRnIYhdIJwYP4HY8CsPc80,OLpXvpOGtwnNiy8AkPB0BR" />
         <Link Id="OqD6RYbjEBaQEATTaAcy0u" Ids="LkDFxYgtP4pO8WaxveddhZ,LyFpANAbxzlLTIDWHSXYF3" />
         <Link Id="UXL0kh86cc9PQkPBpaQhQy" Ids="SFmBDJXqhjHMfa8M8yFgty,Tvd8qpfXr1pMsvnH7chVTd" />
+        <Link Id="M8ug4iscwDuL8uGdDhuTEo" Ids="P6MBijzL9oxPCZAXfr1ouv,OLpXvpOGtwnNiy8AkPB0BR" />
       </Patch>
     </Node>
   </Patch>
