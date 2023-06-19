@@ -56,6 +56,19 @@ namespace VL.Devices.AzureKinect
             });
         }
 
+        public static IObservable<Byte[]> SelectColorImagesBytes(this IObservable<Capture> captures)
+        {
+            return captures.SelectMany(c =>
+            {
+                var image = c.Color;
+                if (image != null)
+                {
+                    return Observable.Return(image.Memory.ToArray());
+                }
+                return Observable.Empty<Byte[]>();
+            });
+        }
+
         /// <summary>
         /// Selects the depth images out of the captures.
         /// </summary>
