@@ -1,17 +1,14 @@
-[Summary("")]
+[Summary("Converts the RGB/XYZ values of a PointCloud image to positions in a vertex buffer")]
 shader TexelToVertex_ComputeFX : ComputeShaderBase, Texturing
 {
 	RWStructuredBuffer<float4> Values;
+    int2 dim = int2(640,576);
+    bool mirror = false;
 
     override void Compute()
     {
-        float2 dim = 1/Texture0TexelSize;
-        //float2 halfTexelSize = Texture0TexelSize*0.5;
-
-        float2 texCoord = float2(streams.DispatchThreadId.xy) / float2(dim.xy);
-        //float4 texel = Texture0.SampleLevel(Sampler0, texCoord + halfTexelSize,0);
         float4 texel = Texture0.Load(int3(streams.DispatchThreadId.x, streams.DispatchThreadId.y,0));
-        texel.xy *= -1;
+        texel.xy = mirror ?  float2(texel.x, -texel.y) : float2(-texel.x, -texel.y);
 
         uint vertexIndex = streams.DispatchThreadId.y * dim.x + streams.DispatchThreadId.x;
         Values[vertexIndex] = float4(texel.xyz, 1.0f);

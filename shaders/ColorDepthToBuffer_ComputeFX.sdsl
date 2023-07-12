@@ -1,0 +1,31 @@
+[Summary("Converts the depth values of a Depth and ColorToDepth image to positions in a vertex buffer")]
+shader ColorDepthToBuffer_ComputeFX : ComputeShaderBase, Texturing
+{
+	RWStructuredBuffer<float4> Values;
+    int2 dim = int2(640,576);
+
+    override void Compute()
+    {
+        float2 data = Texture0.Load(int3(streams.DispatchThreadId.x, streams.DispatchThreadId.y,0));
+        float depth = Texture1.Load(int3(streams.DispatchThreadId.x, streams.DispatchThreadId.y,0)).x * 65.535;
+        float4 col = Texture2.Load(int3(streams.DispatchThreadId.x, streams.DispatchThreadId.y,0));
+        
+        float colW = ColorToBits(col);
+
+        uint vertexIndex = streams.DispatchThreadId.y * dim.x + streams.DispatchThreadId.x;
+        Values[vertexIndex] = float4(data.xy*depth, -depth, colW);
+    }
+
+    float ColorToBits(float4 c)
+    {
+        uint u = uint(c.r * 255.0) |
+                (uint(c.g * 255.0) << 8) |
+                (uint(c.b * 255.0) << 16) |
+                (uint(c.a * 255.0) << 24);
+        
+        float f = asfloat(u);
+        return f;
+    }
+};
+
+
