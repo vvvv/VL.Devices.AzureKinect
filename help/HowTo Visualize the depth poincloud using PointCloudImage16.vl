@@ -15,12 +15,13 @@
       </p:NodeReference>
       <Patch Id="OlsV3HqqOJwLw0AGcIM2OQ">
         <Canvas Id="GRQhVqpSfytQYp6hN7N7dU" CanvasType="Group">
-          <Node Bounds="357,53,85,19" Id="Ts7H3A1LcGuLKiStjfsE10">
+          <Node Bounds="338,53,105,19" Id="Ts7H3A1LcGuLKiStjfsE10">
             <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AzureKinect" />
             </p:NodeReference>
             <Pin Id="L5R2CmnHCJVPXPrrYoBuGX" Name="Device Index" Kind="InputPin" />
+            <Pin Id="PsDCiUwDRdPMbRUOtcJItV" Name="Color Format" Kind="InputPin" />
             <Pin Id="ES4JphsliraORRHdBLqDv3" Name="Color Resolution" Kind="InputPin" />
             <Pin Id="UIsVUGvsy6jP0EgWVqkzSE" Name="Depth Mode" Kind="InputPin" />
             <Pin Id="DJaBOGfJyv9Otn6DbDaT9s" Name="FPS" Kind="InputPin" />
@@ -28,7 +29,7 @@
             <Pin Id="VZnzbMyr29nOMAc39uCsoz" Name="Output" Kind="StateOutputPin" />
             <Pin Id="J5zsbaiXQp1Lqi81s9kIwp" Name="Firmware Info" Kind="OutputPin" />
           </Node>
-          <Node Bounds="357,404,91,19" Id="PwQLjjzZG5WMrxGOFhmdF6">
+          <Node Bounds="338,404,91,19" Id="PwQLjjzZG5WMrxGOFhmdF6">
             <p:NodeReference LastCategoryFullName="Stride.Textures" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ImageToTexture" />
@@ -38,7 +39,7 @@
             <Pin Id="U0iwyax07r9MOg0jlJfILN" Name="Output" Kind="OutputPin" />
             <Pin Id="DRYc42ZnCbdNvuWcd5aaXk" Name="Changed" Kind="OutputPin" />
           </Node>
-          <Node Bounds="357,163,105,19" Id="EIZLMiFxBqPOxYpDYK0npQ">
+          <Node Bounds="338,163,105,19" Id="EIZLMiFxBqPOxYpDYK0npQ">
             <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloudImage16" />
@@ -96,7 +97,7 @@
             </Pin>
             <Pin Id="UnOgvqSSXHjOSow95l15Bq" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="EjtEdpIpBIBMmR4jwDbOFW" Comment="" Bounds="826,773,136,15" ShowValueBox="true" isIOBox="true" Value="0, 0.27999854, 1, 1">
+          <Pad Id="EjtEdpIpBIBMmR4jwDbOFW" Comment="" Bounds="826,803,136,15" ShowValueBox="true" isIOBox="true" Value="0, 0.27999854, 1, 1">
             <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
@@ -111,12 +112,12 @@
             <Pin Id="TtoZh3MwVDgMQ4AfzLkAIA" Name="Cull Mode" Kind="InputPin" />
             <Pin Id="JRrEvvZ8UedNTFX6LO0PI7" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IqF8fphdFq4PF32d0UwaKd" Comment="" Bounds="862,805,35,15" ShowValueBox="true" isIOBox="true" Value="0.55">
+          <Pad Id="IqF8fphdFq4PF32d0UwaKd" Comment="" Bounds="862,835,35,15" ShowValueBox="true" isIOBox="true" Value="0.55">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="383,445,105,19" Id="ILPAxSh57AMNE3UilauxMI">
+          <Node Bounds="388,446,105,19" Id="ILPAxSh57AMNE3UilauxMI">
             <p:NodeReference LastCategoryFullName="Stride.Textures.Utils" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Utils" NeedsToBeDirectParent="true">
@@ -132,7 +133,7 @@
             <Pin Id="KMowdAUUo42PChf7FkGLqv" Name="Resource Format" Kind="OutputPin" />
             <Pin Id="A1izn9Rv3VdMq06aEboNHg" Name="Exists" Kind="OutputPin" />
           </Node>
-          <Node Bounds="271,833,92,19" Id="Tg3cAZE9JgvOmRBJlHr5hM">
+          <Node Bounds="268,833,92,19" Id="Tg3cAZE9JgvOmRBJlHr5hM">
             <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.Rendering.Nodes">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="DirectDispatcher" />
@@ -140,7 +141,7 @@
             <Pin Id="LTmb1smhrtbMrfXuyr9ExD" Name="Thread Group Count" Kind="InputPin" />
             <Pin Id="CRuuTFkJWcUPD7nM8FBnMu" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="271,719,109,19" Id="KskNgwxHXfSK99iYlUraTd">
+          <Node Bounds="268,719,109,19" Id="KskNgwxHXfSK99iYlUraTd">
             <p:NodeReference LastCategoryFullName="Stride.Rendering.Utils" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="CalcDispatchArgs2D" />
@@ -150,12 +151,12 @@
             <Pin Id="TLd6OhlhnlUPwSziPu2Vuh" Name="Thread Group Count" Kind="OutputPin" />
             <Pin Id="RZl4RC7a3CRNcNwhkpjLZ9" Name="Thread Group Size" Kind="OutputPin" />
           </Node>
-          <Pad Id="NsUhqQJkmuWMoOzgxzwRyK" Comment="Element Size in Bytes" Bounds="428,752,35,15" ShowValueBox="true" isIOBox="true" Value="16">
+          <Pad Id="NsUhqQJkmuWMoOzgxzwRyK" Comment="Element Size in Bytes" Bounds="458,752,35,15" ShowValueBox="true" isIOBox="true" Value="16">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="272,1065,101,19" Id="L4QgIBlZwIvN4SjBKa5ykd">
+          <Node Bounds="268,1065,101,19" Id="L4QgIBlZwIvN4SjBKa5ykd">
             <p:NodeReference LastCategoryFullName="Stride.Utils" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RendererScheduler" />
@@ -168,7 +169,7 @@
             </Pin>
             <Pin Id="Flq8nZEW7l3M1s7R1zkzuA" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="269,572,97,19" Id="HrXINy5VicPPKKsQNTrXQj">
+          <Node Bounds="268,572,97,19" Id="HrXINy5VicPPKKsQNTrXQj">
             <p:NodeReference LastCategoryFullName="Stride.Rendering.Utils" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="QuantizeCount2D" />
@@ -177,7 +178,7 @@
             <Pin Id="Uxd6WrB3BgNL4H6cbSr5vf" Name="Count" Kind="InputPin" />
             <Pin Id="NTovj6Jno28QB7GUlIMCMH" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="402,774,125,19" Id="RZWhxbgrtz3L1TuOwp9xl3">
+          <Node Bounds="432,774,125,19" Id="RZWhxbgrtz3L1TuOwp9xl3">
             <p:NodeReference LastCategoryFullName="Stride.Buffers" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ComputeBuffer" />
@@ -191,7 +192,7 @@
             <Pin Id="CNmYqyRtLqAMxZ0XdjXWGs" Name="Output" Kind="OutputPin" />
             <Pin Id="Dc7VlJSGQzhOJoXXYRJJN7" Name="Has Changed" Kind="OutputPin" />
           </Node>
-          <Pad Id="T1kewJH1IObLCLh5A6RjFU" Comment="Allow Raw Views" Bounds="500,715,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="T1kewJH1IObLCLh5A6RjFU" Comment="Allow Raw Views" Bounds="530,715,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -199,7 +200,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VBV3zO3kPNZMyqCQWOQyii" Comment="Count" Bounds="404,546,35,28" ShowValueBox="true" isIOBox="true" Value="640, 576">
+          <Pad Id="VBV3zO3kPNZMyqCQWOQyii" Comment="Count" Bounds="410,546,35,28" ShowValueBox="true" isIOBox="true" Value="640, 576">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Int2" />
             </p:TypeAnnotation>
@@ -209,12 +210,12 @@
               <Choice Kind="TypeFlag" Name="Int2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TJnwO0f9zvTPdCM443Etf6" Comment="Element Count" Bounds="404,676,44,15" ShowValueBox="true" isIOBox="true" Value="64576">
+          <Pad Id="TJnwO0f9zvTPdCM443Etf6" Comment="Element Count" Bounds="434,676,44,15" ShowValueBox="true" isIOBox="true" Value="64576">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="402,606,34,19" Id="CiaU2Zq4QoROS7oAx7fyaR">
+          <Node Bounds="432,606,34,19" Id="CiaU2Zq4QoROS7oAx7fyaR">
             <p:NodeReference LastCategoryFullName="Primitive.Int2" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Int2 (Split)" />
@@ -223,7 +224,7 @@
             <Pin Id="P7ZZlXpWPFSPzCMbEdvrvn" Name="X" Kind="OutputPin" />
             <Pin Id="SPaZK4BNYRjNTzQHVBE2Ph" Name="Y" Kind="OutputPin" />
           </Node>
-          <Node Bounds="402,643,25,19" Id="VZ8trkuC5LoQAw2HnpRj8g">
+          <Node Bounds="432,640,25,19" Id="VZ8trkuC5LoQAw2HnpRj8g">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="*" />
@@ -241,7 +242,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="271,895,180,19" Id="Q9PSjTWpv2FMA15HAq7rGq">
+          <Node Bounds="268,895,180,19" Id="Q9PSjTWpv2FMA15HAq7rGq">
             <p:NodeReference LastCategoryFullName="Stride.Rendering.ComputeShaders" LastDependency="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="TexelToVertexShader" />
@@ -250,6 +251,7 @@
             <Pin Id="Tp4hGaVtOzNPPGJEzvv141" Name="Thread Group Size" Kind="InputPin" />
             <Pin Id="E7KZybvovJRMEYv581v6xJ" Name="Texture 0" Kind="InputPin" />
             <Pin Id="DxojWkbehzuMALKRr15yKQ" Name="Values" Kind="InputPin" />
+            <Pin Id="Ic33e6Oi7smLN3Gqff6IQD" Name="Dim" Kind="InputPin" />
             <Pin Id="AOaFpVUZeZwMcG0FgH4CdL" Name="Enabled" Kind="InputPin" />
             <Pin Id="LkDFxYgtP4pO8WaxveddhZ" Name="Output" Kind="OutputPin" />
           </Node>
@@ -327,7 +329,7 @@
             <Pin Id="AhgBMOOyVMCOZoSPqQpgoh" Name="Maximum" Kind="InputPin" />
             <Pin Id="VOEjHNn19L8PQaCiK0WXox" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="A1YTN17JvhHLzRBZmSQgbW" Bounds="475,92,391,133" ShowValueBox="true" isIOBox="true" Value="The PointCloudImage is an image containing XYZ coordinates stored in RGB values for each pixel and can be used to retrieve a pointcloud. In this example a compute shader is used below to convert the pixel values into vertex positions for a mesh.&#xD;&#xA;&#xD;&#xA;Note: Use PointCloudImage16 instead of PointCloudImage, as the latter truncates the precision of the positions.">
+          <Pad Id="A1YTN17JvhHLzRBZmSQgbW" Bounds="475,92,391,133" ShowValueBox="true" isIOBox="true" Value="The PointCloudImage is an image containing XYZ coordinates stored in the RGB values of its pixels and can be used to retrieve a pointcloud. In this example a compute shader is used below to convert the pixel RGB values into vertex positions for a mesh.&#xD;&#xA;&#xD;&#xA;Note: Use PointCloudImage16 instead of PointCloudImage, as the latter truncates the precision of the positions.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -336,7 +338,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UdkccrgCcyrNlHfFyL4WHp" Bounds="271,929,227,58" ShowValueBox="true" isIOBox="true" Value="compute shader to load pixel data and store them in a compute buffer to use as vertex positions">
+          <Pad Id="UdkccrgCcyrNlHfFyL4WHp" Bounds="270,929,227,58" ShowValueBox="true" isIOBox="true" Value="compute shader to load pixel data and store them in a compute buffer to use as vertex positions">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -345,7 +347,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="ANkpFAOFxtjPGdM1fHGSqT" Bounds="598,249,297,63" ShowValueBox="true" isIOBox="true" Value="see also: &quot;Visualize the depth pointcloud in Stride&quot; for an alternative method that uses Depth and Color images.">
+          <Pad Id="ANkpFAOFxtjPGdM1fHGSqT" Bounds="585,256,342,41" ShowValueBox="true" isIOBox="true" Value="see also: &quot;Visualize the depth pointcloud in Stride&quot; for an alternative method that uses Depth and Color images.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -365,9 +367,7 @@
         <Link Id="UJuKesvOvIUL55ZsLpAiyY" Ids="VZnzbMyr29nOMAc39uCsoz,RdbV23QIQt7NKu5Uc7NWq1" />
         <Link Id="HMW3pSqQYiNMpCoPN6RQh5" Ids="U0iwyax07r9MOg0jlJfILN,E7KZybvovJRMEYv581v6xJ" />
         <Link Id="PJ8m4IOjmDyMgB4aTv52Eh" Ids="FO735sITkGcQIV2Prw901y,DlzSA71g9zGPw9dAtwK6KP" />
-        <Link Id="OanE9WxG9pENsOdDVCeG5i" Ids="JRrEvvZ8UedNTFX6LO0PI7,VtR20ayCpszPZbnAE6I5Mv" />
         <Link Id="ICuzTBerr5fNW8wLIPdQO7" Ids="UnOgvqSSXHjOSow95l15Bq,K6L2rSWgdH8OxjuwvNXMtp" />
-        <Link Id="JTaCFZ94Vb1L4f337931tP" Ids="EjtEdpIpBIBMmR4jwDbOFW,D7fNj71DDExMCAzpHsMNMY" />
         <Link Id="RTdxwo9yeARLWoo24y0CrS" Ids="IqF8fphdFq4PF32d0UwaKd,QFmW2tEj7eRNc9XSHWwGrG" />
         <Link Id="Tc1p1BPWEu3OYZGo5OvUFi" Ids="U0iwyax07r9MOg0jlJfILN,Gk1Uotv68DZLDWZ2UAOzLJ" />
         <Link Id="VR5GFBFCzx6LQ8UlraaTBx" Ids="ClBUbPNgjMrPnIFC7fb0Cd,VBV3zO3kPNZMyqCQWOQyii" />
@@ -398,6 +398,9 @@
         <Link Id="OqD6RYbjEBaQEATTaAcy0u" Ids="LkDFxYgtP4pO8WaxveddhZ,LyFpANAbxzlLTIDWHSXYF3" />
         <Link Id="UXL0kh86cc9PQkPBpaQhQy" Ids="SFmBDJXqhjHMfa8M8yFgty,Tvd8qpfXr1pMsvnH7chVTd" />
         <Link Id="M8ug4iscwDuL8uGdDhuTEo" Ids="P6MBijzL9oxPCZAXfr1ouv,OLpXvpOGtwnNiy8AkPB0BR" />
+        <Link Id="GJaexQgafecNgqte4dkHMe" Ids="VBV3zO3kPNZMyqCQWOQyii,Ic33e6Oi7smLN3Gqff6IQD" />
+        <Link Id="MTy67mRJz0iObvQEmvfSSa" Ids="EjtEdpIpBIBMmR4jwDbOFW,D7fNj71DDExMCAzpHsMNMY" />
+        <Link Id="AZYtob8rF0VNcrqgAL8C4c" Ids="JRrEvvZ8UedNTFX6LO0PI7,VtR20ayCpszPZbnAE6I5Mv" />
       </Patch>
     </Node>
   </Patch>
