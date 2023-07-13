@@ -868,12 +868,12 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="ProcessAppFlag" Name="ManageProcess" />
               </p:NodeReference>
-              <Pin Id="DXLPangyeZuPu04rLXFdNh" Name="Enabled" Kind="InputPin" />
+              <Pin Id="DXLPangyeZuPu04rLXFdNh" Name="Enabled" Kind="InputPin" DefaultValue="False" />
               <Pin Id="RUwXP35Cis7MCIYHcFYYIm" Name="Lifespan" Kind="InputPin" DefaultValue="Short" />
               <Patch Id="EDY51bfT14xPGWSkjnrjBw" ManuallySortedPins="true">
                 <Patch Id="Esurlj5QbOMM7Y77m2DXtv" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="JmtCkHUOJuWPAbokMSBRaC" Name="Update" ManuallySortedPins="true" />
-                <Node Bounds="1041,207,1205,307" Id="JS7hR4ff4j7Ngt5GIhWLLE">
+                <Node Bounds="1041,202,1205,312" Id="JS7hR4ff4j7Ngt5GIhWLLE">
                   <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Try" />
@@ -881,7 +881,7 @@
                   <Patch Id="GoTdPPTx4iqQHSov5NB5rG" ManuallySortedPins="true">
                     <Patch Id="RVf51BN70cXNO6A0MWqDj3" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="QIaQtijILySNxoe07wYtCt" Name="Update" ManuallySortedPins="true" />
-                    <Node Bounds="1053,230,180,19" Id="RzLb29eCQknLKBira9TH2e">
+                    <Node Bounds="1053,225,180,19" Id="RzLb29eCQknLKBira9TH2e">
                       <p:NodeReference LastCategoryFullName="System.Resources" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="GetLatestResourceForTemporaryUse" />
@@ -1161,6 +1161,7 @@
                   <Pin Id="BGP2PFi6arFPYmyG8qmwEb" Name="Failure" Kind="OutputPin" />
                   <Pin Id="Si3eoBBj2bHNFx6MaM5Ulh" Name="Error Message" Kind="OutputPin" />
                   <Pin Id="FSGz2IO6ta1P2w4qPyuCt5" Name="Exceptions" Kind="OutputPin" />
+                  <ControlPoint Id="FWzOMUpSvpkNIVemGQmEAo" Bounds="1055,208" Alignment="Top" />
                 </Node>
               </Patch>
             </Node>
@@ -1169,8 +1170,8 @@
                 <Choice Kind="TypeFlag" Name="ProcessLifespan" />
               </p:TypeAnnotation>
             </Pad>
-            <ControlPoint Id="ACGnNuoRUpOPHwYPjs2POv" Bounds="981,163" />
-            <ControlPoint Id="Ink0WfEpCCpLcoj9PCIJfq" Bounds="992,919" />
+            <ControlPoint Id="QAiWogDMusbPh96McyC9cB" Bounds="929,171" />
+            <ControlPoint Id="V0HDGmY9GJlLD0OePnE8HY" Bounds="994,919" />
           </Canvas>
           <ProcessDefinition Id="GMk3JKetzWsMwPDZeR7aWs" HasStateOut="true">
             <Fragment Id="NEsjZi744IFOXyyN4mWgDJ" Patch="TB8WkLMS34EMsZ3wFgmFlr" Enabled="true" />
@@ -1357,7 +1358,6 @@
           <Link Id="SmkTqN1PV4yNl0trvJNLzK" Ids="UyY5XszqmpjP6GHvouiYIs,M7crjTYJW9KN4DYAq3Odfe" />
           <Link Id="QQDvKsdttfsNOxWNvbffn2" Ids="RKDU5CWf8xYPB1EUPSv2Fc,IZGIXgy5LtjOOyOfO7LIV2" />
           <Link Id="CXxF7cv1HhkM9xotQgVXBR" Ids="GTBmKn7kMH0NabMTirJIqJ,VzoNnEUF4OsPSUTaF8bu0m" />
-          <Link Id="DISF1zXI1s2PratsRdHiXa" Ids="GTBmKn7kMH0NabMTirJIqJ,Ink0WfEpCCpLcoj9PCIJfq,ACGnNuoRUpOPHwYPjs2POv,DXLPangyeZuPu04rLXFdNh" />
           <Link Id="LJcUQ1nkPWDNqnY5ngkWPy" Ids="Im9cBuOLyzlNHkPdBQMc4R,RUwXP35Cis7MCIYHcFYYIm" />
           <Link Id="ENIevsi8Te9Mqp3RGCynQJ" Ids="TJu0u4u7QnLNKvoj4H430q,QVF6Az2gM2KMRnKCeOMkzY" />
           <Link Id="V182mKIb8BvPCpWt0y1Dej" Ids="JKeHhRB9LmfQMT3zaIonSW,Ld0UAzGHSmDPjeJILAsRk3" />
@@ -1391,9 +1391,11 @@
           <Link Id="CiUBJDGHC0YQMOU1HwBOfO" Ids="B3hP1q30NwdMFEFcA7Men0,LQFnikJhdHdL2VM9GX5HdY" />
           <Link Id="TLvwIhWCfbOLQz0mx1bS35" Ids="MscU2rrfNRZMpbJC46dmiT,Oy7OnVwDNQsPd6sNpgE15v" />
           <Link Id="CFAnss5ojvKQFvQWvfK2tP" Ids="KqgZwWnJoLSNsNOM9XzWV8,QLeeIzEUvusPwMsFRiuwtG" />
-          <Link Id="ORnprZrKZJ3Ovxf2fKZmNT" Ids="ArmLCuFft9wM8ZF47yvEji,NY9a2VV9TbtNSR8JMUEc06" />
           <Link Id="NzAeZ1p31IGModOAlg3yEG" Ids="Ptg7Y2dPU5SNvKSf4FHYBr,NgzelrNUXw0NgPENJKGKjE" />
           <Link Id="PZspKuPArBtPIgARtQmRMr" Ids="Ptg7Y2dPU5SNvKSf4FHYBr,Ma0VAoGtXajMb8RhhPrwbu" />
+          <Link Id="UGIeKIMD5VsOr8pa5AAv6b" Ids="FWzOMUpSvpkNIVemGQmEAo,NY9a2VV9TbtNSR8JMUEc06" />
+          <Link Id="OIiq45gs2tKMS4BwANfSgc" Ids="ArmLCuFft9wM8ZF47yvEji,FWzOMUpSvpkNIVemGQmEAo" />
+          <Link Id="LY0McR5hb3oMMKmFHt5Nfs" Ids="GTBmKn7kMH0NabMTirJIqJ,V0HDGmY9GJlLD0OePnE8HY,QAiWogDMusbPh96McyC9cB,DXLPangyeZuPu04rLXFdNh" />
         </Patch>
       </Node>
       <!--
@@ -9887,13 +9889,10 @@
     </Node>
   </Patch>
   <NugetDependency Id="MsqCX6Ttc4CLXiQVDI6QhQ" Location="VL.Skia" Version="2023.5.2" />
-  <PlatformDependency Id="JvKnBkMg9y5QJxBrHlbiSn" Location="VL.Devices.AzureKinect.dll" />
   <NugetDependency Id="KZAfO3faLstMCFyjB36g9Y" Location="System.Numerics.Vectors" Version="4.5.0" />
   <NugetDependency Id="BjHHosGh8QaNOegumIQQIC" Location="VL.Skia3d" Version="1.1.2" />
   <NugetDependency Id="VJjJ4uUjfMCMWx9Df4PSWA" Location="VL.Stride.Runtime" Version="2023.5.2" />
   <PlatformDependency Id="QFgM5jDAhfxPsQ0SrkSAPc" Location="./dependencies/Microsoft.Azure.Kinect.Sensor/Microsoft.Azure.Kinect.Sensor.dll" />
   <PlatformDependency Id="GML7Urt30mJOajUQRUztY1" Location="./dependencies/Microsoft.Azure.Kinect.Sensor.Record/Microsoft.Azure.Kinect.Sensor.Record.dll" />
-  <PlatformDependency Id="FCaqFNam6iMNbUPOVT0Wyw" Location="VL.Devices.AzureKinect.dll" />
   <PlatformDependency Id="OozQO0nwpsEPSbgKcGPLwJ" Location="VL.Devices.AzureKinect.dll" />
-  <PlatformDependency Id="Ezrl0Jmr5MTLcGaiJQQU5a" Location="VL.Devices.AzureKinect.dll" />
 </Document>
