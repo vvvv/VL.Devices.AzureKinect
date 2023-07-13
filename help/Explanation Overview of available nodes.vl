@@ -331,7 +331,7 @@
               <Choice Kind="TypeFlag" Name="ColorControlMode" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QAKOyrgzx9vQBe4BXlLDtS" Comment="Gain" Bounds="695,310,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="QAKOyrgzx9vQBe4BXlLDtS" Comment="Gain" Bounds="695,310,35,15" ShowValueBox="true" isIOBox="true" Value="20">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -383,6 +383,15 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Sq45h5sIbHROVkDTMOGcvT" Comment="Enabled" Bounds="412,309,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="PVbVbOGAsC1OMyqjNp9dbd" Name="Create" />
         <Patch Id="H2XlLgF6scLOXsDx75hd3r" Name="Update" />
@@ -408,6 +417,7 @@
         <Link Id="DZ1l1gc3LaAPZ5EOiNQre2" Ids="C0unQBRfWOZM97HJ58HDMT,CggFQdAr0YePL2z3rHQjw4" />
         <Link Id="MRLPL7G5PrpQbDV0AXcdxK" Ids="Kb9EfaVGtIFOzr4FOBFdKE,HMBN8cJG5ERL9CN2SIdVUQ" />
         <Link Id="KDsmVI4TZb2LerfP1mffsL" Ids="MZuC53TE2tSLjHOPjWW31d,CSlYmkV2iVGOhRMMw98mZK" />
+        <Link Id="DFW7Mm7BiFbPeaDLj3Ie3i" Ids="Sq45h5sIbHROVkDTMOGcvT,AkT3LYA2RWfOunlSb6Xosa" />
       </Patch>
     </Node>
   </Patch>
