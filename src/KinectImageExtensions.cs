@@ -56,6 +56,19 @@ namespace VL.Devices.AzureKinect
             });
         }
 
+        public static IObservable<Byte[]> SelectColorImagesBytes(this IObservable<Capture> captures)
+        {
+            return captures.SelectMany(c =>
+            {
+                var image = c.Color;
+                if (image != null)
+                {
+                    return Observable.Return(image.Memory.ToArray());
+                }
+                return Observable.Empty<Byte[]>();
+            });
+        }
+
         /// <summary>
         /// Selects the depth images out of the captures.
         /// </summary>
@@ -89,6 +102,140 @@ namespace VL.Devices.AzureKinect
                     return Observable.Return(image.AsVLImage());
                 }
                 return Observable.Empty<IImage>();
+            });
+        }
+
+        /// <summary>
+        /// Selects the color and depth images out of the captures to transform an image from the color camera perspective to the depth camera perspective
+        /// </summary>
+        /// <param name="captures">The captures to select the depth images from.</param>
+        /// <returns>The ColorDepth Image of the captures.</returns>
+        public static IObservable<IImage> SelectColorDepthImages(this IObservable<Capture> captures, Transformation transformation)
+        {
+            return captures.SelectMany(c =>
+            {
+                var depth = c.Depth;
+                var color = c.Color;
+                if (depth == null || color == null || transformation == null)
+                    return Observable.Empty<IImage>();
+                else
+                {
+                    var image = transformation.ColorImageToDepthCamera(c);
+                    return Observable.Return(image.AsVLImage());
+                }
+            });
+        }
+
+        /// <summary>
+        /// Selects the color and depth images out of the captures to transform an image from the depth camera perspective to the color camera perspective
+        /// </summary>
+        /// <param name="captures">The captures to select the depth images from.</param>
+        /// <returns>The DepthColor Image of the captures.</returns>
+        public static IObservable<IImage> SelectDepthColorImages(this IObservable<Capture> captures, Transformation transformation)
+        {
+            return captures.SelectMany(c =>
+            {
+                var depth = c.Depth;
+                var color = c.Color;
+                if (depth == null || color == null || transformation == null)
+                    return Observable.Empty<IImage>();
+                else
+                {
+                    var image = transformation.DepthImageToColorCamera(c);
+                    return Observable.Return(image.AsVLImage());
+                }
+            });
+        }
+
+        /// <summary>
+        /// Creates a point cloud image from the depth image. Each pixel will be an XYZ set of 8 bit values.
+        /// </summary>
+        /// <param name="captures">The captures to select the depth images from.</param>
+        /// <param name="transformation">Calibrated Transformation of Azure Kinect images.</param>
+        /// <param name="scaling">scaling factor for the coordinates.</param>
+        /// <returns>The PointCloud Image of the depth capture converted to 8 Bit BGRA</returns>
+        public static IObservable<IImage> SelectPointCloudImage(this IObservable<Capture> captures, Transformation transformation, float scaling)
+        {
+            return captures.SelectMany(c =>
+            {
+                var depth = c.Depth;
+                if (depth == null || transformation == null)
+                    return Observable.Empty<IImage>();
+                else
+                {
+                    var image = transformation.DepthImageToPointCloud(depth, CalibrationDeviceType.Depth);
+                    return Observable.Return(image.PointCloudImageToBGRAImage(scaling));
+                }
+            });
+        }
+
+        /// <summary>
+        /// Creates a point cloud image from the depth image. Each pixel will be an XYZ set of 16 bit values. 
+        /// </summary>
+        /// <param name="captures">The captures to select the depth images from.</param>
+        /// <param name="transformation">Calibrated Transformation of Azure Kinect images.</param>
+        /// <param name="scaling">scaling factor for the coordinates.</param>
+        /// <returns>The PointCloud Image of the depth capture in 16 Bit floating point RGBA</returns>
+        public static IObservable<IImage> SelectPointCloudImage16(this IObservable<Capture> captures, Transformation transformation, float scaling)
+        {
+            return captures.SelectMany(c =>
+            {
+                var depth = c.Depth;
+                if (depth == null || transformation == null)
+                    return Observable.Empty<IImage>();
+                else
+                {
+                    var image = transformation.DepthImageToPointCloud(depth, CalibrationDeviceType.Depth);
+                    return Observable.Return(image.PointCloudImageToRGBA16FImage(scaling));
+                }
+            });
+        }
+
+        struct BGRA
+        {
+            public byte b;
+            public byte g;
+            public byte r;
+            public byte a;
+        }
+
+        public static IObservable<IImage> ColorToDepthPackR5G6B5A16(this IObservable<Capture> captures, Transformation transformation)
+        {
+            return captures.SelectMany(c =>
+            {
+                var depth = c.Depth;
+                var color = c.Color;
+                if (depth == null || color == null || transformation == null)
+                    return Observable.Empty<IImage>();
+                else
+                {
+                    var image = transformation.ColorImageToDepthCamera(c);
+                    var rgb = image.GetPixels<BGRA>();
+                    var dImage = depth.GetPixels<ushort>();
+
+                    var pixels = new uint[rgb.Length]; 
+                    
+                    var i = 0;
+                    byte r;
+                    byte g;
+                    byte b;
+
+                    foreach (var pixel in rgb.Span)
+                    {
+                        r = (byte)(pixel.r >> 3);
+                        g = (byte)(pixel.g >> 2);
+                        b = (byte)(pixel.b >> 3);
+                        pixels[i++] = (uint)((b << 11) | (g << 5) | r);
+                    }
+                    i = 0;
+                    foreach (var dpixel in dImage.Span)
+                    {
+                        pixels[i] = (uint)(pixels[i] | (dpixel << 16));
+                        i++;
+                    }
+                    return Observable.Return(pixels.ToImage(image.WidthPixels, image.HeightPixels, PixelFormat.R8G8B8A8));
+                }
+            
             });
         }
 
@@ -188,19 +335,34 @@ namespace VL.Devices.AzureKinect
             return result.ToSpread();
         }
 
-        public static IImage PointCloudeImageToBGRAImage(this Image image, float scaling = 1f)
+        public static IImage PointCloudImageToBGRAImage(this Image image, float scaling = 1f)
         {
             if (image.Format != ImageFormat.Custom)
                 throw new UnsupportedImageFormatException(image.Format);
 
             var data = image.GetPixels<XYZ>();
-            var pixels = new ColorBGRA[data.Length];
+            var pixels = new ColorBGRA[data.Length]; // 16 to 8 Bit truncation happening here: https://microsoft.github.io/Azure-Kinect-Sensor-SDK/release/1.4.x/class_microsoft_1_1_azure_1_1_kinect_1_1_sensor_1_1_transformation_a8dc3bd0e8dec8d61d50ea5fa0086a8dc.html#a8dc3bd0e8dec8d61d50ea5fa0086a8dc
             var i = 0;
             foreach (var pixel in data.Span)
             {
                 pixels[i++] = new ColorBGRA(pixel.x * scaling, pixel.y * scaling, pixel.z * scaling, 1);
             }
-            return pixels.ToImage(image.WidthPixels, image.HeightPixels, PixelFormat.B8G8R8A8);
+            return pixels.ToImage(image.WidthPixels, image.HeightPixels, PixelFormat.B8G8R8A8); 
+        }
+
+        public static IImage PointCloudImageToRGBA16FImage(this Image image, float scaling = 1f)
+        {
+            if (image.Format != ImageFormat.Custom)
+                throw new UnsupportedImageFormatException(image.Format);
+
+            var data = image.GetPixels<XYZ>();
+            var pixels = new Half4[data.Length];
+            var i = 0;
+            foreach (var pixel in data.Span)
+            {
+                pixels[i++] = new Half4(pixel.x * scaling, pixel.y * scaling, pixel.z * scaling, 1);
+            }
+            return pixels.ToImage(image.WidthPixels, image.HeightPixels, PixelFormat.R16G16B16A16F); // there is no BGRA16
         }
 
         public static PixelFormat ToPixelFormat(this ImageFormat format)

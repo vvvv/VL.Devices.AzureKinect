@@ -12,10 +12,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.Kinect.Sensor" Version="1.4.1">
-      <!-- We reference a modified version with the Playback API (https://github.com/microsoft/Azure-Kinect-Sensor-SDK/pull/1711) -->
-      <ExcludeAssets>compile;runtime</ExcludeAssets>
-    </PackageReference>
     <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
     <PackageReference Include="VL.Core" Version="2021.4.10" />
   </ItemGroup>
