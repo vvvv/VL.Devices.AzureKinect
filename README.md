@@ -1,5 +1,5 @@
 # VL.Devices.AzureKinect
-A package for using Microsoft's Azure Kinect in VL.
+A package for using Azure Kinect depth cameras by Microsoft in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
