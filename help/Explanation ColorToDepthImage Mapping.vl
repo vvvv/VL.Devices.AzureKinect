@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="I0Sy0BKPPpVPnuxKM7tEnM" LanguageVersion="2023.5.2" Version="0.128">
-  <NugetDependency Id="Ro9DjLWjIIUO5myCibwAmo" Location="VL.CoreLib" Version="2023.5.2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="I0Sy0BKPPpVPnuxKM7tEnM" LanguageVersion="2025.7.0-0389-g5972a096a9" Version="0.128">
+  <NugetDependency Id="Ro9DjLWjIIUO5myCibwAmo" Location="VL.CoreLib" Version="2025.7.0-0389-g5972a096a9" />
   <Patch Id="HdO0T4KIHhQPqg2wHQASoe">
     <Canvas Id="EeAcoVw3fZPMAC03Hd8Xxn" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -20,11 +20,27 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AzureKinect" />
             </p:NodeReference>
+            <Pin Id="LL6oQSrIA6JMhgvHF3viod" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="AAvFTtiHkNMNfu5nZEHQnU" Name="Device Index" Kind="InputPin" />
             <Pin Id="Ot5rY3Il5SNQL7sLqxDPIl" Name="Color Format" Kind="InputPin" />
             <Pin Id="Nogh1Z9e1H6O9CvUczJxGE" Name="Color Resolution" Kind="InputPin" />
             <Pin Id="TvvmPvE3KoNMJf0jKe0PGn" Name="Depth Mode" Kind="InputPin" />
             <Pin Id="CyVve2kiQnfLpXqTh6ltkV" Name="FPS" Kind="InputPin" />
+            <Pin Id="A2cP7kM0b1jPNmY3cb91lE" Name="Synchronized Images Only" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IjVMtrnCp7YNgfU79fHoOx" Name="Depth Delay" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Cb1t9KefKfxOKmIyG9IUXx" Name="Sync Mode" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Oi6I1MOpUfeMyHLaM21tfd" Name="Delay Off Master" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JHmWFmED8C1LOV2PUNYEoc" Name="Exposure Time Mode" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MqnUWKrg3zfO0BPx3zSGRr" Name="Exposure Time" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HicAdjdwRPrMxkqKjGSvOd" Name="Brightness" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GjVxEnjVfXLMgAAGvRE2A5" Name="Contrast" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SCZpiWgR4wXM4wk2lw7dfs" Name="Saturation" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PPeFlGz6frFNUlTtrINZ2x" Name="Sharpness" Kind="InputPin" IsHidden="true" />
+            <Pin Id="G9gM1iKSmO8OIEXmh7JSTa" Name="Backlight Compensation" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PHv3zVbSuTxPYPEoWnWLAY" Name="Gain" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Jmy7OOK01A3MzoPx4V3AKi" Name="Powerline Frequency" Kind="InputPin" IsHidden="true" />
+            <Pin Id="A1EwJye572rQc0FIieh0id" Name="Whitebalance Mode" Kind="InputPin" IsHidden="true" />
+            <Pin Id="E99dptKeEm0LumdUPJNom5" Name="Whitebalance" Kind="InputPin" IsHidden="true" />
             <Pin Id="BHBcp55KkFkPvsBlTaReU6" Name="Enabled" Kind="InputPin" />
             <Pin Id="GiWR6VgQl9MO07CesJdJn5" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Ax2xRBpmDFEPC2AWsP63x2" Name="Firmware Info" Kind="OutputPin" />
@@ -35,6 +51,7 @@
               <Choice Kind="ProcessAppFlag" Name="ColorToDepthImage" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="BkRafhhuoOFMPhdCLaaD90" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FW1O2cQvphbO7gVrWfaxnk" Name="Device" Kind="InputPin" />
             <Pin Id="BWDJ7hQje0rN7nMiAhBzE4" Name="Output" Kind="OutputPin" />
           </Node>
@@ -62,10 +79,11 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ColorToDepthImage (Reactive)" />
             </p:NodeReference>
+            <Pin Id="GbN40LeWkUXNXcaXNsNDYs" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="ScJUfuyw6scPBeFpCG7uQZ" Name="Device" Kind="InputPin" />
             <Pin Id="KFF2E8CMZGyPKEtHJva3Jz" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="BX7ZME37UBfNdqkGvsUFHe" Bounds="581,245,297,19" ShowValueBox="true" isIOBox="true" Value="see also: Visualize the depth pointcloud in Stride">
+          <Pad Id="BX7ZME37UBfNdqkGvsUFHe" Bounds="581,245,318,19" ShowValueBox="true" isIOBox="true" Value="see also: Visualize the depth pointcloud with Stride">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -80,6 +98,7 @@
               <Choice Kind="ProcessAppFlag" Name="DepthToColorImage" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="BaHr52ZWA3aNLLWYMMOZKS" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UgghLtLjA6GP6ROivn6nc7" Name="Device" Kind="InputPin" />
             <Pin Id="UvDBle8POoWO2eNhyV6ZFW" Name="Output" Kind="OutputPin" />
           </Node>
@@ -89,6 +108,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthToColorImage (Reactive)" />
             </p:NodeReference>
+            <Pin Id="T7cf7eyRJ6HPEr9kv80kGu" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="RtacXvw45FTNdDWgOPcwbF" Name="Device" Kind="InputPin" />
             <Pin Id="SdLJhu22H3oOo8cwm5jypP" Name="Output" Kind="OutputPin" />
           </Node>

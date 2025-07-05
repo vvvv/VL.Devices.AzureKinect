@@ -1,5 +1,8 @@
 # VL.Devices.AzureKinect
-A package for using Azure Kinect depth cameras by Microsoft in VL.
+A package for using Azure Kinect depth cameras by Microsoft in VL.  
+Based on the [Azure Kinect Sensor SDK 1.4.2](https://github.com/microsoft/Azure-Kinect-Sensor-SDK).
+
+For Skeleton/Body tracking see extra package: [VL.Devices.AzureKinect.Body](https://www.nuget.org/packages/VL.Devices.AzureKinect.Body)
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
