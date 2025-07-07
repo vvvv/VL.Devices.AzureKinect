@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="MbjWXhjC9jcMf2qlPAmD7M" LanguageVersion="2021.4.10.1043" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2021.4.10" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MbjWXhjC9jcMf2qlPAmD7M" LanguageVersion="2025.7.0-0389-g5972a096a9" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2025.7.0-0389-g5972a096a9" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -16,53 +16,65 @@
       <Patch Id="PFfDaLRccY9PbWwk3Oc9Yz">
         <Canvas Id="NrbeJxw6AQVLIXfi6tseMO" CanvasType="Group">
           <Node Bounds="158,481,69,19" Id="BXZj28suNmNNzNSQj1yoZw">
-            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
+            <Pin Id="T3ziHyemA6OLD6mQ4SSb6C" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="PYgw79V4QSCMbhjKWDwGsW" Name="Device" Kind="InputPin" />
             <Pin Id="Grydrv0UWUcLjj5yHyfjQy" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="233,481,71,19" Id="HN51jgRV1wyOe5jVU1tPIr">
-            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
+            <Pin Id="VEIzn4o7tPEQI7HKAPIwXv" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UyI3iqyZyF5QDEcUOO8WdF" Name="Device" Kind="InputPin" />
             <Pin Id="ETUvRYMKDZAPJde9zt798P" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="310,481,80,19" Id="ISl7mmwl0ihOyph7qXaAvK">
-            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Devices" />
               <CategoryReference Kind="Category" Name="AzureKinect" />
               <Choice Kind="ProcessAppFlag" Name="InfraredImage" />
             </p:NodeReference>
+            <Pin Id="CjlEyPHxpZHLos7rvRLwFo" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="VBy2zl75tjYPlPMVOMjtkE" Name="Device" Kind="InputPin" />
             <Pin Id="TCmNu6cyhsmOS4h4n2MCGT" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="138,665,145,19" Id="USn2NgqsYvCLfnTN9YYbXg">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="138,665,165,19" Id="USn2NgqsYvCLfnTN9YYbXg">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="DinKkDVhXISOQDusVabT3O" Name="Bounds" Kind="InputPin" DefaultValue="1181, 62, 612, 433" />
+            <Pin Id="DinKkDVhXISOQDusVabT3O" Name="Bounds" Kind="InputPin" DefaultValue="2043, 50, 919, 694" />
+            <Pin Id="FI2v8dqGhvYQM4VjsZegPQ" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TzSooB6eutVQUaNmEUAyme" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Q1Z0NZE19KtOTV8zQEcKQf" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Hk9tJxjR5ZJMV3GDo6QO9o" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="P7E8HOHJvFwNmBK9vriJog" Name="Input" Kind="InputPin" />
+            <Pin Id="A9XNAPbIT1YMRlOqVHx0Yy" Name="Title" Kind="InputPin" />
             <Pin Id="DgFHAvXiLRCOnPtoNb6pg0" Name="Color" Kind="InputPin" />
             <Pin Id="PGpnxLMZZ39M3juQf2jHCS" Name="Clear" Kind="InputPin" />
             <Pin Id="AqsUj5UxOXlMsqu50Z7l7L" Name="Space" Kind="InputPin" />
             <Pin Id="LD1w8WPFO51LNUwhCrMemT" Name="Show Cursor" Kind="InputPin" />
             <Pin Id="NsmhSFWVtWgQR1zztQp1SS" Name="VSync" Kind="InputPin" />
+            <Pin Id="G2Ip8ufS0NzQY5fmc5GhmN" Name="Commands" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GCOHQCjWzXrPjBuSCpdxLp" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
             <Pin Id="QB2jEEerrQtORPxtq8Mods" Name="Enabled" Kind="InputPin" />
+            <Pin Id="NJm3Hdz0CMoP5GlghVPhNP" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
             <Pin Id="DHyhlsR7BgEP0atPTtrqZq" Name="Form" Kind="OutputPin" />
             <Pin Id="A9XFh65FswKMqu4AtuJkym" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="M9Elpbu61hMMDnrLn01p4c" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="158,604,125,19" Id="BY0eJiXXrHzNrFxDkojlsL">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawImage" />
             </p:NodeReference>
+            <Pin Id="CcNKuxUOdbcPvJC9EEe1sC" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UREZ2ARW2pnQPoeqPuVG9K" Name="Image" Kind="InputPin" />
             <Pin Id="Dd9WBrFlYw7QTtFaUx79Pq" Name="Position" Kind="InputPin" />
             <Pin Id="RQTTPGQ5gpjLKDHFpxmAQZ" Name="Size" Kind="InputPin" DefaultValue="2, 2" />
@@ -74,7 +86,7 @@
             <Pin Id="ROZc4tUeViCOZvFFTDPDjR" Name="Actual Bounds" Kind="OutputPin" />
           </Node>
           <Node Bounds="158,549,67,26" Id="SyCrrXRRsjyLcRgV4ZRaVa">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromImage" />
               <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true" />
@@ -84,7 +96,7 @@
             <Pin Id="T5VH5XlAWsRLvkDAgg06Gl" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="LzP7piuV9ClNy80JMyHBcl" Comment="Seek" Bounds="240,250,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -93,13 +105,13 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Q4YF8HwCphSNZSZA0zTD0b" Comment="Filename" Bounds="160,112,88,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\..\..\..\temp\foo-noimu.mkv">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Qs3KFJ6venVL7Dvd0ow3gj" Comment="" Bounds="312,538,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="LsbflrYXqOQON60BNdiff0" Comment="Play" Bounds="180,139,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -108,7 +120,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="R0p71yzlLGgPnVsrDlKD7U" Comment="Loop" Bounds="419,306,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -118,28 +130,28 @@
           </Pad>
           <Pad Id="HqKGcNE9oo8M1aZfAFQiP4" Comment="Duration" Bounds="230,412,41,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="J1ySFkjQFTlNau0faE2fVp" Comment="Rate" Bounds="200,179,35,15" ShowValueBox="true" isIOBox="true" Value="1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="IL3fRzWOYr0OXTZWGPHLkb" Comment="Seek Time" Bounds="220,226,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Lm84GBgX3HXOXUrA4qvMhq" Comment="Loop Start Time" Bounds="260,305,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="C6B9S3w9cnyP8SGqbeaHK8" Comment="Loop End Time" Bounds="280,328,47,15" ShowValueBox="true" isIOBox="true" Value="9999">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="LUdL8l6dbyiQZTvaVgdT8X" Comment="Current Time" Bounds="341,412,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="BK4cQzmQWi2PYeB0Ae9Xwz" Bounds="575,123,260,19" ShowValueBox="true" isIOBox="true" Value="For the recorder, download the latest SDK:">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -148,7 +160,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="JJv6NEF7J5kPN50pYJ1hkH" Bounds="575,142,247,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -157,7 +169,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="TFQuFl3h9FaPbGgfx4s21K" Bounds="575,178,174,19" ShowValueBox="true" isIOBox="true" Value="Then find instructions here:">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -166,7 +178,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="EaW64kCo1x6N2KoAHzOvNn" Bounds="575,198,324,19" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/azure/kinect-dk/azure-kinect-recorder">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -175,11 +187,13 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="158,371,145,19" Id="PRn38I3RPwLP8EE8IRsMfi">
-            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastSymbolSource="VL.Devices.AzureKinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AzureKinectPlayer" />
               <CategoryReference Kind="Category" Name="AzureKinect" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="NIhEDntJ5D9MgyggEt4QtH" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FoPp5M9HFqtP3ygwvvm8nN" Name="Filename" Kind="InputPin" />
             <Pin Id="E0yPB4FfzSAPXfTUQwQ7EK" Name="Play" Kind="InputPin" />
             <Pin Id="EvedDHdcmaQPvUT240JB0M" Name="Rate" Kind="InputPin" />
@@ -191,6 +205,9 @@
             <Pin Id="Lin6Ztu8r1nO1wbciMDx5T" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Snaur3ijfkyOl1zyFUmqpo" Name="Duration" Kind="OutputPin" />
             <Pin Id="EbzViuNnc1rPos6g239IoY" Name="Current Time" Kind="OutputPin" />
+            <Pin Id="OGCqfa7GCeBLA4a0NVaVBu" Name="Sync To External Time" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JuxJkRSodjVMZWRM4rkf7i" Name="External Time" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RtEixkBBQVjMA5kJShw36t" Name="Sync To Time Timestamp Threshold" Kind="InputPin" IsHidden="true" />
           </Node>
         </Canvas>
         <Patch Id="PVbVbOGAsC1OMyqjNp9dbd" Name="Create" />
@@ -219,6 +236,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2025.7.0-0389-g5972a096a9" />
   <NugetDependency Id="RZzgwQ5hDLQQVOrRCGYkHo" Location="VL.Devices.AzureKinect" Version="1.3.4" />
 </Document>
