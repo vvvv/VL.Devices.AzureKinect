@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect.Femto</id>
-    <version>0.0.1-alpha</version>
+    <version>0.0.2-alpha</version>
     <title>VL.Devices.AzureKinect.Femto</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
@@ -23,7 +23,7 @@
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.dll" target="lib\netstandard2.0\" exclude="" />
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.Record.dll" target="lib\netstandard2.0\" exclude="" />
 	<file src="..\runtimes-femto\**" target="runtimes\" exclude="" />
-    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\VL.Devices.AzureKinect.vl" target="VL.Devices.AzureKinect.Femto.vl" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
     <file src="nugeticon.png" target="icon\" />
