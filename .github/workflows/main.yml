@@ -22,21 +22,21 @@ jobs:
 
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v2.0.0
-      
-    - name: Publish AzureKinect Nuget
-      uses: vvvv/PublishVLNuget@1.0.43
-      with:
-        csproj: src\VL.Devices.AzureKinect.csproj
-        nuspec: deployment\VL.Devices.AzureKinect.nuspec
-        icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
-        icon-dst: ./deployment/nugeticon.png
-        nuget-key: ${{ secrets.VVVV_ORG_NUGET_KEY }}
-        
+
     - name: Publish OrbbecFemto Nuget
       uses: vvvv/PublishVLNuget@1.0.43
       with:
         csproj: src\VL.Devices.AzureKinect.csproj
         nuspec: deployment\VL.Devices.AzureKinect.Femto.nuspec
+        icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
+        icon-dst: ./deployment/nugeticon.png
+        nuget-key: ${{ secrets.VVVV_ORG_NUGET_KEY }}
+        
+    - name: Publish AzureKinect Nuget
+      uses: vvvv/PublishVLNuget@1.0.43
+      with:
+        csproj: src\VL.Devices.AzureKinect.csproj
+        nuspec: deployment\VL.Devices.AzureKinect.nuspec
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./deployment/nugeticon.png
         nuget-key: ${{ secrets.VVVV_ORG_NUGET_KEY }}
