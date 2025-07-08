@@ -12,7 +12,7 @@
     <tags>VL, camera, video, depth, pointcloud, orbbec, bolt, mega, tracking, body, skeleton, joints</tags>
     <license type="expression">LGPL-3.0-only</license>
     <dependencies>
-      <dependency id="SixLabors.ImageSharp" version="2.1.8" />
+      <dependency id="SixLabors.ImageSharp" version="2.1.10" />
       <dependency id="VL.Skia3d" version="1.1.2" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
@@ -23,8 +23,15 @@
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.dll" target="lib\netstandard2.0\" exclude="" />
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.Record.dll" target="lib\netstandard2.0\" exclude="" />
 	<file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.BodyTracking.dll" target="lib\netstandard2.0\" exclude="" />
-	<file src="..\runtimes\**" target="runtimes\" exclude="" />  <!-- copy bodytracking dlls which are shared -->
-	<file src="..\runtimes-femto\**" target="runtimes\" exclude="" />  <!-- overwrite core dlls which are device specific -->
+	<!-- copy bodytracking dlls which are shared -->
+	<file src="..\runtimes\win-x64\native\directml.dll" target="runtimes\" exclude="" />  
+	<file src="..\runtimes\win-x64\native\k4abt.dll" target="runtimes\" exclude="" />  
+	<file src="..\runtimes\win-x64\native\onnxruntime.dll" target="runtimes\" exclude="" /> 
+	<file src="..\runtimes\win-x64\native\onnxruntime_providers_cuda.dll" target="runtimes\" exclude="" />  
+	<file src="..\runtimes\win-x64\native\onnxruntime_providers_shared.dll" target="runtimes\" exclude="" />
+	<file src="..\runtimes\win-x64\native\onnxruntime_providers_tensorrt.dll" target="runtimes\" exclude="" />
+	<!-- copy core dlls which are device specific -->
+	<file src="..\runtimes-femto\**" target="runtimes\" exclude="" />
     <file src="..\VL.Devices.AzureKinect.vl" target="VL.Devices.AzureKinect.Femto.vl" exclude="" />
 	<file src="..\help\Help.xml" target="help\" exclude="" />
     <file src="..\help-femto\**" target="help\" exclude="" />

@@ -12,7 +12,7 @@
     <tags>VL, camera, video, depth, pointcloud, tracking, body, skeleton, joints</tags>
     <license type="expression">LGPL-3.0-only</license>
     <dependencies>
-      <dependency id="SixLabors.ImageSharp" version="2.1.8" />
+      <dependency id="SixLabors.ImageSharp" version="2.1.10" />
       <dependency id="VL.Skia3d" version="1.1.2" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
