@@ -27,6 +27,6 @@
     <file src="..\help\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
     <file src="nugeticon.png" target="icon\" />
-    <file src="..\README.md" target="docs\" />
+    <file src="..\README-AzureKinect.md" target="docs\README.md" />
   </files>
 </package>

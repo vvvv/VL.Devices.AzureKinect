@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect.Femto</id>
-    <version>0.0.2-alpha</version>
+    <version>0.0.3-alpha</version>
     <title>VL.Devices.AzureKinect.Femto</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
 	<repository type="git" url="https://github.com/vvvv/VL.Devices.AzureKinect.git" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Orbbec Femto Bolt and Mega for vvvv via Orbbec k4a</description>
-    <tags>VL, camera, video, depth, pointcloud</tags>
+    <description>Orbbec Femto Bolt and Mega for vvvv via OrbbecSDK K4A-Wrapper</description>
+    <tags>VL, camera, video, depth, pointcloud, orbbec, bolt, mega</tags>
     <license type="expression">LGPL-3.0-only</license>
     <dependencies>
       <dependency id="SixLabors.ImageSharp" version="1.0.4" />
@@ -27,6 +27,6 @@
     <file src="..\help\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
     <file src="nugeticon.png" target="icon\" />
-    <file src="..\README-femto.md" target="docs\README.md" />
+    <file src="..\README-Femto.md" target="docs\README.md" />
   </files>
 </package>

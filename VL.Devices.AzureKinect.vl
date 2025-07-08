@@ -8,7 +8,7 @@
     ************************ AzureKinect ************************
 
 -->
-      <Node Name="AzureKinect" Bounds="120,317" Id="I2swvD9Zw6TPZUpsoPbNxA" Summary="Returns data from a device" Tags="tracking,skeleton,body,pointcloud,video,depth">
+      <Node Name="AzureKinect" Bounds="120,317" Id="I2swvD9Zw6TPZUpsoPbNxA" Summary="Returns data from a device" Tags="tracking,skeleton,body,pointcloud,video,depth,orbbec,femto,mega,bolt">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1385,7 +1385,7 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="RySQRAdxVSMOgE5t4V2dEX" Name="Gain" Kind="InputPin" Bounds="623,1101" DefaultValue="1" Visibility="Optional">
+            <Pin Id="RySQRAdxVSMOgE5t4V2dEX" Name="Gain" Kind="InputPin" Bounds="623,1101" DefaultValue="0" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>

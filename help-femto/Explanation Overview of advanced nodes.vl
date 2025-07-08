@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="CfuIsEHFBrWMiSEC2sL3ZW" LanguageVersion="2023.5.2" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2023.5.2" />
+  <Patch Id="APFBYc3ryadNMXCUycaQDK">
+    <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="PNbg63iTMIGMWpKhKkhEUl">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PFfDaLRccY9PbWwk3Oc9Yz">
+        <Canvas Id="NrbeJxw6AQVLIXfi6tseMO" CanvasType="Group">
+          <Pad Id="VGBupwmyQQaOFSCVniCvON" Bounds="463,333,230,172" ShowValueBox="true" isIOBox="true" Value="&lt; These return images&#xD;&#xA;&#xD;&#xA;They are also available as &quot;Reactive&quot; versions in the nodebrowser if you enable &quot;Advanced&quot; nodes. &#xD;&#xA;&#xD;&#xA;The reactive versions allow you to apply computations to the images in a background thread.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AqomDnjCbHvLKzuhHijxDt" Comment="Device Index" Bounds="58,126,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="56,203,105,19" Id="J9X7pE1P1FkOjdfZNTuaSp">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AzureKinect" />
+            </p:NodeReference>
+            <Pin Id="JiWpU784nGYM05PKdrLBAc" Name="Device Index" Kind="InputPin" />
+            <Pin Id="MD7pOCtgIjWPMTuyDLRtwu" Name="Color Format" Kind="InputPin" />
+            <Pin Id="PucVstt3KyHOdo2pwhK5as" Name="Color Resolution" Kind="InputPin" />
+            <Pin Id="JoTkHHCxFbwN8hTsy4gHXx" Name="Depth Mode" Kind="InputPin" />
+            <Pin Id="F8NDsnG9E2SLGKw4CjGbRE" Name="FPS" Kind="InputPin" />
+            <Pin Id="AkT3LYA2RWfOunlSb6Xosa" Name="Enabled" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="RSNhMapJtIZPLiyln70eWW" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="D78fBHFkz7iPIZH3xWlieh" Name="Firmware Info" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="56,324,108,19" Id="ER3vpQxSw7AOuBneyjBNR5">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ColorToDepthImage" />
+            </p:NodeReference>
+            <Pin Id="QL2Nxk4dpTvM5ZIFkB88ao" Name="Device" Kind="InputPin" />
+            <Pin Id="AFfFqTCBVylLIRkNw527OT" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="207,324,108,19" Id="DR8gyV4jqWHPGrcUeb0m3A">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DepthToColorImage" />
+            </p:NodeReference>
+            <Pin Id="Lpm6f8EALfUOglubQXRjIO" Name="Device" Kind="InputPin" />
+            <Pin Id="AZaCPyNA8ZAMNbXDYwsIJt" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="349,324,105,19" Id="Ct5ixfjqrmhPJVMvbZTx1b">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PointCloudImage16" />
+            </p:NodeReference>
+            <Pin Id="KS0FyEBSHqEOlFi5jI5pBD" Name="Device" Kind="InputPin" />
+            <Pin Id="HvVgS8EsXphMiFJjUhflX3" Name="Scaling" Kind="InputPin" />
+            <Pin Id="D6XCArbCrN8QKx0mLnTVV9" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SxoZpHRb0JqLQGufA9qbqZ" Bounds="152,390,144,19" ShowValueBox="true" isIOBox="true" Value="hit F1 for explanations">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="77,619,139,19" Id="O4Tl9Wv2HMKQWDKMlYPThQ">
+            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ColorToDepthImagePacked (Reactive)" />
+            </p:NodeReference>
+            <Pin Id="OaEVr0ezUICOiwpYWP0iJ9" Name="Device" Kind="InputPin" />
+            <Pin Id="UT5wB6yWXauPMs5qdJsUPh" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="BAbzKcZfvrDPicFGd7t7Oo" Name="Experimental section" Bounds="49,544,660,263" />
+          <Pad Id="EYw1VvxSkBYQMqGlNuKPIq" Bounds="263,628,383,115" ShowValueBox="true" isIOBox="true" Value="Packed version of ColoToDepth and Depth in a single R8G8B8A8 (32 Bits) image. The original R8G8B8 values are converted to R5G6B5 (16 Bits) and Depth (16 Bits) and packed into one image with 32 Bits.&#xD;&#xA;Needs to be &quot;unpacked&quot; to get color and depth separated again, which can be done in e.g. in a compute shader">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="PVbVbOGAsC1OMyqjNp9dbd" Name="Create" />
+        <Patch Id="H2XlLgF6scLOXsDx75hd3r" Name="Update" />
+        <ProcessDefinition Id="Q75xfigtNzgOvh7zlq5gns">
+          <Fragment Id="GbhzaHLL7cgP9Aqb7MKI3C" Patch="PVbVbOGAsC1OMyqjNp9dbd" Enabled="true" />
+          <Fragment Id="R56Abdr1Rw3OEfJsdkIY8m" Patch="H2XlLgF6scLOXsDx75hd3r" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Pq72ATbW5HNOjomlMJCDmz" Ids="AqomDnjCbHvLKzuhHijxDt,JiWpU784nGYM05PKdrLBAc" />
+        <Link Id="De3K9H7EVEJOS1LG0QifA7" Ids="RSNhMapJtIZPLiyln70eWW,QL2Nxk4dpTvM5ZIFkB88ao" />
+        <Link Id="LXaOjpURwAoPXugwKCdWa8" Ids="RSNhMapJtIZPLiyln70eWW,Lpm6f8EALfUOglubQXRjIO" />
+        <Link Id="ImxywDPHUfZPJBeecf4sAa" Ids="RSNhMapJtIZPLiyln70eWW,KS0FyEBSHqEOlFi5jI5pBD" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2023.5.2" />
+  <NugetDependency Id="RZzgwQ5hDLQQVOrRCGYkHo" Location="VL.Devices.AzureKinect.Femto" Version="0.0.0.0" />
+</Document>
