@@ -24,6 +24,9 @@
     <Reference Include="Microsoft.Azure.Kinect.Sensor.Record">
       <HintPath>..\dependencies\Microsoft.Azure.Kinect.Sensor.Record\Microsoft.Azure.Kinect.Sensor.Record.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Azure.Kinect.BodyTracking">
+      <HintPath>..\dependencies\Microsoft.Azure.Kinect.BodyTracking\Microsoft.Azure.Kinect.BodyTracking.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
