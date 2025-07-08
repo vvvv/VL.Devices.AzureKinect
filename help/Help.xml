@@ -2,9 +2,12 @@
 <Pack>
 	<Topic title="Basics">
 		<VLDocument link="Explanation Overview of available nodes.vl" tags=""/>
-		<VLDocument link="HowTo Playback a recording.vl" tags=""/>
+		<VLDocument link="Explanation Overview of BodyTracking nodes.vl" tags=""/>
+		<VLDocument link="HowTo Track bodies.vl" tags=""/>
+		<VLDocument link="HowTo Visualize body masks.vl" tags=""/>
 		<VLDocument link="HowTo Visualize the depth pointcloud with Skia.vl" tags=""/>
 		<VLDocument link="HowTo Visualize the depth pointcloud with Stride.vl" tags=""/>
+		<VLDocument link="HowTo Playback a recording.vl" tags=""/>
 	</Topic>
 	<Topic title="Advanced">
 		<VLDocument link="Explanation Overview of advanced nodes.vl" tags=""/>
