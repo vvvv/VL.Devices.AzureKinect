@@ -296,5 +296,4 @@
   <NugetDependency Id="BRJnnZdh5eyMS3vQIp8RQ2" Location="VL.Skia" Version="2025.7.0-0389-g5972a096a9" />
   <NugetDependency Id="PlhzwyrzqZ1LbLQQqfXZSM" Location="VL.Devices.AzureKinect" Version="0.0.0.0" />
   <NugetDependency Id="PzpGo5rWv4jQSJ9eRUYFcn" Location="VL.Skia3d" Version="1.1.2" />
-  <NugetDependency Id="PDPYgaU0Ya6OHxjQFfZWs1" Location="VL.Devices.AzureKinect.Body" Version="0.0.0.0" />
 </Document>

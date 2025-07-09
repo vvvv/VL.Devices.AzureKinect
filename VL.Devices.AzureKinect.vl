@@ -10004,4 +10004,5 @@
   <PlatformDependency Id="QFgM5jDAhfxPsQ0SrkSAPc" Location="./dependencies/Microsoft.Azure.Kinect.Sensor/Microsoft.Azure.Kinect.Sensor.dll" />
   <PlatformDependency Id="GML7Urt30mJOajUQRUztY1" Location="./dependencies/Microsoft.Azure.Kinect.Sensor.Record/Microsoft.Azure.Kinect.Sensor.Record.dll" />
   <PlatformDependency Id="OozQO0nwpsEPSbgKcGPLwJ" Location="VL.Devices.AzureKinect.dll" />
+  <DocumentDependency Id="QATEFcDrfdsL2dvRlhm0mT" Location="./VL.Devices.AzureKinect.Body.vl" IsForward="true" />
 </Document>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect.Femto</id>
-    <version>0.0.4-alpha</version>
+    <version>0.0.5-alpha</version>
     <title>VL.Devices.AzureKinect.Femto</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
@@ -24,15 +24,17 @@
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.Record.dll" target="lib\netstandard2.0\" exclude="" />
 	<file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.BodyTracking.dll" target="lib\netstandard2.0\" exclude="" />
 	<!-- copy bodytracking dlls which are shared -->
-	<file src="..\runtimes\win-x64\native\directml.dll" target="runtimes\" exclude="" />  
-	<file src="..\runtimes\win-x64\native\k4abt.dll" target="runtimes\" exclude="" />  
-	<file src="..\runtimes\win-x64\native\onnxruntime.dll" target="runtimes\" exclude="" /> 
-	<file src="..\runtimes\win-x64\native\onnxruntime_providers_cuda.dll" target="runtimes\" exclude="" />  
-	<file src="..\runtimes\win-x64\native\onnxruntime_providers_shared.dll" target="runtimes\" exclude="" />
-	<file src="..\runtimes\win-x64\native\onnxruntime_providers_tensorrt.dll" target="runtimes\" exclude="" />
+	<file src="..\runtimes\win-x64\native\directml.dll" target="runtimes\win-x64\native\" exclude="" />  
+	<file src="..\runtimes\win-x64\native\k4abt.dll" target="runtimes\win-x64\native\" exclude="" />  
+	<file src="..\runtimes\win-x64\native\onnxruntime.dll" target="runtimes\win-x64\native\" exclude="" /> 
+	<file src="..\runtimes\win-x64\native\onnxruntime_providers_cuda.dll" target="runtimes\win-x64\native\" exclude="" />  
+	<file src="..\runtimes\win-x64\native\onnxruntime_providers_shared.dll" target="runtimes\win-x64\native\" exclude="" />
+	<file src="..\runtimes\win-x64\native\onnxruntime_providers_tensorrt.dll" target="runtimes\win-x64\native\" exclude="" />
 	<!-- copy core dlls which are device specific -->
 	<file src="..\runtimes-femto\**" target="runtimes\" exclude="" />
     <file src="..\VL.Devices.AzureKinect.vl" target="VL.Devices.AzureKinect.Femto.vl" exclude="" />
+    <file src="..\VL.Devices.AzureKinect.HDE.vl" target="VL.Devices.AzureKinect.Femto.HDE.vl" exclude="" />
+    <file src="..\VL.Devices.AzureKinect.Body.vl" target="VL.Devices.AzureKinect.Body.vl" exclude="" />
 	<file src="..\help\Help.xml" target="help\" exclude="" />
     <file src="..\help-femto\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
