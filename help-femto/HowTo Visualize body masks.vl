@@ -262,5 +262,4 @@
   </Patch>
   <NugetDependency Id="Bp82zJ1Ix5HMEh4rZwCSmc" Location="VL.Skia" Version="2025.7.0-0389-g5972a096a9" />
   <NugetDependency Id="Q88SLIRTsFjNYksHDbTBqr" Location="VL.Devices.AzureKinect.Femto" Version="0.0.0.0" />
-  <NugetDependency Id="BO3baKxIjhnMdhZu5fMBCu" Location="VL.Devices.AzureKinect.Body" Version="0.0.0.0" />
 </Document>
