@@ -34,7 +34,6 @@
 	<file src="..\runtimes-femto\**" target="runtimes\" exclude="" />
     <file src="..\VL.Devices.AzureKinect.vl" target="VL.Devices.AzureKinect.Femto.vl" exclude="" />
     <file src="..\VL.Devices.AzureKinect.HDE.vl" target="VL.Devices.AzureKinect.Femto.HDE.vl" exclude="" />
-    <file src="..\VL.Devices.AzureKinect.Body.vl" target="VL.Devices.AzureKinect.Body.vl" exclude="" />
 	<file src="..\help\Help.xml" target="help\" exclude="" />
     <file src="..\help-femto\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
