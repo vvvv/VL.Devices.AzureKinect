@@ -6,6 +6,10 @@ BodyTracking via [Azure Kinect Body Tracking SDK 1.1.2](https://learn.microsoft.
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://vvvv.org
 
+## Firmware Prerequisites
+- Based on [K4A-Wrapper 2.0.11](https://github.com/orbbec/OrbbecSDK-K4A-Wrapper/releases/tag/v2.0.11) which lists specific requirements for the firmware of the Femto devices 
+- Check [OrbbecFirmware](https://github.com/orbbec/OrbbecFirmware) for firmware upgrade instructions
+
 ## BodyTracking Prerequisites
 - [BodyTracking SDK 1.1.2](https://learn.microsoft.com/en-us/azure/kinect-dk/body-sdk-download) (in the default install path!)
 - [Cuda 11.4](https://developer.nvidia.com/cuda-11-4-0-download-archive) only if wanting to use Cuda instead of DirectML or Gpu as the "Processing Mode"
