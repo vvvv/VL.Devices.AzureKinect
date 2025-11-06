@@ -26,9 +26,7 @@ Once the VL.Devices.AzureKinect nuget is installed and referenced in your VL doc
 Demos are available via the Help Browser!
 
 ## Developing 
-While developing make sure to have correct .dlls for either AzureKinect or Femto devices in the \runtimes folder!
-
-When done working on help patches, run "help2femto.bat" which duplicates the help patches into \help-femto (but with references set to VL.Devices.AzureKinect.Femto) and commit those. 
+When done working on patches, run "azure2femto.bat" which duplicates files into \vl-femto and \help-femto (but with references set to VL.Devices.AzureKinect.Femto) and commit those. 
 
 The deployment GH Action creates two packs including the correct readme and help patches.
 
@@ -36,5 +34,6 @@ The deployment GH Action creates two packs including the correct readme and help
 Development of this library was partially sponsored by
 - [Studio Brüll](https://studiobruell.de)
 - [wirmachenbunt](https://wirmachenbunt.de)
+- [SCHNELLE BUNTE BILDER](https://schnellebuntebilder.de)
 
 For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org).

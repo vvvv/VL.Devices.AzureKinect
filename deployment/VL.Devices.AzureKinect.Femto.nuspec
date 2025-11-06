@@ -32,8 +32,7 @@
 	<file src="..\runtimes\win-x64\native\onnxruntime_providers_tensorrt.dll" target="runtimes\win-x64\native\" exclude="" />
 	<!-- copy core dlls which are device specific -->
 	<file src="..\runtimes-femto\**" target="runtimes\" exclude="" />
-    <file src="..\VL.Devices.AzureKinect.vl" target="VL.Devices.AzureKinect.Femto.vl" exclude="" />
-    <file src="..\VL.Devices.AzureKinect.HDE.vl" target="VL.Devices.AzureKinect.Femto.HDE.vl" exclude="" />
+    <file src="..\vl-femto\**" target="." exclude="" />
 	<file src="..\help\Help.xml" target="help\" exclude="" />
     <file src="..\help-femto\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
