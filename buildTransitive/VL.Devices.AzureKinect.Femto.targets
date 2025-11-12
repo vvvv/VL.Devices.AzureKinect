@@ -1,0 +1,12 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <!-- Ensures extensions are in a folder next to the exe -->
+    <Content Include="$(MSBuildThisFileDirectory)..\runtimes\win-x64\native\extensions\**\*.*">
+      <!-- Copy to output directory on build -->
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <LinkBase>extensions</LinkBase>
+    </Content>
+  </ItemGroup>
+
+</Project>
