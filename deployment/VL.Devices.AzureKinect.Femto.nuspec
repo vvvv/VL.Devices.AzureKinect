@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect.Femto</id>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
     <title>VL.Devices.AzureKinect.Femto</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
@@ -19,6 +19,7 @@
     <readme>docs\README.md</readme>
   </metadata>
   <files>
+    <file src="..\buildTransitive\**" target="buildTransitive\" />
 	<file src="..\lib\netstandard2.0\VL.Devices.AzureKinect.dll" target="lib\netstandard2.0\" exclude="" />
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.dll" target="lib\netstandard2.0\" exclude="" />
     <file src="..\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.Record.dll" target="lib\netstandard2.0\" exclude="" />
