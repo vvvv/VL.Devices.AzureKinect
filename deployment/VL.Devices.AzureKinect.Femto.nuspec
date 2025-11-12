@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect.Femto</id>
-    <version>1.5.0</version>
+    <version>1.4.0</version>
     <title>VL.Devices.AzureKinect.Femto</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
@@ -32,7 +32,6 @@
 	<file src="..\runtimes\win-x64\native\onnxruntime_providers_tensorrt.dll" target="runtimes\win-x64\native\" exclude="" />
 	<!-- copy core dlls which are device specific -->
 	<file src="..\runtimes-femto\*" target="runtimes\" exclude="" />
-	<file src="..\runtimes-femto\extensions\**" target="runtimes\extensions\" exclude="" />
     <file src="..\vl-femto\**" target="." exclude="" />
 	<file src="..\help\Help.xml" target="help\" exclude="" />
     <file src="..\help-femto\**" target="help\" exclude="" />
