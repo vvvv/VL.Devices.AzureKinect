@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+	<Topic title="Basics">
+		<VLDocument link="Explanation Overview of available nodes.vl" tags=""/>
+		<VLDocument link="Explanation Overview of BodyTracking nodes.vl" tags=""/>
+		<VLDocument link="HowTo Track bodies.vl" tags=""/>
+		<VLDocument link="HowTo Avateer a rigged mesh.vl" tags="skeleton tracking"/>
+		<VLDocument link="HowTo Visualize body masks.vl" tags=""/>
+		<VLDocument link="HowTo Visualize the depth pointcloud with Skia.vl" tags=""/>
+		<VLDocument link="HowTo Visualize the depth pointcloud with Stride.vl" tags=""/>
+		<VLDocument link="HowTo Playback a recording.vl" tags=""/>
+	</Topic>
+	<Topic title="Advanced">
+		<VLDocument link="Explanation Overview of advanced nodes.vl" tags=""/>
+		<VLDocument link="HowTo Sync multiple devices.vl" tags=""/>
+		<VLDocument link="HowTo Visualize the depth poincloud using PointCloudImage16.vl" tags=""/>
+		<VLDocument link="Explanation ColorToDepthImage Mapping.vl" tags=""/>
+	</Topic>
+</Pack>
