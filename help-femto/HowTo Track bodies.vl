@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MAxdYPtimWBMv4UKoYwp5f" LanguageVersion="2025.7.0-0389-g5972a096a9" Version="0.128">
-  <NugetDependency Id="GowQjEC3BnmLtfx2YShcc5" Location="VL.CoreLib" Version="2025.7.0-0389-g5972a096a9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MAxdYPtimWBMv4UKoYwp5f" LanguageVersion="2025.7.1-0103-gf49d596041" Version="0.128">
+  <NugetDependency Id="GowQjEC3BnmLtfx2YShcc5" Location="VL.CoreLib" Version="2025.7.1-0103-gf49d596041" />
   <Patch Id="EZ4HuupTYTZLQJDZAnUbZU">
     <Canvas Id="Nj2gjmQfLhbNm404eipiCK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -45,16 +45,6 @@
             <Pin Id="BcNkTNAZPsSOD7zheTR6C3" Name="Output" Kind="StateOutputPin" />
             <Pin Id="MQkGjFfxICdPBo651ATOm3" Name="Firmware Info" Kind="OutputPin" />
           </Node>
-          <Node Bounds="283,327,60,19" Id="KGTjTUAb0CQMCFQXlLVxPT">
-            <p:NodeReference LastCategoryFullName="Devices.AzureKinect" LastDependency="VL.Devices.AzureKinect.Body.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Skeletons" />
-            </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="VYxjATV44sMM0HEaLYZSZ2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NMv8rMmlAspPeXhW2bIiXr" Name="Device" Kind="InputPin" />
-            <Pin Id="SNtBqedAiC1PCk0Zr2TzmE" Name="Output" Kind="OutputPin" />
-          </Node>
           <Node Bounds="271,423,380,90" Id="OHBYYe3MHLtOBGFocSM4cm">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -68,10 +58,10 @@
               <Patch Id="CMRgbFhCgsHNpYwzrrTL3R" Name="Create" ManuallySortedPins="true" />
               <Patch Id="J0QfqDOO0iwLC8imycnkhl" Name="Update" ManuallySortedPins="true" />
               <Patch Id="Kcx7sRqwCDBLoeYumxWpXH" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="514,458,125,26" Id="AFey1j43PJ2Mi9p7HoKNyp">
-                <p:NodeReference LastCategoryFullName="Devices.AzureKinect.Skeleton" LastDependency="VL.Devices.AzureKinect.Body.vl">
+              <Node Bounds="514,458,125,19" Id="AFey1j43PJ2Mi9p7HoKNyp">
+                <p:NodeReference LastCategoryFullName="Devices.AzureKinect.BodyData" LastDependency="VL.Devices.AzureKinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="Skeleton" />
+                  <CategoryReference Kind="RecordType" Name="BodyData" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
                 </p:NodeReference>
                 <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
@@ -119,6 +109,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
+            <Pin Id="IsULDb9TnXJLoIA84ozocf" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="JXnCpM35MTaMTEkOgHU6ak" Name="Bounds" Kind="InputPin" DefaultValue="2034, 77, 741, 623">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
@@ -126,10 +117,12 @@
             </Pin>
             <Pin Id="NKCx4zTKpXLP1ImQlBCD10" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="QX1aLvumdd3QEuNWkgaHkk" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
-            <Pin Id="IsULDb9TnXJLoIA84ozocf" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FUGz9Nb9PM1POeVQpA2O7i" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
+            <Pin Id="INiy1tL8iZ9Lhd4H9vUgsJ" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BzSBfSYN6FZOfHvXtRUzoP" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
             <Pin Id="TKGceYAn5hWN2Wz9P9F12w" Name="Input" Kind="InputPin" />
             <Pin Id="GDHdzwpg58IQFyJbCKf82W" Name="Title" Kind="InputPin" />
+            <Pin Id="GtLx1j99yNYM07S43CCNXF" Name="Title Bar Interaction Width" Kind="InputPin" IsHidden="true" />
             <Pin Id="VgE4bhnYxd0Mvqcpk1XtLT" Name="Color" Kind="InputPin" DefaultValue="0.6399999, 0.6399999, 0.6399999, 1">
               <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
@@ -217,23 +210,24 @@
             <Pin Id="KeJFipQZJEXOL0u29a7lRD" Name="Sensor Orientation" Kind="InputPin" />
             <Pin Id="QKWThfBSSjhOPwy0iB4Fcc" Name="Smoothing Factor" Kind="InputPin" />
             <Pin Id="PzqwhIJRAUpLuaIHWy6WDT" Name="Output" Kind="OutputPin" />
+            <Pin Id="PlaDG2XdUVgLY7vwpyNEo2" Name="Frames" Kind="OutputPin" />
           </Node>
           <Pad Id="To7rhiB9CXDLhbTkO5YRKs" Comment="Show Labels" Bounds="386,379,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BVzPrFB6ahJNeeepZVjCFH" Comment="Show Axis" Bounds="385,335,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BVzPrFB6ahJNeeepZVjCFH" Comment="Show Axis" Bounds="365,331,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JpHNYKuhDEuOgO90W92nSd" Comment="Processing Mode" Bounds="325,236,72,15" ShowValueBox="true" isIOBox="true" Value="DirectML">
+          <Pad Id="JpHNYKuhDEuOgO90W92nSd" Comment="Processing Mode" Bounds="325,236,74,15" ShowValueBox="true" isIOBox="true" Value="DirectML">
             <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.BodyTracking" LastDependency="Microsoft.Azure.Kinect.BodyTracking.dll">
               <Choice Kind="TypeFlag" Name="TrackerProcessingMode" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LeiJ5NBqxTFPjJC7ezH2lD" Comment="Sensor Orientation" Bounds="365,262,122,15" ShowValueBox="true" isIOBox="true" Value="Default">
+          <Pad Id="LeiJ5NBqxTFPjJC7ezH2lD" Comment="Sensor Orientation" Bounds="365,262,124,15" ShowValueBox="true" isIOBox="true" Value="Default">
             <p:TypeAnnotation LastCategoryFullName="Microsoft.Azure.Kinect.BodyTracking" LastDependency="Microsoft.Azure.Kinect.BodyTracking.dll">
               <Choice Kind="TypeFlag" Name="SensorOrientation" />
             </p:TypeAnnotation>
@@ -274,13 +268,11 @@
           <Fragment Id="UFR2S6Vc2gGQIXrrQ3N110" Patch="I8uQePu79PPO2Vfad4m1Q4" Enabled="true" />
         </ProcessDefinition>
         <Link Id="TXKdIrZC1TyMETweCP6knY" Ids="BcNkTNAZPsSOD7zheTR6C3,BZ8NFsr2P5CNq2MOyabVUT" />
-        <Link Id="NgENLioGL9KNJGCB1DJ7M0" Ids="SNtBqedAiC1PCk0Zr2TzmE,KFIS6zUBNDHPtbciYnfk7f" />
         <Link Id="H5rdvB9A8q0LW9GDJOGDI8" Ids="KFIS6zUBNDHPtbciYnfk7f,HJcOUzsRf1ZPkhdhz4CXdH" />
         <Link Id="Drdo2wYiRhVPeIzMeWITKk" Ids="Vwtv9DkOOUBMrDyl6LnyTd,NHvXTrNfS7CLbvG1CpJHlE" />
         <Link Id="UEHXalWKI8rQH1cNpQSJSi" Ids="FPWukj4EMpkMrPgAdj1NGw,QjdR3xFGFD6MbMJMrijUSd" />
         <Link Id="HknaG8PWrN4LjU7A3FXfjM" Ids="KMiDiaNDmuWNnC6UqXjq8x,TKGceYAn5hWN2Wz9P9F12w" />
         <Link Id="LNx95Wxhd5FOBYWK7vfGFe" Ids="KhyeTESZYutPRFXFriGkAE,DP3E8SVBDd1OJd3Mjf2tPl" />
-        <Link Id="AvD94X9paHDMQEtEUcvyGB" Ids="PzqwhIJRAUpLuaIHWy6WDT,NMv8rMmlAspPeXhW2bIiXr" />
         <Link Id="TqHT9GmIqCFO3eYBQHbjKz" Ids="KFIS6zUBNDHPtbciYnfk7f,ECqJ9nC2RHDPO9xBG0w7jC" />
         <Link Id="Dsltd3OJJ0YOgNLAXzh093" Ids="UEuj574EsP2L24hFtopFo9,TJkcMjbUu9TNSL78B40ayJ" />
         <Link Id="O6mO6pR3RV3MjAhGl1bXVY" Ids="To7rhiB9CXDLhbTkO5YRKs,MjYOe9oBeKRP9rgknE4obC" />
@@ -290,10 +282,11 @@
         <Link Id="S8Jlrq8SBAPPGhAtDPQoho" Ids="KFIS6zUBNDHPtbciYnfk7f,OXDEJdUa3N9PiaeKbyTZfz" />
         <Link Id="HkXYI2qlgEZP4bRq7g0RpJ" Ids="JddAujUehBUPNPCtlXwz5z,Sxe7r5HnnmkLmEojBCd7m1" />
         <Link Id="JM0S53oLi6qOX5k4zwvODN" Ids="SFzczeaARiqNySDTGTYc4m,UEuj574EsP2L24hFtopFo9" />
+        <Link Id="JcsWC4S05SELeCKCc7gYPn" Ids="PzqwhIJRAUpLuaIHWy6WDT,KFIS6zUBNDHPtbciYnfk7f" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BRJnnZdh5eyMS3vQIp8RQ2" Location="VL.Skia" Version="2025.7.0-0389-g5972a096a9" />
+  <NugetDependency Id="BRJnnZdh5eyMS3vQIp8RQ2" Location="VL.Skia" Version="2025.7.1-0103-gf49d596041" />
   <NugetDependency Id="PlhzwyrzqZ1LbLQQqfXZSM" Location="VL.Devices.AzureKinect.Femto" Version="0.0.0.0" />
   <NugetDependency Id="PzpGo5rWv4jQSJ9eRUYFcn" Location="VL.Skia3d" Version="1.1.2" />
 </Document>
