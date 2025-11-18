@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="S3BYXYbBcOQLrAesdzH6KE" LanguageVersion="2025.7.0-0389-g5972a096a9" Version="0.128">
-  <NugetDependency Id="BfQ9BqV8poEPnZWKYQROv0" Location="VL.CoreLib" Version="2025.7.0-0389-g5972a096a9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="S3BYXYbBcOQLrAesdzH6KE" LanguageVersion="2025.7.1-0103-gf49d596041" Version="0.128">
+  <NugetDependency Id="BfQ9BqV8poEPnZWKYQROv0" Location="VL.CoreLib" Version="2025.7.1-0103-gf49d596041" />
   <Patch Id="DYRuwp4ufPyNyKtULooXvw">
     <Canvas Id="QYFOXjrMgATQTcpBMDj2hQ" DefaultCategory="Devices.AzureKinect.Body.HDE" CanvasType="FullCategory">
       <!--
@@ -200,7 +200,7 @@
           </Patch>
           <Slot Id="RuoMCZhg6MPNEgZi4nLdY4" Name="Value">
             <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Skeleton" />
+              <Choice Kind="TypeFlag" Name="BodyData" />
             </p:TypeAnnotation>
           </Slot>
           <Patch Id="PGE5hxJS6wfK9ompQzJxHS" Name="Update">
@@ -335,7 +335,7 @@
             <Node Bounds="719,502,105,26" Id="AUROCUtNMLMOxzo0mexJGs">
               <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastDependency="VL.Devices.Kinect2.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Skeleton" />
+                <CategoryReference Kind="ClassType" Name="BodyData" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
               <Pin Id="C9oXD7CZ8haLnOaLYu2PYf" Name="Input" Kind="StateInputPin" />
@@ -578,8 +578,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PplJ8M06DDYNWsWk2Slfxl" Location="VL.Skia" Version="2025.7.0-0389-g5972a096a9" />
-  <NugetDependency Id="Vx0IDKk0ZwjLq5dkCVhG5Z" Location="VL.HDE" Version="2025.7.0-0389-g5972a096a9" />
+  <NugetDependency Id="PplJ8M06DDYNWsWk2Slfxl" Location="VL.Skia" Version="2025.7.1-0103-gf49d596041" />
+  <NugetDependency Id="Vx0IDKk0ZwjLq5dkCVhG5Z" Location="VL.HDE" Version="2025.7.1-0103-gf49d596041" />
   <NugetDependency Id="SENEgtiPifvO2cyj0n9cBa" Location="VL.Devices.AzureKinect" Version="0.0.0.0" />
   <NugetDependency Id="Pztoe82H5JNNgeZV0CCeiV" Location="VL.Skia3d" Version="1.1.2" />
 </Document>
