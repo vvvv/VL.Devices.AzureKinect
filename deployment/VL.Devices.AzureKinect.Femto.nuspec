@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect.Femto</id>
-    <version>1.7.2</version>
+    <version>1.7.1</version>
     <title>VL.Devices.AzureKinect.Femto</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
@@ -35,7 +35,6 @@
 	<!-- copy core dlls which are device specific -->
 	<file src="..\runtimes-femto\**" target="runtimes\" exclude="" />
     <file src="..\vl-femto\**" target="." exclude="" />
-	<file src="..\help\Help.xml" target="help\" exclude="" />
     <file src="..\help-femto\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
     <file src="nugeticon.png" target="icon\" />
