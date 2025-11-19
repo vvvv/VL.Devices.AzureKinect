@@ -19,6 +19,8 @@ if not exist "%vlOutFolder%" (
     mkdir "%vlOutFolder%"
 )
 
+powershell Copy-Item -Path "%helpInFolder%\help.xml", "%helpInFolder%\lankydude.fbx" -Destination "%helpOutFolder%"
+
 :: Loop through all .vl files and change references
 for %%f in ("%helpInFolder%\*.vl") do (
     set "filename=%%~nxf"
