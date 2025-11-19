@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.AzureKinect.Femto</id>
-    <version>1.7.1</version>
+    <version>1.7.2</version>
     <title>VL.Devices.AzureKinect.Femto</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.Devices.AzureKinect</projectUrl>
@@ -14,6 +14,7 @@
     <dependencies>
       <dependency id="SixLabors.ImageSharp" version="2.1.10" />
       <dependency id="VL.Skia3d" version="1.1.2" />
+      <dependency id="VL.Skeleton" version="0.0.5" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
