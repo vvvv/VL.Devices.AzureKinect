@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FXhAwXcvDLmLrdBs8USiy2" LanguageVersion="2025.7.1-0106-gc0edd1f65b" Version="0.128">
-  <NugetDependency Id="CGRGdPSjELiM8Zwqwutmpa" Location="VL.CoreLib" Version="2025.7.1-0106-gc0edd1f65b" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FXhAwXcvDLmLrdBs8USiy2" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="CGRGdPSjELiM8Zwqwutmpa" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="QLqDcTOr1wsMLsuNhMjakn">
     <Canvas Id="OnK2FssQOETNWfnJIrAYkA" DefaultCategory="Devices.AzureKinect" CanvasType="FullCategory">
       <!--
@@ -1237,8 +1237,8 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="ON4ye8r2GuPPVsA7dLrv9N" Bounds="93,1010" />
-            <ControlPoint Id="QxkcFOUDtk2MjF98TsvD9r" Bounds="93,1040" />
+            <Pad Id="ON4ye8r2GuPPVsA7dLrv9N" Bounds="180,1030" />
+            <ControlPoint Id="QxkcFOUDtk2MjF98TsvD9r" Bounds="180,1060" />
           </Canvas>
           <ProcessDefinition Id="GMk3JKetzWsMwPDZeR7aWs" HasStateOut="true">
             <Fragment Id="NEsjZi744IFOXyyN4mWgDJ" Patch="TB8WkLMS34EMsZ3wFgmFlr" Enabled="true" />
@@ -1490,7 +1490,7 @@
           <Link Id="PL0Wbz12rv4M2JI2oZCWl0" Ids="ON4ye8r2GuPPVsA7dLrv9N,QxkcFOUDtk2MjF98TsvD9r" />
           <Link Id="VW7jnBaFDO8OUaOoEuIAvd" Ids="QxkcFOUDtk2MjF98TsvD9r,OfD3i4PJpMXMJHjYbfTXo2" IsHidden="true" />
           <Patch Id="VWKzF3xFPiJLU3xac3SAKL" Name="GetFirmwareInfo (Internal)">
-            <Pin Id="OfD3i4PJpMXMJHjYbfTXo2" Name="Output" Kind="OutputPin" />
+            <Pin Id="OfD3i4PJpMXMJHjYbfTXo2" Name="Firmware Info" Kind="OutputPin" />
           </Patch>
         </Patch>
       </Node>
@@ -2924,6 +2924,7 @@
                 </Patch>
               </Node>
               <ControlPoint Id="FdAKiwrxeM9MpjtJzlp7mK" Bounds="408,311" />
+              <ControlPoint Id="FdOeTtXN07DNMEpY8qTPFh" Bounds="296,310" />
             </Canvas>
             <ProcessDefinition Id="Dqtc7JGcTDfOlPKztMQITS" IsHidden="true">
               <Fragment Id="EzJvw6RcPbKP3op15rUFUq" Patch="TA4iqf663pTMKcX7PYDaO2" Enabled="true" />
@@ -2931,6 +2932,7 @@
               <Fragment Id="G6ymLkPtgYtM5s3d6UNL9e" Patch="Sa5xrSWunDJN6q9l63ZcTb" Enabled="true" />
               <Fragment Id="D9lwVR2dPOLPgELZweOzkj" Patch="QmFOzesdYpkN9vTPPXvj1I" Enabled="true" />
               <Fragment Id="RwQuSp3rjNcMokJz757USu" Patch="AWduGflYifQOVpLLPBmpgk" />
+              <Fragment Id="Lg0FtWBtkhRPKv893cFGq8" Patch="Vn6j6gp8o5wMA0KvlGwHSZ" />
             </ProcessDefinition>
             <Link Id="Qv62VqOfAWON7no6nAGMOL" Ids="EzF0KBfDDIaLyyA770ySsi,ST4RpDQnZgCNDJ5crCB3lb" IsHidden="true" />
             <Link Id="N1kasFi7iIrONsAz7NHz4K" Ids="UqqGDKvyQqBPcvOikaIVy1,VIfOK1YGAQwLU8Kt7dU1OM" IsHidden="true" />
@@ -2978,6 +2980,14 @@
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
+            <Patch Id="Vn6j6gp8o5wMA0KvlGwHSZ" Name="GetFirmwareInfo (Internal)">
+              <Pin Id="NvZ789P0DtgLma6ovBeqsf" MergeId="10250" Name="Firmware Info" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="KMB3NOSw3wvL4sBmKBxBNh" Ids="FdOeTtXN07DNMEpY8qTPFh,NvZ789P0DtgLma6ovBeqsf" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -6998,10 +7008,10 @@
         </p:Interfaces>
         <Patch Id="M8LVqcGuvdQO9Q6obQ2mvx">
           <Canvas Id="NiFCSqJwivKLa6JOVzy9fV" CanvasType="Group">
-            <ControlPoint Id="GGmtGIUEoa7Mq7gSj4b690" Bounds="101,736" />
+            <ControlPoint Id="GGmtGIUEoa7Mq7gSj4b690" Bounds="100,770" />
             <ControlPoint Id="AfowIZzMqD8O4DXChtp4OD" Bounds="114,84" />
             <ControlPoint Id="VLudhzhRp0qM8bkb6wzuOd" Bounds="392,767" />
-            <Node Bounds="57,124,478,570" Id="QPa019U7bDZNLWsx7RTwVp">
+            <Node Bounds="26,108,702,622" Id="QPa019U7bDZNLWsx7RTwVp">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -7010,24 +7020,24 @@
               <Pin Id="GvZ04YYVb1tPsEWAY6UFJL" Name="Force" Kind="InputPin" />
               <Pin Id="D5dKn5fMkWvQdMHSzN0ANF" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="QhF7wmUxOrsPsrNylHIKAI" Name="Has Changed" Kind="OutputPin" />
-              <ControlPoint Id="Hv3auBbCmXXOGKRXct74My" Bounds="114,130" Alignment="Top" />
-              <ControlPoint Id="EgvVq50P40gOcyV6z8xEEY" Bounds="100,687" Alignment="Bottom" />
-              <ControlPoint Id="JYcb2wCjBZmO2rI8rXZnOM" Bounds="396,687" Alignment="Bottom" />
-              <ControlPoint Id="GxjEoX2eSBqLeschxp5As4" Bounds="241,687" Alignment="Bottom" />
+              <ControlPoint Id="Hv3auBbCmXXOGKRXct74My" Bounds="114,114" Alignment="Top" />
+              <ControlPoint Id="EgvVq50P40gOcyV6z8xEEY" Bounds="100,724" Alignment="Bottom" />
+              <ControlPoint Id="JYcb2wCjBZmO2rI8rXZnOM" Bounds="396,724" Alignment="Bottom" />
+              <ControlPoint Id="GxjEoX2eSBqLeschxp5As4" Bounds="241,724" Alignment="Bottom" />
               <ControlPoint Id="T4pIwMcSmUpQAkrF3gFoZL" Bounds="585,724" Alignment="Bottom" />
               <Patch Id="RH9ONQmFBLeMuwPMju3W4P" ManuallySortedPins="true">
                 <Patch Id="S5AdBETqej9ONWXcStjSDJ" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Ltn6Aw6PCx5OJxqZ34T8id" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="57,128,660,560" Id="RZO3Nm2HbLFP3io2dpm3Ml">
+                <Node Bounds="57,128,660,570" Id="RZO3Nm2HbLFP3io2dpm3Ml">
                   <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="Try" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <FullNameCategoryReference ID="Control" />
                   </p:NodeReference>
-                  <ControlPoint Id="FbTv5YyHipsOF0ZlzHCRVO" Bounds="99,682" Alignment="Bottom" />
-                  <ControlPoint Id="V2GRNO5xVDzOLxInJj4YoG" Bounds="239,682" Alignment="Bottom" />
-                  <ControlPoint Id="AUl1fyzosbbMY5cz62T9sh" Bounds="398,682" Alignment="Bottom" />
-                  <ControlPoint Id="VXgYd9KevRbNfCR8bquecH" Bounds="585,682" Alignment="Bottom" />
+                  <ControlPoint Id="FbTv5YyHipsOF0ZlzHCRVO" Bounds="99,692" Alignment="Bottom" />
+                  <ControlPoint Id="V2GRNO5xVDzOLxInJj4YoG" Bounds="239,692" Alignment="Bottom" />
+                  <ControlPoint Id="AUl1fyzosbbMY5cz62T9sh" Bounds="398,692" Alignment="Bottom" />
+                  <ControlPoint Id="VXgYd9KevRbNfCR8bquecH" Bounds="585,692" Alignment="Bottom" />
                   <Pin Id="SWNY4G8f5FoOIibea44ggz" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="LQl1xCmBxPMOlnaD6CBJx5" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
                   <Pin Id="HkyupcTH6CpNU683PhOj3v" Name="Stick To Last Valid Outputs" Kind="InputPin" />
@@ -7078,7 +7088,7 @@
                         </Patch>
                         <ControlPoint Id="OrkUCJJ6mzyMpHMAGHcvHJ" Bounds="408,401" />
                         <ControlPoint Id="FEJpcWeI9IIPucaqvRL70B" Bounds="408,523" />
-                        <Node Bounds="406,473,-24,19" Id="SBpHBuMvpR7N9mi5Q9fBWQ">
+                        <Node Bounds="406,473,43,19" Id="SBpHBuMvpR7N9mi5Q9fBWQ">
                           <p:NodeReference LastCategoryFullName="Devices.AzureKinect.AzureKinectPlayer" LastDependency="VL.Devices.AzureKinect.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Player" />
@@ -8329,7 +8339,7 @@
                 </Patch>
               </Patch>
             </Node>
-            <ControlPoint Id="IkokLBotDCDNnbNPeDozM3" Bounds="241,728" />
+            <ControlPoint Id="IkokLBotDCDNnbNPeDozM3" Bounds="241,770" />
             <!--
 
     ************************ PlayerControl (Internal) ************************
@@ -9837,6 +9847,12 @@
                 </Patch>
               </Patch>
             </Node>
+            <ControlPoint Id="CmNHdYSBuC9O0OqKqJwjq7" Bounds="-120,771" />
+            <Pad Id="HpVqEn52OQtPqgG08Ti357" Comment="Firmware Info" Bounds="-119,740,35,15" ShowValueBox="true" isIOBox="true" Value="N/A">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <ProcessDefinition Id="INlYMl71695MOYL6zuLJRQ" HasStateOut="true">
             <Fragment Id="OTzXQHqAp3KPESz1HK4TD1" Patch="RFSuTlS20k1LgsdGM39Vbs" Enabled="true" />
@@ -9844,6 +9860,7 @@
             <Fragment Id="JUY2m0dNylpMp15FQgBv71" Patch="ScqY3DS54PIPGJxKG3cnd9" />
             <Fragment Id="UOHBNzvr8R9N9jufpFPGkq" Patch="ObHoFRsR2ldMu2MACxSVyv" Enabled="true" />
             <Fragment Id="HA3d7KUkzBcQCJhoxfgMmc" Patch="VN5QfzpkOJULw0YtIhDJcU" />
+            <Fragment Id="Eqy8RoDVgYpLkoGxYkEmVv" Patch="FNyRvCLMYGoPQl13fa5J4b" />
           </ProcessDefinition>
           <Link Id="DmMJL11BId9Nu89P9inNN8" Ids="GGmtGIUEoa7Mq7gSj4b690,UVxoOvAoqmSMvM6tKR0jo4" IsHidden="true" />
           <Link Id="JRiYQ5CF6a7M0lhgcZQSvJ" Ids="K739cB7LYuMPwGuEHzfvPL,AfowIZzMqD8O4DXChtp4OD" IsHidden="true" />
@@ -9970,6 +9987,11 @@
             <Pin Id="SS1gBq7sEUVN40tVTahLjg" Name="Duration" Kind="OutputPin" />
             <Pin Id="Pj4JPDq4Xl1Pn3wezFHtad" Name="Current Time" Kind="OutputPin" Bounds="533,1006" />
           </Patch>
+          <Patch Id="FNyRvCLMYGoPQl13fa5J4b" Name="GetFirmwareInfo (Internal)">
+            <Pin Id="D7MbrftcuucLxsmrQvJd4C" MergeId="1264" Name="Firmware Info" Kind="OutputPin" />
+          </Patch>
+          <Link Id="FfAzJBLM2KUNtwEIUmVdec" Ids="CmNHdYSBuC9O0OqKqJwjq7,D7MbrftcuucLxsmrQvJd4C" IsHidden="true" />
+          <Link Id="ABP40EEZZo1MfqBWry0Io6" Ids="HpVqEn52OQtPqgG08Ti357,CmNHdYSBuC9O0OqKqJwjq7" />
         </Patch>
       </Node>
       <Canvas Id="Cn5O2ZnLNfVNo2T5gYsRkM" Name="BodyTracking" Position="322,469" CanvasType="Group">
@@ -11708,13 +11730,14 @@
                 <ControlPoint Id="MERAu8YuVovLoWB3t9dWSB" Bounds="383,243" Alignment="Top" />
               </Node>
               <Node Bounds="364,50,91,26" Id="TWnFE2Gvc6cN6wiJP6k7eK">
-                <p:NodeReference LastCategoryFullName="Devices.AzureKinect.AzureKinect" LastDependency="VL.Devices.AzureKinect.vl">
+                <p:NodeReference LastCategoryFullName="Devices.AzureKinect.IDevice" LastDependency="VL.Devices.AzureKinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="IDevice" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetFirmwareInfo" />
                 </p:NodeReference>
                 <Pin Id="St63pQwLO4VO2ElD9WV2r2" Name="Input" Kind="StateInputPin" />
-                <Pin Id="AfOE8ZMR5mUM2bX8GNrhbo" Name="State Output" Kind="StateOutputPin" />
                 <Pin Id="BdqivBPhFCtNwUwFM7sfu0" Name="Output" Kind="OutputPin" />
+                <Pin Id="VWCecJMblUVQZ2qNU0j8JO" Name="Firmware Info" Kind="OutputPin" />
               </Node>
               <Node Bounds="52,150,37,19" Id="UUdiuDRKb50MJJUv8Ni30E">
                 <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
@@ -11849,9 +11872,6 @@
             <Link Id="KmnokTMtqwPMgFJhuPW3ly" Ids="Gsqe5EAvgGGQZJHXPXag2F,FCirrqNrhR1Pp2yo5QQNnP" />
             <Link Id="EbMfvDzzbWROiO9jeAYUdX" Ids="JQU5IbmxZk7Ln3y1pkgbGa,FCpPEE7WiXoN3BnDYMzffV" />
             <Link Id="QSBJKFNJkPoOJM2RzVu7Hc" Ids="Gsqe5EAvgGGQZJHXPXag2F,HSIBOZRSbnGNqXghoaxqXU,DTDn0oJBvrVNvIl92vmC9p" />
-            <Link Id="DGmwaGIHLhZLOBS9MoeaOw" Ids="AfOE8ZMR5mUM2bX8GNrhbo,CwtcSY15cDbOBjbYJyeY8s" />
-            <Link Id="ReFZymWkCgCPE3WvRFsIwW" Ids="AfOE8ZMR5mUM2bX8GNrhbo,PRydpAkzCs1NgAA3E5Ev3N" />
-            <Link Id="EgMPNBlGhxnPFZJFHieg2g" Ids="BdqivBPhFCtNwUwFM7sfu0,SXQKN9Wp4sMNhitaOe0Jdv" />
             <Link Id="RnZgCxeznUvMDnjSEEuqdT" Ids="KlEnck24ucrNkApmmpmocf,DCtsYCXGzzeLBSNVPPW02I" />
             <Link Id="Q5EKK2Nw37VOntRhKB4ilF" Ids="RNLqAUxdE36N20TMnqokDZ,IVFgIUIzWKaOzqgnTTSL4G" />
             <Link Id="O8Ni0WiSWZZNkRLVkPBXqZ" Ids="NLxpgCpjdhlLNZzaUmArQ0,LzNc7stGS2KQaU6D0ghiBe" IsFeedback="true" />
@@ -11860,6 +11880,9 @@
             <Link Id="E8w6Npmr1urPCWUeLv8Cpo" Ids="MERAu8YuVovLoWB3t9dWSB,UNTkq1q3XQ9PhgnPreOp86" IsFeedback="true" />
             <Link Id="ASyDkfY5YniMnxjYFs8N4X" Ids="FCpPEE7WiXoN3BnDYMzffV,UNTkq1q3XQ9PhgnPreOp86" />
             <Link Id="HipP1kjHqWbOixMsz4Zg4z" Ids="UNTkq1q3XQ9PhgnPreOp86,RcZJr0sKqexOcGg0p2UWho" />
+            <Link Id="QqDV81M4T6JOZDD7lRuD2Q" Ids="VWCecJMblUVQZ2qNU0j8JO,SXQKN9Wp4sMNhitaOe0Jdv" />
+            <Link Id="Oithqy5aoAmMs4CVybtGHb" Ids="BdqivBPhFCtNwUwFM7sfu0,PRydpAkzCs1NgAA3E5Ev3N" />
+            <Link Id="LbjZXLC16tdP2Nc3K6TkPs" Ids="BdqivBPhFCtNwUwFM7sfu0,CwtcSY15cDbOBjbYJyeY8s" />
           </Patch>
         </Node>
         <!--
@@ -15292,10 +15315,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="MsqCX6Ttc4CLXiQVDI6QhQ" Location="VL.Skia" Version="2025.7.1-0106-gc0edd1f65b" />
-  <NugetDependency Id="KZAfO3faLstMCFyjB36g9Y" Location="System.Numerics.Vectors" Version="4.5.0" />
+  <NugetDependency Id="MsqCX6Ttc4CLXiQVDI6QhQ" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="KZAfO3faLstMCFyjB36g9Y" Location="System.Numerics.Vectors" Version="4.6.0" />
   <NugetDependency Id="BjHHosGh8QaNOegumIQQIC" Location="VL.Skia3d" Version="1.1.2" />
-  <NugetDependency Id="VJjJ4uUjfMCMWx9Df4PSWA" Location="VL.Stride.Runtime" Version="2025.7.1-0106-gc0edd1f65b" />
+  <NugetDependency Id="VJjJ4uUjfMCMWx9Df4PSWA" Location="VL.Stride.Runtime" Version="2025.7.0" />
   <PlatformDependency Id="QFgM5jDAhfxPsQ0SrkSAPc" Location="./dependencies/Microsoft.Azure.Kinect.Sensor/Microsoft.Azure.Kinect.Sensor.dll" />
   <PlatformDependency Id="GML7Urt30mJOajUQRUztY1" Location="./dependencies/Microsoft.Azure.Kinect.Sensor.Record/Microsoft.Azure.Kinect.Sensor.Record.dll" />
   <PlatformDependency Id="OozQO0nwpsEPSbgKcGPLwJ" Location="VL.Devices.AzureKinect.dll" />
