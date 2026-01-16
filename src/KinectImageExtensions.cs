@@ -1,9 +1,9 @@
 ﻿using Microsoft.Azure.Kinect.Sensor;
+using Stride.Core.Mathematics;
 using System;
 using System.Reactive.Linq;
 using VL.Lib.Basics.Imaging;
 using VL.Lib.Collections;
-using Stride.Core.Mathematics;
 
 namespace VL.Devices.AzureKinect
 {
@@ -14,6 +14,18 @@ namespace VL.Devices.AzureKinect
             public short x;
             public short y;
             public short z;
+        }
+
+        public static bool IsFemto
+        {
+            get
+            {
+#if FEMTO
+                return true;
+#else
+                return false;
+#endif
+            }
         }
 
         /// <summary>
@@ -295,7 +307,13 @@ namespace VL.Devices.AzureKinect
                 var colorImage = c.Color;
                 if (colorImage != null && colorImage.TryToDecompress(out var decompressedImage))
                     return Observable.Using(
-                        () => CreateCapture(decompressedImage, c.Depth?.Reference(), c.IR?.Reference(), c.Temperature), 
+                        () =>
+                        {
+#if FEMTO
+                            decompressedImage = decompressedImage.Reference();
+#endif
+                            return CreateCapture(decompressedImage, c.Depth?.Reference(), c.IR?.Reference(), c.Temperature);
+                        }, 
                         x => Observable.Return(x));
                 else
                     return Observable.Return(c);

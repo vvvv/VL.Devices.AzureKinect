@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platform>x64</Platform>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <Platforms>x64</Platforms>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputPath>..\lib\</OutputPath>
+    <AssemblyName>VL.Devices.AzureKinect</AssemblyName>
+    <DefineConstants>FEMTO</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.11" />
+    <PackageReference Include="VL.Core" Version="2021.4.10" />
+  </ItemGroup>
+
+  <!-- The modified version inlcuding the Playback API (https://github.com/microsoft/Azure-Kinect-Sensor-SDK/pull/1711) -->
+  <ItemGroup>
+    <Reference Include="Microsoft.Azure.Kinect.Sensor">
+      <HintPath>..\dependencies\Microsoft.Azure.Kinect.Sensor\Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Kinect.Sensor.Record">
+      <HintPath>..\dependencies\Microsoft.Azure.Kinect.Sensor.Record\Microsoft.Azure.Kinect.Sensor.Record.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Kinect.BodyTracking">
+      <HintPath>..\dependencies\Microsoft.Azure.Kinect.BodyTracking\Microsoft.Azure.Kinect.BodyTracking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

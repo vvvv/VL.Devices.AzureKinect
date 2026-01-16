@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29306.81
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Devices.AzureKinect", "VL.Devices.AzureKinect.csproj", "{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Devices.AzureKinect.Femto", "VL.Devices.AzureKinect.Femto.csproj", "{C585525F-9D7C-87C8-1BA4-1742D7F8F4BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Debug|x64.Build.0 = Debug|x64
 		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Release|x64.ActiveCfg = Release|x64
 		{1DBBA58C-3E18-4AA7-A5F8-B1E77BD10348}.Release|x64.Build.0 = Release|x64
+		{C585525F-9D7C-87C8-1BA4-1742D7F8F4BC}.Debug|x64.ActiveCfg = Debug|x64
+		{C585525F-9D7C-87C8-1BA4-1742D7F8F4BC}.Debug|x64.Build.0 = Debug|x64
+		{C585525F-9D7C-87C8-1BA4-1742D7F8F4BC}.Release|x64.ActiveCfg = Release|x64
+		{C585525F-9D7C-87C8-1BA4-1742D7F8F4BC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

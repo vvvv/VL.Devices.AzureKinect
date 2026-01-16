@@ -7186,7 +7186,7 @@
                         </Node>
                       </Patch>
                     </Node>
-                    <Node Bounds="100,15,235,292" Id="Bj0WfEUDBcRPekigt6jTL5">
+                    <Node Bounds="100,15,271,292" Id="Bj0WfEUDBcRPekigt6jTL5">
                       <p:NodeReference LastCategoryFullName="System.Resources" LastDependency="VL.CoreLib.vl">
                         <CategoryReference Kind="Category" Name="Resources" />
                         <Choice Kind="OperationCallFlag" Name="New" />
@@ -7273,6 +7273,13 @@
                           <Pin Id="Ey4uFOHzMoLLWvMcgOCDKD" Name="Input" Kind="InputPin" />
                           <Pin Id="KXq03Fhx480PnfHPexDaO2" Name="Input 2" Kind="InputPin" />
                           <Pin Id="Ftc20FKSbWSNK8fXIepOqc" Name="Output" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="307,230,52,19" Id="A1aKfDIwj3QOILZivFkndF">
+                          <p:NodeReference LastCategoryFullName="VL.Devices.AzureKinect.KinectImageExtensions" LastDependency="VL.Devices.AzureKinect.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="IsFemto" />
+                          </p:NodeReference>
+                          <Pin Id="SJmRos64VpjMFI1cymBv7D" Name="Is Femto" Kind="OutputPin" />
                         </Node>
                       </Patch>
                     </Node>
@@ -10080,6 +10087,7 @@
           <Link Id="THQS4iWDRQYMNv11mBIdyr" Ids="VTwVrIrnXmFPWi2wlWzoKA,KmsWYq0XanhLLJ0EYZu3ul" />
           <Link Id="Uiz4BDv5jPWN8hejjSIKaH" Ids="PFG08r5ESo4OObdXHArxVz,IUfd6wbCKe8P6RtBlJozHw" />
           <Link Id="J2mcD2iYC1EPMZEOETqJt3" Ids="VTwVrIrnXmFPWi2wlWzoKA,TXJ1bEP56WlLPrQuwKGIsZ" />
+          <Link Id="Iw9LZgFycN4OvEbpNY5e4T" Ids="SJmRos64VpjMFI1cymBv7D,BOA6OhnuIkSPxQSh1f63dp" />
         </Patch>
       </Node>
       <Canvas Id="Cn5O2ZnLNfVNo2T5gYsRkM" Name="BodyTracking" Position="322,469" CanvasType="Group">
